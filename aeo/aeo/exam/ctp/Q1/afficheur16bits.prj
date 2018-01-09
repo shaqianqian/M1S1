@@ -1,0 +1,4 @@
+vhdl work "x7seg.vhd"
+vhdl work "fsm.vhd"
+vhdl work "clock.vhd"
+vhdl work "afficheur.vhd"

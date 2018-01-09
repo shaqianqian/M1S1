@@ -1,0 +1,478 @@
+Release 12.4 - xst M.81d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: chenillard.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "chenillard.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "chenillard"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : chenillard
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/m1/ma/q1/shift_vector.vhd" into library work
+Parsing entity <shift_vector>.
+Parsing architecture <Behavioral> of entity <shift_vector>.
+Parsing VHDL file "/home/m1/ma/q1/clk_div.vhd" into library work
+Parsing entity <clk_div>.
+Parsing architecture <Behavioral> of entity <clk_div>.
+Parsing VHDL file "/home/m1/ma/q1/chenillard.vhd" into library work
+Parsing entity <chenillard>.
+Parsing architecture <Behavioral> of entity <chenillard>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <chenillard> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <clk_div> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <shift_vector> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <chenillard>.
+    Related source file is "/home/m1/ma/q1/chenillard.vhd".
+    Summary:
+	no macro.
+Unit <chenillard> synthesized.
+
+Synthesizing Unit <clk_div>.
+    Related source file is "/home/m1/ma/q1/clk_div.vhd".
+    Found 1-bit register for signal <clk_4hz>.
+    Found 24-bit register for signal <compt>.
+    Found 24-bit adder for signal <compt[23]_GND_5_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+Unit <clk_div> synthesized.
+
+Synthesizing Unit <shift_vector>.
+    Related source file is "/home/m1/ma/q1/shift_vector.vhd".
+    Found 32-bit register for signal <i>.
+    Found 8-bit register for signal <temp>.
+    Found 32-bit adder for signal <i[31]_GND_8_o_add_10_OUT> created at line 41.
+    Found 32-bit subtractor for signal <i[31]_GND_8_o_sub_5_OUT<31:0>> created at line 33.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred  28 Multiplexer(s).
+Unit <shift_vector> synthesized.
+RTL-Simplification CPUSTAT: 0.01 
+RTL-BasicInf CPUSTAT: 0.09 
+RTL-BasicOpt CPUSTAT: 0.01 
+RTL-Remain-Bus CPUSTAT: 0.00 
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 24-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 24-bit register                                       : 1
+ 32-bit register                                       : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 28
+ 1-bit 2-to-1 multiplexer                              : 24
+ 32-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <clk_div>.
+The following registers are absorbed into counter <compt>: 1 register on signal <compt>.
+Unit <clk_div> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 24-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 1
+ 24-bit up counter                                     : 1
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+# Multiplexers                                         : 28
+ 1-bit 2-to-1 multiplexer                              : 24
+ 32-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <chenillard> ...
+
+Optimizing unit <shift_vector> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block chenillard, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : chenillard.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 439
+#      GND                         : 1
+#      INV                         : 34
+#      LUT1                        : 78
+#      LUT2                        : 29
+#      LUT3                        : 5
+#      LUT4                        : 38
+#      LUT5                        : 7
+#      LUT6                        : 23
+#      MUXCY                       : 108
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 112
+# FlipFlops/Latches                : 65
+#      FD                          : 65
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              65  out of  18224     0%  
+ Number of Slice LUTs:                  214  out of   9112     2%  
+    Number used as Logic:               214  out of   9112     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    214
+   Number with an unused Flip Flop:     149  out of    214    69%  
+   Number with an unused LUT:             0  out of    214     0%  
+   Number of fully used LUT-FF pairs:    65  out of    214    30%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    232     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+U1/clk_4hz                         | BUFG                   | 40    |
+clk_entree                         | BUFGP                  | 25    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.149ns (Maximum Frequency: 194.201MHz)
+   Minimum input arrival time before clock: 4.506ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/clk_4hz'
+  Clock period: 5.149ns (frequency: 194.201MHz)
+  Total number of paths / destination ports: 2732 / 40
+-------------------------------------------------------------------------
+Delay:               5.149ns (Levels of Logic = 4)
+  Source:            U2/i_27 (FF)
+  Destination:       U2/i_31 (FF)
+  Source Clock:      U1/clk_4hz rising
+  Destination Clock: U1/clk_4hz rising
+
+  Data Path: U2/i_27 to U2/i_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.995  U2/i_27 (U2/i_27)
+     LUT5:I0->O            1   0.203   0.924  U2/GND_8_o_i[31]_equal_2_o<31>15 (U2/GND_8_o_i[31]_equal_2_o<31>14)
+     LUT5:I0->O           11   0.203   0.883  U2/GND_8_o_i[31]_equal_2_o<31>16 (U2/N4)
+     LUT5:I4->O           15   0.205   0.982  U2/_n0065_01 (U2/_n0065_0)
+     LUT4:I3->O            1   0.205   0.000  U2/i_31_rstpot (U2/i_31_rstpot)
+     FD:D                      0.102          U2/i_31
+    ----------------------------------------
+    Total                      5.149ns (1.365ns logic, 3.784ns route)
+                                       (26.5% logic, 73.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_entree'
+  Clock period: 5.115ns (frequency: 195.511MHz)
+  Total number of paths / destination ports: 7801 / 25
+-------------------------------------------------------------------------
+Delay:               5.115ns (Levels of Logic = 10)
+  Source:            U1/compt_0 (FF)
+  Destination:       U1/compt_0 (FF)
+  Source Clock:      clk_entree rising
+  Destination Clock: clk_entree rising
+
+  Data Path: U1/compt_0 to U1/compt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  U1/compt_0 (U1/compt_0)
+     INV:I->O              1   0.206   0.000  U1/Madd_compt[23]_GND_5_o_add_0_OUT_lut<0>_INV_0 (U1/Madd_compt[23]_GND_5_o_add_0_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U1/Madd_compt[23]_GND_5_o_add_0_OUT_cy<0> (U1/Madd_compt[23]_GND_5_o_add_0_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U1/Madd_compt[23]_GND_5_o_add_0_OUT_cy<1> (U1/Madd_compt[23]_GND_5_o_add_0_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U1/Madd_compt[23]_GND_5_o_add_0_OUT_cy<2> (U1/Madd_compt[23]_GND_5_o_add_0_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U1/Madd_compt[23]_GND_5_o_add_0_OUT_cy<3> (U1/Madd_compt[23]_GND_5_o_add_0_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  U1/Madd_compt[23]_GND_5_o_add_0_OUT_cy<4> (U1/Madd_compt[23]_GND_5_o_add_0_OUT_cy<4>)
+     XORCY:CI->O           1   0.180   0.924  U1/Madd_compt[23]_GND_5_o_add_0_OUT_xor<5> (U1/compt[23]_GND_5_o_add_0_OUT<5>)
+     LUT5:I0->O            2   0.203   0.845  U1/compt[23]_PWR_5_o_equal_2_o<23>4 (U1/compt[23]_PWR_5_o_equal_2_o<23>3)
+     LUT6:I3->O           13   0.205   0.933  U1/compt[23]_PWR_5_o_equal_2_o<23>7 (U1/compt[23]_PWR_5_o_equal_2_o)
+     LUT2:I1->O            1   0.205   0.000  U1/compt_0_rstpot (U1/compt_0_rstpot)
+     FD:D                      0.102          U1/compt_0
+    ----------------------------------------
+    Total                      5.115ns (1.796ns logic, 3.319ns route)
+                                       (35.1% logic, 64.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/clk_4hz'
+  Total number of paths / destination ports: 80 / 40
+-------------------------------------------------------------------------
+Offset:              4.506ns (Levels of Logic = 3)
+  Source:            btn_entree (PAD)
+  Destination:       U2/i_31 (FF)
+  Destination Clock: U1/clk_4hz rising
+
+  Data Path: btn_entree to U2/i_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            43   1.222   1.793  btn_entree_IBUF (btn_entree_IBUF)
+     LUT5:I0->O           15   0.203   0.982  U2/_n0065_01 (U2/_n0065_0)
+     LUT4:I3->O            1   0.205   0.000  U2/i_31_rstpot (U2/i_31_rstpot)
+     FD:D                      0.102          U2/i_31
+    ----------------------------------------
+    Total                      4.506ns (1.732ns logic, 2.774ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/clk_4hz'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            U2/temp_7 (FF)
+  Destination:       led_sortie<7> (PAD)
+  Source Clock:      U1/clk_4hz rising
+
+  Data Path: U2/temp_7 to led_sortie<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  U2/temp_7 (U2/temp_7)
+     OBUF:I->O                 2.571          led_sortie_7_OBUF (led_sortie<7>)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock U1/clk_4hz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/clk_4hz     |    5.149|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_entree
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_entree     |    5.115|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.74 secs
+ 
+--> 
+
+
+Total memory usage is 364664 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

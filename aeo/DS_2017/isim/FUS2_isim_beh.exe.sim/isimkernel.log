@@ -1,0 +1,29 @@
+Command line:
+   FUS2_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57452
+
+Fri Jan  5 11:51:01 2018
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 156.652 Meg
+
+ Total Signals          : 9
+ Total Nets             : 65
+ Total Signal Drivers   : 4
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 1
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 425
+Total Line Count : 11
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 232.153 Meg
+
+Fri Jan  5 11:51:59 2018
+

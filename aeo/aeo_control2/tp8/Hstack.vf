@@ -1,0 +1,257 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 12.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Hstack.vf
+// /___/   /\     Timestamp : 11/28/2017 15:52:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/m1/ma/aeo/tp8/Hstack.vf -w /home/m1/ma/aeo/tp8/Hstack.sch
+//Design Name: Hstack
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Hstack(clk, 
+              ipdone, 
+              Lit, 
+              Litload, 
+              Nin, 
+              N2in, 
+              reset, 
+              shortIP, 
+              Tin, 
+              X, 
+              Y, 
+              Nout, 
+              N2out, 
+              offset, 
+              oversized, 
+              Tout);
+
+   (* clock_signal = "yes" *) 
+    input clk;
+    input ipdone;
+    input [11:0] Lit;
+    input Litload;
+    input [31:0] Nin;
+    input [31:0] N2in;
+    input reset;
+    input shortIP;
+    input [31:0] Tin;
+    input [1:0] X;
+    input [1:0] Y;
+   output [31:0] Nout;
+   output [31:0] N2out;
+   output offset;
+   output [31:0] oversized;
+   output [31:0] Tout;
+   
+   wire [3:0] adr0;
+   wire [3:0] adr1;
+   wire [3:0] adr2;
+   wire [3:0] adr3;
+   wire [7:0] count;
+   wire lastcycle;
+   wire [31:0] R0in;
+   wire [31:0] R1in;
+   wire [31:0] R2in;
+   wire [31:0] R3in;
+   wire [1:0] selin0;
+   wire [1:0] selin1;
+   wire [1:0] selin2;
+   wire [1:0] selin3;
+   wire [1:0] selreg0;
+   wire [1:0] selreg1;
+   wire [1:0] selreg2;
+   wire [1:0] selreg3;
+   wire [1:0] selTout;
+   wire we0;
+   wire we1;
+   wire we2;
+   wire we3;
+   wire [31:0] XLXN_17;
+   wire [31:0] XLXN_26;
+   wire [31:0] XLXN_34;
+   wire [31:0] XLXN_39;
+   wire [31:0] XLXN_41;
+   wire [31:0] XLXN_46;
+   wire [31:0] XLXN_48;
+   wire [31:0] XLXN_53;
+   wire [1:0] XLXN_82;
+   wire [1:0] XLXN_83;
+   wire [1:0] XLXN_223;
+   wire [31:0] XLXN_225;
+   wire [31:0] XLXN_226;
+   wire [31:0] XLXN_227;
+   wire [31:0] XLXN_259;
+   wire [31:0] XLXN_269;
+   wire XLXN_332;
+   wire XLXN_338;
+   wire XLXN_340;
+   wire XLXN_342;
+   wire [31:0] Tout_DUMMY;
+   
+   assign Tout[31:0] = Tout_DUMMY[31:0];
+   constant32  constlit (.value(Lit[11:0]), 
+                        .value32(XLXN_269[31:0]));
+   Mux4  muxi0 (.sel(selin0[1:0]), 
+               .X0(Tin[31:0]), 
+               .X1(Nin[31:0]), 
+               .X2(N2in[31:0]), 
+               .X3(XLXN_269[31:0]), 
+               .Y(XLXN_26[31:0]));
+   Mux4  muxi1 (.sel(selin1[1:0]), 
+               .X0(Tin[31:0]), 
+               .X1(Nin[31:0]), 
+               .X2(N2in[31:0]), 
+               .X3(XLXN_269[31:0]), 
+               .Y(XLXN_39[31:0]));
+   Mux4  muxi2 (.sel(selin2[1:0]), 
+               .X0(Tin[31:0]), 
+               .X1(Nin[31:0]), 
+               .X2(N2in[31:0]), 
+               .X3(XLXN_269[31:0]), 
+               .Y(XLXN_46[31:0]));
+   Mux4  muxi3 (.sel(selin3[1:0]), 
+               .X0(Tin[31:0]), 
+               .X1(Nin[31:0]), 
+               .X2(N2in[31:0]), 
+               .X3(XLXN_269[31:0]), 
+               .Y(XLXN_53[31:0]));
+   Mux4  muxoutN (.sel(XLXN_82[1:0]), 
+                 .X0(XLXN_259[31:0]), 
+                 .X1(XLXN_225[31:0]), 
+                 .X2(XLXN_226[31:0]), 
+                 .X3(XLXN_227[31:0]), 
+                 .Y(Nout[31:0]));
+   Mux4  muxoutN2 (.sel(XLXN_83[1:0]), 
+                  .X0(XLXN_259[31:0]), 
+                  .X1(XLXN_225[31:0]), 
+                  .X2(XLXN_226[31:0]), 
+                  .X3(XLXN_227[31:0]), 
+                  .Y(N2out[31:0]));
+   Mux4  muxoutT (.sel(selTout[1:0]), 
+                 .X0(XLXN_259[31:0]), 
+                 .X1(XLXN_225[31:0]), 
+                 .X2(XLXN_226[31:0]), 
+                 .X3(XLXN_227[31:0]), 
+                 .Y(Tout_DUMMY[31:0]));
+   Mux2  muxR0 (.sel(selreg0[1]), 
+               .X0(XLXN_26[31:0]), 
+               .X1(XLXN_17[31:0]), 
+               .Y(R0in[31:0]));
+   Mux2  muxR1 (.sel(selreg1[1]), 
+               .X0(XLXN_39[31:0]), 
+               .X1(XLXN_34[31:0]), 
+               .Y(R1in[31:0]));
+   Mux2  muxR2 (.sel(selreg2[1]), 
+               .X0(XLXN_46[31:0]), 
+               .X1(XLXN_41[31:0]), 
+               .Y(R2in[31:0]));
+   Mux2  muxR3 (.sel(selreg3[1]), 
+               .X0(XLXN_53[31:0]), 
+               .X1(XLXN_48[31:0]), 
+               .Y(R3in[31:0]));
+   predicat  pred (.tin(Tout_DUMMY[31:0]), 
+                  .predicat(offset));
+   Ram8  ram0 (.addr(adr0[3:0]), 
+              .clk(clk), 
+              .datain(XLXN_26[31:0]), 
+              .we(we0), 
+              .dataout(XLXN_17[31:0]));
+   Ram8  ram1 (.addr(adr1[3:0]), 
+              .clk(clk), 
+              .datain(XLXN_39[31:0]), 
+              .we(we1), 
+              .dataout(XLXN_34[31:0]));
+   Ram8  ram2 (.addr(adr2[3:0]), 
+              .clk(clk), 
+              .datain(XLXN_46[31:0]), 
+              .we(we2), 
+              .dataout(XLXN_41[31:0]));
+   Ram8  ram3 (.addr(adr3[3:0]), 
+              .clk(clk), 
+              .datain(XLXN_53[31:0]), 
+              .we(we3), 
+              .dataout(XLXN_48[31:0]));
+   QDE  R0 (.clk(clk), 
+           .d(R0in[31:0]), 
+           .E(XLXN_332), 
+           .q(XLXN_259[31:0]));
+   QDE  R1 (.clk(clk), 
+           .d(R1in[31:0]), 
+           .E(XLXN_338), 
+           .q(XLXN_225[31:0]));
+   QDE  R2 (.clk(clk), 
+           .d(R2in[31:0]), 
+           .E(XLXN_340), 
+           .q(XLXN_226[31:0]));
+   QDE  R3 (.clk(clk), 
+           .d(R3in[31:0]), 
+           .E(XLXN_342), 
+           .q(XLXN_227[31:0]));
+   select_in  sel_in (.count(count[7:0]), 
+                     .Lastcycle(lastcycle), 
+                     .litload(Litload), 
+                     .X(X[1:0]), 
+                     .Y(Y[1:0]), 
+                     .adr0(adr0[3:0]), 
+                     .adr1(adr1[3:0]), 
+                     .adr2(adr2[3:0]), 
+                     .adr3(adr3[3:0]), 
+                     .selin0(selin0[1:0]), 
+                     .selin1(selin1[1:0]), 
+                     .selin2(selin2[1:0]), 
+                     .selin3(selin3[1:0]), 
+                     .selreg0(selreg0[1:0]), 
+                     .selreg1(selreg1[1:0]), 
+                     .selreg2(selreg2[1:0]), 
+                     .selreg3(selreg3[1:0]), 
+                     .we0(we0), 
+                     .we1(we1), 
+                     .we2(we2), 
+                     .we3(we3));
+   select_out  sel_out (.count(count[1:0]), 
+                       .selNout(XLXN_82[1:0]), 
+                       .selN2out(XLXN_83[1:0]), 
+                       .seloverS(XLXN_223[1:0]), 
+                       .selTout(selTout[1:0]));
+   next_count  update_counter (.clk(clk), 
+                              .count_in(count[7:0]), 
+                              .lastcycle(lastcycle), 
+                              .reset(reset), 
+                              .X(X[1:0]), 
+                              .Y(Y[1:0]), 
+                              .count_out(count[7:0]));
+   OR3  XLXI_91 (.I0(ipdone), 
+                .I1(shortIP), 
+                .I2(Litload), 
+                .O(lastcycle));
+   Mux4  XLXI_94 (.sel(XLXN_223[1:0]), 
+                 .X0(XLXN_259[31:0]), 
+                 .X1(XLXN_225[31:0]), 
+                 .X2(XLXN_226[31:0]), 
+                 .X3(XLXN_227[31:0]), 
+                 .Y(oversized[31:0]));
+   OR2  XLXI_146 (.I0(selreg0[1]), 
+                 .I1(selreg0[0]), 
+                 .O(XLXN_332));
+   OR2  XLXI_147 (.I0(selreg1[1]), 
+                 .I1(selreg1[0]), 
+                 .O(XLXN_338));
+   OR2  XLXI_148 (.I0(selreg2[1]), 
+                 .I1(selreg2[0]), 
+                 .O(XLXN_340));
+   OR2  XLXI_149 (.I0(selreg3[1]), 
+                 .I1(selreg3[0]), 
+                 .O(XLXN_342));
+endmodule

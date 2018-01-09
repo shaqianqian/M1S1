@@ -1,0 +1,8 @@
+Release 12.4 Drc M.81d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Tue Oct  3 14:13:07 2017
+
+drc -z chenillard.ncd chenillard.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,54 @@
+Pin Freeze File:  version M.81d
+
+A95144XL144CS XA95144XL-15-CS144
+btn_entree S:PIND7
+clk_entree S:PINK2
+led_sortie<0> S:PINF11
+led_sortie<1> S:PINK11
+led_sortie<2> S:PINE12
+led_sortie<3> S:PINF1
+led_sortie<4> S:PINH2
+led_sortie<5> S:PINL12
+led_sortie<6> S:PINJ10
+led_sortie<7> S:PINC1
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_2 led_sortie_3_OBUF
+PARTITION FB1_9 led_sortie_4_OBUF
+PARTITION FB1_12 U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2 U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2 U2/Msub_i_addsub0000__or0014/U2/Msub_i_addsub0000__or0014_D2 U2/Msub_i_addsub0000__or0010/U2/Msub_i_addsub0000__or0010_D2
+		 U2/i<14> U2/i<10> U2/i<11>
+PARTITION FB2_4 led_sortie_7_OBUF
+PARTITION FB2_10 U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2 U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2 U2/Msub_i_addsub0000__or0018/U2/Msub_i_addsub0000__or0018_D2 U2/Msub_i_addsub0000__or0012/U2/Msub_i_addsub0000__or0012_D2
+		 U2/i<18> U2/i<13> U2/i<19> U2/i<15>
+		 U2/i<12>
+PARTITION FB3_1 clk_sortie/clk_sortie_CE clk_sortie U1/compt_addsub0000<22>/U1/compt_addsub0000<22>_D U1/compt_addsub0000<21>/U1/compt_addsub0000<21>_D
+		 U1/compt_addsub0000<20>/U1/compt_addsub0000<20>_D U1/compt_addsub0000<19>/U1/compt_addsub0000<19>_D U1/compt_addsub0000<18>/U1/compt_addsub0000<18>_D U1/compt_addsub0000<17>/U1/compt_addsub0000<17>_D
+		 U1/compt_addsub0000<16>/U1/compt_addsub0000<16>_D U1/compt_addsub0000<15>/U1/compt_addsub0000<15>_D U1/compt_addsub0000<14>/U1/compt_addsub0000<14>_D U1/compt_addsub0000<13>/U1/compt_addsub0000<13>_D
+		 U1/compt_addsub0000<12>/U1/compt_addsub0000<12>_D U1/compt<6> U1/compt<5> U1/compt<23>
+		 U1/compt<11> U1/compt<10>
+PARTITION FB4_1 U2/Msub_i_addsub0000__or0006/U2/Msub_i_addsub0000__or0006_D2 U2/Msub_i_addsub0000__or0004/U2/Msub_i_addsub0000__or0004_D2 U2/i<9> U2/i<6>
+		 U2/i<5> U2/i<29> U2/i<25> U2/i<21>
+		 U2/i<17> U2/i<8> U2/i<7> U2/i<4>
+		 U2/i<31> U2/i<30> U2/i<28> U2/i<24>
+		 U2/i<20> U2/i<16>
+PARTITION FB5_1 U1/compt<9> U1/compt<8> U1/compt<21> U1/compt<20>
+		 U1/compt<19> U1/compt<18> U1/compt<17> U1/compt<15>
+		 U1/compt<13> U1/compt<12> U1/compt<0> U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+		 U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2 U1/compt<7> U1/compt<4> U1/compt<3>
+		 U1/compt<2> U1/compt<1>
+PARTITION FB6_11 U2/Msub_i_addsub0000__or0028/U2/Msub_i_addsub0000__or0028_D2 U2/Msub_i_addsub0000__or0024/U2/Msub_i_addsub0000__or0024_D2 U2/Msub_i_addsub0000__or0020/U2/Msub_i_addsub0000__or0020_D2 U2/Msub_i_addsub0000__or0016/U2/Msub_i_addsub0000__or0016_D2
+		 U2/Msub_i_addsub0000__or0008/U2/Msub_i_addsub0000__or0008_D2 U1/compt<22> U1/compt<16> U1/compt<14>
+		
+PARTITION FB7_1 U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 led_sortie_5_OBUF U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2
+		 U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2 U2/i<0> U2/Msub_i_addsub0000__or0002/U2/Msub_i_addsub0000__or0002_D2 led_sortie_1_OBUF
+		 $OpTx$FX_DC$247 $OpTx$FX_DC$244 U2/temp_6_or0002/U2/temp_6_or0002_D2 U2/temp_4_or0002/U2/temp_4_or0002_D2
+		 led_sortie_6_OBUF U2/temp_3_or0002/U2/temp_3_or0002_D2 U2/temp_1_or0002/U2/temp_1_or0002_D2 U2/i<2>
+		 U2/i<1> U2/i<3>
+PARTITION FB8_3 led_sortie_0_OBUF
+PARTITION FB8_10 U2/i_Madd__add0000__and0029/U2/i_Madd__add0000__and0029_D2 led_sortie_2_OBUF U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2 U2/Msub_i_addsub0000__or0026/U2/Msub_i_addsub0000__or0026_D2
+		 U2/Msub_i_addsub0000__or0022/U2/Msub_i_addsub0000__or0022_D2 U2/i<26> U2/i<22> U2/i<27>
+		 U2/i<23>
+

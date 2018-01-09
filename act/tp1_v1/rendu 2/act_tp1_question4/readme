@@ -1,0 +1,5 @@
+Question4:
+Dans cette question, on a besoin de mélanger les points de deux lignes des toits,
+et juste prendre les points qui sont les plus hauts, c'est-à-dire que on a besoin
+des fonctions pour comparer les relations entre deux ligne(a side connects with
+the ground(x==0)). Les codes claires sont dans notre programmation <question4.java>

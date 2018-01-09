@@ -1,0 +1,3 @@
+vhdl isim_temp "IP_FLITER.vhd"
+vhdl isim_temp "acompt_1s.vhd"
+vhdl isim_temp "fsm.vhd"

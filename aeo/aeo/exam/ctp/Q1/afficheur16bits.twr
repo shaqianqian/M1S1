@@ -1,0 +1,123 @@
+--------------------------------------------------------------------------------
+Release 12.4 Trace  (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o
+afficheur16bits.twr afficheur16bits.pcf -ucf affichieur.ucf
+
+Design file:              afficheur16bits.ncd
+Physical constraint file: afficheur16bits.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.15 2010-12-02)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clock
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+reset       |    2.214(R)|      SLOW  |   -0.853(R)|      SLOW  |clock_BUFGP       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    2.769|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+------------------+---------+
+Source Pad     |Destination Pad   |  Delay  |
+---------------+------------------+---------+
+switch<0>      |sevenseg_sortie<0>|    9.915|
+switch<0>      |sevenseg_sortie<1>|    9.858|
+switch<0>      |sevenseg_sortie<2>|   10.099|
+switch<0>      |sevenseg_sortie<3>|    9.874|
+switch<0>      |sevenseg_sortie<4>|    9.814|
+switch<0>      |sevenseg_sortie<5>|   10.100|
+switch<0>      |sevenseg_sortie<6>|    9.393|
+switch<1>      |sevenseg_sortie<0>|    9.971|
+switch<1>      |sevenseg_sortie<1>|   10.113|
+switch<1>      |sevenseg_sortie<2>|    9.783|
+switch<1>      |sevenseg_sortie<3>|    9.930|
+switch<1>      |sevenseg_sortie<4>|   10.019|
+switch<1>      |sevenseg_sortie<5>|    9.784|
+switch<1>      |sevenseg_sortie<6>|    9.598|
+switch<2>      |sevenseg_sortie<0>|    9.970|
+switch<2>      |sevenseg_sortie<1>|   10.112|
+switch<2>      |sevenseg_sortie<2>|    9.782|
+switch<2>      |sevenseg_sortie<3>|    9.929|
+switch<2>      |sevenseg_sortie<4>|   10.018|
+switch<2>      |sevenseg_sortie<5>|    9.783|
+switch<2>      |sevenseg_sortie<6>|    9.597|
+switch<3>      |sevenseg_sortie<0>|   10.624|
+switch<3>      |sevenseg_sortie<1>|   10.567|
+switch<3>      |sevenseg_sortie<2>|   10.808|
+switch<3>      |sevenseg_sortie<3>|   10.583|
+switch<3>      |sevenseg_sortie<4>|   10.523|
+switch<3>      |sevenseg_sortie<5>|   10.809|
+switch<3>      |sevenseg_sortie<6>|   10.102|
+switch<4>      |sevenseg_sortie<0>|    9.270|
+switch<4>      |sevenseg_sortie<1>|    9.213|
+switch<4>      |sevenseg_sortie<2>|    9.454|
+switch<4>      |sevenseg_sortie<3>|    9.229|
+switch<4>      |sevenseg_sortie<4>|    9.095|
+switch<4>      |sevenseg_sortie<5>|    9.455|
+switch<4>      |sevenseg_sortie<6>|    8.674|
+switch<5>      |sevenseg_sortie<0>|    9.174|
+switch<5>      |sevenseg_sortie<1>|    9.257|
+switch<5>      |sevenseg_sortie<2>|    9.076|
+switch<5>      |sevenseg_sortie<3>|    9.133|
+switch<5>      |sevenseg_sortie<4>|    9.139|
+switch<5>      |sevenseg_sortie<5>|    9.077|
+switch<5>      |sevenseg_sortie<6>|    8.718|
+switch<6>      |sevenseg_sortie<0>|    9.625|
+switch<6>      |sevenseg_sortie<1>|    9.708|
+switch<6>      |sevenseg_sortie<2>|    9.527|
+switch<6>      |sevenseg_sortie<3>|    9.584|
+switch<6>      |sevenseg_sortie<4>|    9.590|
+switch<6>      |sevenseg_sortie<5>|    9.528|
+switch<6>      |sevenseg_sortie<6>|    9.169|
+switch<7>      |sevenseg_sortie<0>|    9.981|
+switch<7>      |sevenseg_sortie<1>|    9.924|
+switch<7>      |sevenseg_sortie<2>|   10.165|
+switch<7>      |sevenseg_sortie<3>|    9.940|
+switch<7>      |sevenseg_sortie<4>|    9.972|
+switch<7>      |sevenseg_sortie<5>|   10.166|
+switch<7>      |sevenseg_sortie<6>|    9.551|
+---------------+------------------+---------+
+
+
+Analysis completed Thu Oct 12 17:50:54 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 288 MB
+
+
+

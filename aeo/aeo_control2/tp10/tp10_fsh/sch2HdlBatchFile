@@ -1,0 +1,10 @@
+sch2hdl,-sympath,/home/parallels/Desktop/tp10/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/parallels/Desktop/tp10/afficheur.vhf,-w,/home/parallels/Desktop/tp10/afficheur.sch
+sch2hdl,-sympath,/home/parallels/Desktop/tp10/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/parallels/Desktop/tp10/Enable190.vhf,-w,/home/parallels/Desktop/tp10/Enable190.sch
+sch2hdl,-sympath,/home/parallels/Desktop/tp10/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/parallels/Desktop/tp10/Hstack.vhf,-w,/home/parallels/Desktop/tp10/Hstack.sch
+sch2hdl,-sympath,/home/parallels/Desktop/tp10/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/parallels/Desktop/tp10/mux4x4.vhf,-w,/home/parallels/Desktop/tp10/mux4x4.sch
+sch2hdl,-sympath,/home/parallels/Desktop/tp10/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/parallels/Desktop/tp10/netring.vhf,-w,/home/parallels/Desktop/tp10/netring.sch
+sch2hdl,-sympath,/home/parallels/Desktop/tp10/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/parallels/Desktop/tp10/netring_master.vhf,-w,/home/parallels/Desktop/tp10/netring_master.sch
+sch2hdl,-sympath,/home/parallels/Desktop/tp10/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/parallels/Desktop/tp10/pulse.vhf,-w,/home/parallels/Desktop/tp10/pulse.sch
+sch2hdl,-sympath,/home/parallels/Desktop/tp10/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/parallels/Desktop/tp10/regfile.vhf,-w,/home/parallels/Desktop/tp10/regfile.sch
+sch2hdl,-sympath,/home/parallels/Desktop/tp10/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/parallels/Desktop/tp10/reset_mem.vhf,-w,/home/parallels/Desktop/tp10/reset_mem.sch
+sch2hdl,-sympath,/home/parallels/Desktop/tp10/ipcore_dir,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,/home/parallels/Desktop/tp10/shiftanodes.vhf,-w,/home/parallels/Desktop/tp10/shiftanodes.sch

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/parallels/Desktop/TP_controle/Q4/afficheur16bits.ncd
+OUTFILE=/home/parallels/Desktop/TP_controle/Q4/afficheur16bits.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/parallels/Desktop/TP_controle/Q4
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

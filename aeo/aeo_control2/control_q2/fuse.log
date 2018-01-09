@@ -1,0 +1,21 @@
+Running: /home/parallels/Desktop/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/parallels/Desktop/aeo_control2/control_final 2/control_q2/iP_threetri_isim_beh.exe -prj /home/parallels/Desktop/aeo_control2/control_final 2/control_q2/iP_threetri_beh.prj work.iP_threetri 
+ISim M.81d (signature 0x9ca8bed6)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/parallels/Desktop/aeo_control2/control_final 2/control_q2/swap.vhd" into library work
+Parsing VHDL file "/home/parallels/Desktop/aeo_control2/control_final 2/control_q2/ip_threetri.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 71088 KB
+Fuse CPU Usage: 310 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Compiling architecture behavioral of entity swap [swap_default]
+Compiling architecture behavioral of entity ip_threetri
+Time Resolution for simulation is 1ps.
+Compiled 5 VHDL Units
+Built simulation executable /home/parallels/Desktop/aeo_control2/control_final 2/control_q2/iP_threetri_isim_beh.exe
+Fuse Memory Usage: 371148 KB
+Fuse CPU Usage: 330 ms
+GCC CPU Usage: 640 ms

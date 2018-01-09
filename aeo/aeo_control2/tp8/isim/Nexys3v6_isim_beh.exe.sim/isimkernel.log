@@ -1,0 +1,29 @@
+Command line:
+   Nexys3v6_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  41829
+
+Tue Nov  7 18:28:31 2017
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 175.292 Meg
+
+ Total Signals          : 2003
+ Total Nets             : 12520
+ Total Signal Drivers   : 876
+ Total Blocks           : 402
+ Total Primitive Blocks : 278
+ Total Processes        : 747
+ Total Traceable Variables  : 816
+ Total Scalar Nets and Variables : 20185
+Total Line Count : 2369
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 249.741 Meg
+
+Tue Nov  7 18:28:35 2017
+

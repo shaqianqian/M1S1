@@ -1,0 +1,29 @@
+Command line:
+   HMaster_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53653
+
+Sat Dec  2 22:07:42 2017
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 172.343 Meg
+
+ Total Signals          : 1499
+ Total Nets             : 11880
+ Total Signal Drivers   : 624
+ Total Blocks           : 347
+ Total Primitive Blocks : 235
+ Total Processes        : 583
+ Total Traceable Variables  : 661
+ Total Scalar Nets and Variables : 15214
+Total Line Count : 1313
+
+ Total Simulation Time: 0.1 sec
+
+ Current Memory Usage: 247.845 Meg
+
+Sat Dec  2 22:07:47 2017
+

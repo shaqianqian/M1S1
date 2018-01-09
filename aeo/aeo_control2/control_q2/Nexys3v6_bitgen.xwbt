@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/parallels/Desktop/aeo_control2/control_final 2/control_q2/Nexys3v6.ncd
+OUTFILE=/home/parallels/Desktop/aeo_control2/control_final 2/control_q2/Nexys3v6.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/parallels/Desktop/aeo_control2/control_final 2/control_q2
+LICENSE=ISE
+USER_INFO=15690819_173552794_661

@@ -1,0 +1,10 @@
+Command line:
+   x7seg_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  49313
+
+Tue Sep 12 16:50:22 2017
+
+
+ Elaboration Time: 0 sec

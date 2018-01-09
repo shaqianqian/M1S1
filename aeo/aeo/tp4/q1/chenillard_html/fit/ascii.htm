@@ -1,0 +1,2584 @@
+<html><body>
+<pre>
+ 
+cpldfit:  version M.81d                             Xilinx Inc.
+                                  No Fit Report
+Design Name: chenillard                          Date: 10- 3-2017,  2:06PM
+Device Used: XA95144XL-15-CS144
+Fitting Status: Design Rule Checking Failed
+
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'chenillard.ise'.
+WARNING:Cpld:1260 - Invalid constraint 'IOSTANDARD' found in netlist.  The
+   constaint is not supported for targeted device and is ignored.
+ERROR:Cpld - Pin constraints not supported in autofit mode. Either specify a
+   package or remove pin constraints.
+ERROR:Cpld - The design requires too many resources to fit in any of the
+   specified devices or design rule checks prevent this design from fitting.
+ERROR:Cpld:868 - Cannot fit the design into any of the specified devices with
+   the selected implementation options.
+*************************  Mapped Resource Summary  **************************
+
+No logic has been mapped.
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+0  /144 (  0%) 0   /720  (  0%) 0  /432 (  0%)   0  /144 (  0%) 0  /117 (  0%)
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    2           0    |  I/O              :     0     109
+Output        :    8           0    |  GCK/IO           :     0       3
+Bidirectional :    0           0    |  GTS/IO           :     0       4
+GCK           :    0           0    |  GSR/IO           :     0       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     10           0
+
+End of Mapped Resource Summary
+*************************  Summary of UnMapped Logic  ************************
+
+** 8 Outputs **
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+led_sortie<0>                      3     4     U16
+led_sortie<1>                      3     4     V16
+led_sortie<2>                      3     4     U15
+led_sortie<3>                      3     4     V15
+led_sortie<4>                      3     4     M11
+led_sortie<5>                      3     4     N11
+led_sortie<6>                      3     4     R11
+led_sortie<7>                      3     4     T11
+
+** 511 Buried Nodes **
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+CE0_                               1     1     
+CE1_                               1     1     
+CE2_                               1     1     
+CE3_                               1     1     
+CE4_                               1     1     
+CE5_                               1     1     
+CE6_                               1     1     
+CE7_                               1     1     
+U1/Madd_compt_addsub0000__and0000  1     2     
+U1/Madd_compt_addsub0000__and0001  1     2     
+U1/Madd_compt_addsub0000__and0002  1     2     
+U1/Madd_compt_addsub0000__and0003  1     2     
+U1/Madd_compt_addsub0000__and0004  1     2     
+U1/Madd_compt_addsub0000__and0005  1     2     
+U1/Madd_compt_addsub0000__and0006  1     2     
+U1/Madd_compt_addsub0000__and0007  1     2     
+U1/Madd_compt_addsub0000__and0008  1     2     
+U1/Madd_compt_addsub0000__and0009  1     2     
+U1/Madd_compt_addsub0000__and0010  1     2     
+U1/Madd_compt_addsub0000__and0011  1     2     
+U1/Madd_compt_addsub0000__and0012  1     2     
+U1/Madd_compt_addsub0000__and0013  1     2     
+U1/Madd_compt_addsub0000__and0014  1     2     
+U1/Madd_compt_addsub0000__and0015  1     2     
+U1/Madd_compt_addsub0000__and0016  1     2     
+U1/Madd_compt_addsub0000__and0017  1     2     
+U1/Madd_compt_addsub0000__and0018  1     2     
+U1/Madd_compt_addsub0000__and0019  1     2     
+U1/Madd_compt_addsub0000__and0020  1     2     
+U1/Madd_compt_addsub0000__and0021  1     2     
+U1/compt<0>                        2     3     
+U1/compt<1>                        2     3     
+U1/compt<2>                        2     3     
+U1/compt<3>                        2     3     
+U1/compt<4>                        2     3     
+U1/compt<5>                        2     3     
+U1/compt<6>                        2     3     
+U1/compt<7>                        2     3     
+U1/compt<8>                        2     3     
+U1/compt<9>                        2     3     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U1/compt<10>                       2     3     
+U1/compt<11>                       2     3     
+U1/compt<12>                       2     3     
+U1/compt<13>                       2     3     
+U1/compt<14>                       2     3     
+U1/compt<15>                       2     3     
+U1/compt<16>                       2     3     
+U1/compt<17>                       2     3     
+U1/compt<18>                       2     3     
+U1/compt<19>                       2     3     
+U1/compt<20>                       2     3     
+U1/compt<21>                       2     3     
+U1/compt<22>                       2     3     
+U1/compt<23>                       2     3     
+U1/compt_addsub0000<1>             2     2     
+U1/compt_addsub0000<2>             2     2     
+U1/compt_addsub0000<3>             2     2     
+U1/compt_addsub0000<4>             2     2     
+U1/compt_addsub0000<5>             2     2     
+U1/compt_addsub0000<6>             2     2     
+U1/compt_addsub0000<7>             2     2     
+U1/compt_addsub0000<8>             2     2     
+U1/compt_addsub0000<9>             2     2     
+U1/compt_addsub0000<10>            2     2     
+U1/compt_addsub0000<11>            2     2     
+U1/compt_addsub0000<12>            2     2     
+U1/compt_addsub0000<13>            2     2     
+U1/compt_addsub0000<14>            2     2     
+U1/compt_addsub0000<15>            2     2     
+U1/compt_addsub0000<16>            2     2     
+U1/compt_addsub0000<17>            2     2     
+U1/compt_addsub0000<18>            2     2     
+U1/compt_addsub0000<19>            2     2     
+U1/compt_addsub0000<20>            2     2     
+U1/compt_addsub0000<21>            2     2     
+U1/compt_addsub0000<22>            2     2     
+U1/compt_addsub0000<23>            2     2     
+U1/compt_cmp_eq0000                1     3     
+U1/compt_cmp_eq00001               1     8     
+U1/compt_cmp_eq000014              1     4     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U1/compt_cmp_eq000015              1     8     
+U1/compt_cmp_eq000016              1     2     
+U1/compt_cmp_eq00002               1     4     
+U2/Msub_i_addsub0000__or0000       2     2     
+U2/Msub_i_addsub0000__or0001       2     2     
+U2/Msub_i_addsub0000__or0002       2     2     
+U2/Msub_i_addsub0000__or0003       2     2     
+U2/Msub_i_addsub0000__or0004       2     2     
+U2/Msub_i_addsub0000__or0005       2     2     
+U2/Msub_i_addsub0000__or0006       2     2     
+U2/Msub_i_addsub0000__or0007       2     2     
+U2/Msub_i_addsub0000__or0008       2     2     
+U2/Msub_i_addsub0000__or0009       2     2     
+U2/Msub_i_addsub0000__or0010       2     2     
+U2/Msub_i_addsub0000__or0011       2     2     
+U2/Msub_i_addsub0000__or0012       2     2     
+U2/Msub_i_addsub0000__or0013       2     2     
+U2/Msub_i_addsub0000__or0014       2     2     
+U2/Msub_i_addsub0000__or0015       2     2     
+U2/Msub_i_addsub0000__or0016       2     2     
+U2/Msub_i_addsub0000__or0017       2     2     
+U2/Msub_i_addsub0000__or0018       2     2     
+U2/Msub_i_addsub0000__or0019       2     2     
+U2/Msub_i_addsub0000__or0020       2     2     
+U2/Msub_i_addsub0000__or0021       2     2     
+U2/Msub_i_addsub0000__or0022       2     2     
+U2/Msub_i_addsub0000__or0023       2     2     
+U2/Msub_i_addsub0000__or0024       2     2     
+U2/Msub_i_addsub0000__or0025       2     2     
+U2/Msub_i_addsub0000__or0026       2     2     
+U2/Msub_i_addsub0000__or0027       2     2     
+U2/Msub_i_addsub0000__or0028       2     2     
+U2/Msub_i_addsub0000__or0029       2     2     
+U2/i<0>                            2     3     
+U2/i<1>                            2     3     
+U2/i<2>                            2     3     
+U2/i<3>                            2     3     
+U2/i<4>                            2     3     
+U2/i<5>                            2     3     
+U2/i<6>                            2     3     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U2/i<7>                            2     3     
+U2/i<8>                            2     3     
+U2/i<9>                            2     3     
+U2/i<10>                           2     3     
+U2/i<11>                           2     3     
+U2/i<12>                           2     3     
+U2/i<13>                           2     3     
+U2/i<14>                           2     3     
+U2/i<15>                           2     3     
+U2/i<16>                           2     3     
+U2/i<17>                           2     3     
+U2/i<18>                           2     3     
+U2/i<19>                           2     3     
+U2/i<20>                           2     3     
+U2/i<21>                           2     3     
+U2/i<22>                           2     3     
+U2/i<23>                           2     3     
+U2/i<24>                           2     3     
+U2/i<25>                           2     3     
+U2/i<26>                           2     3     
+U2/i<27>                           2     3     
+U2/i<28>                           2     3     
+U2/i<29>                           2     3     
+U2/i<30>                           2     3     
+U2/i<31>                           2     3     
+U2/i_0__and00001                   1     2     
+U2/i_10__and00001                  1     2     
+U2/i_11__and00001                  1     2     
+U2/i_12__and00001                  1     2     
+U2/i_13__and00001                  1     2     
+U2/i_14__and00001                  1     2     
+U2/i_15__and00001                  1     2     
+U2/i_16__and00001                  1     2     
+U2/i_17__and00001                  1     2     
+U2/i_18__and00001                  1     2     
+U2/i_19__and00001                  1     2     
+U2/i_1__and00001                   1     2     
+U2/i_20__and00001                  1     2     
+U2/i_21__and00001                  1     2     
+U2/i_22__and00001                  1     2     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U2/i_23__and00001                  1     2     
+U2/i_24__and00001                  1     2     
+U2/i_25__and00001                  1     2     
+U2/i_26__and00001                  1     2     
+U2/i_27__and00001                  1     2     
+U2/i_28__and00001                  1     2     
+U2/i_29__and00001                  1     2     
+U2/i_2__and00001                   1     2     
+U2/i_30__and00001                  1     2     
+U2/i_31__and00001                  1     2     
+U2/i_3__and00001                   1     2     
+U2/i_4__and00001                   1     2     
+U2/i_5__and00001                   1     2     
+U2/i_6__and00001                   1     2     
+U2/i_7__and00001                   1     2     
+U2/i_8__and00001                   1     2     
+U2/i_9__and00001                   1     2     
+U2/i_Madd__add0000__and0000        1     2     
+U2/i_Madd__add0000__and0001        1     2     
+U2/i_Madd__add0000__and0002        1     2     
+U2/i_Madd__add0000__and0003        1     2     
+U2/i_Madd__add0000__and0004        1     2     
+U2/i_Madd__add0000__and0005        1     2     
+U2/i_Madd__add0000__and0006        1     2     
+U2/i_Madd__add0000__and0007        1     2     
+U2/i_Madd__add0000__and0008        1     2     
+U2/i_Madd__add0000__and0009        1     2     
+U2/i_Madd__add0000__and0010        1     2     
+U2/i_Madd__add0000__and0011        1     2     
+U2/i_Madd__add0000__and0012        1     2     
+U2/i_Madd__add0000__and0013        1     2     
+U2/i_Madd__add0000__and0014        1     2     
+U2/i_Madd__add0000__and0015        1     2     
+U2/i_Madd__add0000__and0016        1     2     
+U2/i_Madd__add0000__and0017        1     2     
+U2/i_Madd__add0000__and0018        1     2     
+U2/i_Madd__add0000__and0019        1     2     
+U2/i_Madd__add0000__and0020        1     2     
+U2/i_Madd__add0000__and0021        1     2     
+U2/i_Madd__add0000__and0022        1     2     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U2/i_Madd__add0000__and0023        1     2     
+U2/i_Madd__add0000__and0024        1     2     
+U2/i_Madd__add0000__and0025        1     2     
+U2/i_Madd__add0000__and0026        1     2     
+U2/i_Madd__add0000__and0027        1     2     
+U2/i_Madd__add0000__and0028        1     2     
+U2/i_Madd__add0000__and0029        1     2     
+U2/i_Q_mux0000<0>4                 1     2     
+U2/i_Q_mux0000<0>6                 1     2     
+U2/i_Q_mux0000<0>                  2     2     
+U2/i_Q_mux0000<0>5                 2     2     
+U2/i_Q_mux0000<1>                  2     2     
+U2/i_Q_mux0000<1>4                 1     2     
+U2/i_Q_mux0000<1>2                 2     2     
+U2/i_Q_mux0000<1>1                 1     2     
+U2/i_Q_mux0000<2>2                 2     2     
+U2/i_Q_mux0000<2>                  2     2     
+U2/i_Q_mux0000<2>1                 1     2     
+U2/i_Q_mux0000<2>4                 1     2     
+U2/i_Q_mux0000<3>                  2     2     
+U2/i_Q_mux0000<3>4                 1     3     
+U2/i_Q_mux0000<3>1                 1     2     
+U2/i_Q_mux0000<4>1                 1     2     
+U2/i_Q_mux0000<4>4                 1     3     
+U2/i_Q_mux0000<4>                  2     2     
+U2/i_Q_mux0000<5>4                 1     3     
+U2/i_Q_mux0000<5>1                 1     2     
+U2/i_Q_mux0000<5>                  2     2     
+U2/i_Q_mux0000<6>4                 1     3     
+U2/i_Q_mux0000<6>1                 1     2     
+U2/i_Q_mux0000<6>                  2     2     
+U2/i_Q_mux0000<7>4                 1     3     
+U2/i_Q_mux0000<7>                  2     2     
+U2/i_Q_mux0000<7>1                 1     2     
+U2/i_Q_mux0000<8>4                 1     3     
+U2/i_Q_mux0000<8>1                 1     2     
+U2/i_Q_mux0000<8>                  2     2     
+U2/i_Q_mux0000<9>4                 1     3     
+U2/i_Q_mux0000<9>                  2     2     
+U2/i_Q_mux0000<9>1                 1     2     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U2/i_Q_mux0000<10>                 2     2     
+U2/i_Q_mux0000<10>1                1     2     
+U2/i_Q_mux0000<10>4                1     3     
+U2/i_Q_mux0000<11>1                1     2     
+U2/i_Q_mux0000<11>4                1     3     
+U2/i_Q_mux0000<11>                 2     2     
+U2/i_Q_mux0000<12>                 2     2     
+U2/i_Q_mux0000<12>4                1     3     
+U2/i_Q_mux0000<12>1                1     2     
+U2/i_Q_mux0000<13>4                1     3     
+U2/i_Q_mux0000<13>1                1     2     
+U2/i_Q_mux0000<13>                 2     2     
+U2/i_Q_mux0000<14>                 2     2     
+U2/i_Q_mux0000<14>4                1     3     
+U2/i_Q_mux0000<14>1                1     2     
+U2/i_Q_mux0000<15>1                1     2     
+U2/i_Q_mux0000<15>4                1     3     
+U2/i_Q_mux0000<15>                 2     2     
+U2/i_Q_mux0000<16>1                1     2     
+U2/i_Q_mux0000<16>4                1     3     
+U2/i_Q_mux0000<16>                 2     2     
+U2/i_Q_mux0000<17>                 2     2     
+U2/i_Q_mux0000<17>4                1     3     
+U2/i_Q_mux0000<17>1                1     2     
+U2/i_Q_mux0000<18>1                1     2     
+U2/i_Q_mux0000<18>                 2     2     
+U2/i_Q_mux0000<18>4                1     3     
+U2/i_Q_mux0000<19>4                1     3     
+U2/i_Q_mux0000<19>1                1     2     
+U2/i_Q_mux0000<19>                 2     2     
+U2/i_Q_mux0000<20>1                1     2     
+U2/i_Q_mux0000<20>                 2     2     
+U2/i_Q_mux0000<20>4                1     3     
+U2/i_Q_mux0000<21>1                1     2     
+U2/i_Q_mux0000<21>4                1     3     
+U2/i_Q_mux0000<21>                 2     2     
+U2/i_Q_mux0000<22>1                1     2     
+U2/i_Q_mux0000<22>4                1     3     
+U2/i_Q_mux0000<22>                 2     2     
+U2/i_Q_mux0000<23>                 2     2     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U2/i_Q_mux0000<23>1                1     2     
+U2/i_Q_mux0000<23>4                1     3     
+U2/i_Q_mux0000<24>4                1     3     
+U2/i_Q_mux0000<24>1                1     2     
+U2/i_Q_mux0000<24>                 2     2     
+U2/i_Q_mux0000<25>                 2     2     
+U2/i_Q_mux0000<25>1                1     2     
+U2/i_Q_mux0000<25>4                1     3     
+U2/i_Q_mux0000<26>                 2     2     
+U2/i_Q_mux0000<26>1                1     2     
+U2/i_Q_mux0000<26>4                1     3     
+U2/i_Q_mux0000<27>                 2     2     
+U2/i_Q_mux0000<27>1                1     2     
+U2/i_Q_mux0000<27>4                1     3     
+U2/i_Q_mux0000<28>                 2     2     
+U2/i_Q_mux0000<28>4                1     3     
+U2/i_Q_mux0000<28>1                1     2     
+U2/i_Q_mux0000<29>1                1     2     
+U2/i_Q_mux0000<29>4                1     3     
+U2/i_Q_mux0000<29>                 2     2     
+U2/i_Q_mux0000<30>                 2     2     
+U2/i_Q_mux0000<30>4                1     3     
+U2/i_Q_mux0000<30>1                1     2     
+U2/i_Q_mux0000<31>4                1     3     
+U2/i_Q_mux0000<31>                 2     2     
+U2/i_Q_mux0000<31>1                1     2     
+U2/i__add0000<1>                   2     2     
+U2/i__add0000<2>                   2     2     
+U2/i__add0000<3>                   2     2     
+U2/i__add0000<4>                   2     2     
+U2/i__add0000<5>                   2     2     
+U2/i__add0000<6>                   2     2     
+U2/i__add0000<7>                   2     2     
+U2/i__add0000<8>                   2     2     
+U2/i__add0000<9>                   2     2     
+U2/i__add0000<10>                  2     2     
+U2/i__add0000<11>                  2     2     
+U2/i__add0000<12>                  2     2     
+U2/i__add0000<13>                  2     2     
+U2/i__add0000<14>                  2     2     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U2/i__add0000<15>                  2     2     
+U2/i__add0000<16>                  2     2     
+U2/i__add0000<17>                  2     2     
+U2/i__add0000<18>                  2     2     
+U2/i__add0000<19>                  2     2     
+U2/i__add0000<20>                  2     2     
+U2/i__add0000<21>                  2     2     
+U2/i__add0000<22>                  2     2     
+U2/i__add0000<23>                  2     2     
+U2/i__add0000<24>                  2     2     
+U2/i__add0000<25>                  2     2     
+U2/i__add0000<26>                  2     2     
+U2/i__add0000<27>                  2     2     
+U2/i__add0000<28>                  2     2     
+U2/i__add0000<29>                  2     2     
+U2/i__add0000<30>                  2     2     
+U2/i__add0000<31>                  2     2     
+U2/i_addsub0000<1>                 2     2     
+U2/i_addsub0000<2>                 2     2     
+U2/i_addsub0000<3>                 2     2     
+U2/i_addsub0000<4>                 2     2     
+U2/i_addsub0000<5>                 2     2     
+U2/i_addsub0000<6>                 2     2     
+U2/i_addsub0000<7>                 2     2     
+U2/i_addsub0000<8>                 2     2     
+U2/i_addsub0000<9>                 2     2     
+U2/i_addsub0000<10>                2     2     
+U2/i_addsub0000<11>                2     2     
+U2/i_addsub0000<12>                2     2     
+U2/i_addsub0000<13>                2     2     
+U2/i_addsub0000<14>                2     2     
+U2/i_addsub0000<15>                2     2     
+U2/i_addsub0000<16>                2     2     
+U2/i_addsub0000<17>                2     2     
+U2/i_addsub0000<18>                2     2     
+U2/i_addsub0000<19>                2     2     
+U2/i_addsub0000<20>                2     2     
+U2/i_addsub0000<21>                2     2     
+U2/i_addsub0000<22>                2     2     
+U2/i_addsub0000<23>                2     2     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U2/i_addsub0000<24>                2     2     
+U2/i_addsub0000<25>                2     2     
+U2/i_addsub0000<26>                2     2     
+U2/i_addsub0000<27>                2     2     
+U2/i_addsub0000<28>                2     2     
+U2/i_addsub0000<29>                2     2     
+U2/i_addsub0000<30>                2     2     
+U2/i_addsub0000<31>                2     2     
+U2/i_cmp_eq0000                    1     4     
+U2/i_cmp_eq000033                  1     8     
+U2/i_cmp_eq000034                  1     8     
+U2/i_cmp_eq000035                  1     8     
+U2/i_cmp_eq000036                  1     8     
+U2/temp_0_and0000                  1     3     
+U2/temp_0_and0001                  1     4     
+U2/temp_0_cmp_eq0000               1     4     
+U2/temp_0_cmp_eq000032             1     8     
+U2/temp_0_cmp_eq000033             1     8     
+U2/temp_0_cmp_eq000034             1     8     
+U2/temp_0_cmp_eq000035             1     8     
+U2/temp_0_cmp_eq0001               1     3     
+U2/temp_0_cmp_eq00011              1     2     
+U2/temp_0_cmp_eq000131             1     2     
+U2/temp_0_cmp_eq000132             1     4     
+U2/temp_0_cmp_eq000133             1     8     
+U2/temp_0_cmp_eq000134             1     8     
+U2/temp_0_cmp_eq000135             1     8     
+U2/temp_0_cmp_eq000136             1     3     
+U2/temp_0_cmp_eq000137             1     2     
+U2/temp_0_cmp_eq0002               1     4     
+U2/temp_0_cmp_eq00021              1     8     
+U2/temp_0_cmp_eq00022              1     8     
+U2/temp_0_cmp_eq00023              1     8     
+U2/temp_0_cmp_eq00024              1     8     
+U2/temp_0_mux0006                  2     2     
+U2/temp_0_mux00061                 1     2     
+U2/temp_0_mux00062                 1     2     
+U2/temp_0_mux00065                 2     2     
+U2/temp_0_mux00066                 1     3     
+U2/temp_0_not00011                 2     2     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U2/temp_1_cmp_eq0000               1     4     
+U2/temp_1_cmp_eq000032             1     8     
+U2/temp_1_cmp_eq000033             1     8     
+U2/temp_1_cmp_eq000034             1     8     
+U2/temp_1_cmp_eq000035             1     8     
+U2/temp_1_mux0006                  2     2     
+U2/temp_1_mux00061                 1     2     
+U2/temp_1_mux00063                 1     2     
+U2/temp_1_or0000                   2     2     
+U2/temp_1_or00003                  1     2     
+U2/temp_1_or0001                   2     2     
+U2/temp_1_or00013                  1     2     
+U2/temp_1_or0002                   2     2     
+U2/temp_1_or00021                  1     2     
+U2/temp_1_or00023                  1     2     
+U2/temp_2_cmp_eq0000               1     3     
+U2/temp_2_cmp_eq00001              1     2     
+U2/temp_2_cmp_eq000032             1     2     
+U2/temp_2_cmp_eq000033             1     4     
+U2/temp_2_cmp_eq000034             1     8     
+U2/temp_2_cmp_eq000035             1     8     
+U2/temp_2_cmp_eq000036             1     8     
+U2/temp_2_cmp_eq000037             1     3     
+U2/temp_2_cmp_eq000038             1     2     
+U2/temp_2_mux0006                  2     2     
+U2/temp_2_mux00061                 1     2     
+U2/temp_2_mux00063                 1     2     
+U2/temp_2_or0000                   2     2     
+U2/temp_2_or00003                  1     2     
+U2/temp_2_or0001                   2     2     
+U2/temp_2_or00013                  1     2     
+U2/temp_2_or0002                   2     2     
+U2/temp_2_or00021                  1     2     
+U2/temp_2_or00023                  1     2     
+U2/temp_3_cmp_eq0000               1     4     
+U2/temp_3_cmp_eq000032             1     8     
+U2/temp_3_cmp_eq000033             1     8     
+U2/temp_3_cmp_eq000034             1     8     
+U2/temp_3_cmp_eq000035             1     8     
+U2/temp_3_mux0006                  2     2     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U2/temp_3_mux00061                 1     2     
+U2/temp_3_mux00063                 1     2     
+U2/temp_3_or0000                   2     2     
+U2/temp_3_or00003                  1     2     
+U2/temp_3_or0001                   2     2     
+U2/temp_3_or00013                  1     2     
+U2/temp_3_or0002                   2     2     
+U2/temp_3_or00021                  1     2     
+U2/temp_3_or00023                  1     2     
+U2/temp_4_cmp_eq0000               1     3     
+U2/temp_4_cmp_eq00001              1     2     
+U2/temp_4_cmp_eq000032             1     2     
+U2/temp_4_cmp_eq000033             1     4     
+U2/temp_4_cmp_eq000034             1     8     
+U2/temp_4_cmp_eq000035             1     8     
+U2/temp_4_cmp_eq000036             1     8     
+U2/temp_4_cmp_eq000037             1     3     
+U2/temp_4_cmp_eq000038             1     2     
+U2/temp_4_mux0006                  2     2     
+U2/temp_4_mux00061                 1     2     
+U2/temp_4_mux00063                 1     2     
+U2/temp_4_or0000                   2     2     
+U2/temp_4_or00003                  1     2     
+U2/temp_4_or0001                   2     2     
+U2/temp_4_or00013                  1     2     
+U2/temp_4_or0002                   2     2     
+U2/temp_4_or00021                  1     2     
+U2/temp_4_or00023                  1     2     
+U2/temp_5_cmp_eq0000               1     3     
+U2/temp_5_cmp_eq00001              1     2     
+U2/temp_5_cmp_eq000032             1     2     
+U2/temp_5_cmp_eq000033             1     4     
+U2/temp_5_cmp_eq000034             1     8     
+U2/temp_5_cmp_eq000035             1     8     
+U2/temp_5_cmp_eq000036             1     8     
+U2/temp_5_cmp_eq000037             1     3     
+U2/temp_5_cmp_eq000038             1     2     
+U2/temp_5_mux0006                  2     2     
+U2/temp_5_mux00061                 1     2     
+U2/temp_5_mux00063                 1     2     
+
+Signal                             Total Total User
+Name                               Pts   Inps  Assignment
+U2/temp_5_or0000                   2     2     
+U2/temp_5_or00003                  1     2     
+U2/temp_5_or0001                   2     2     
+U2/temp_5_or00013                  1     2     
+U2/temp_5_or0002                   2     2     
+U2/temp_5_or00021                  1     2     
+U2/temp_5_or00023                  1     2     
+U2/temp_6_mux0006                  2     2     
+U2/temp_6_mux00061                 1     2     
+U2/temp_6_mux00063                 1     2     
+U2/temp_6_or0000                   2     2     
+U2/temp_6_or00003                  1     2     
+U2/temp_6_or0001                   2     2     
+U2/temp_6_or00013                  1     2     
+U2/temp_6_or0002                   2     2     
+U2/temp_6_or00021                  1     2     
+U2/temp_6_or00023                  1     2     
+U2/temp_7_and0000                  1     4     
+U2/temp_7_and0001                  1     3     
+U2/temp_7_cmp_eq0000               1     4     
+U2/temp_7_cmp_eq000032             1     8     
+U2/temp_7_cmp_eq000033             1     8     
+U2/temp_7_cmp_eq000034             1     8     
+U2/temp_7_cmp_eq000035             1     8     
+U2/temp_7_mux0006                  3     3     
+U2/temp_7_mux00063                 1     2     
+U2/temp_7_mux00065                 1     2     
+U2/temp_7_mux00066                 1     2     
+U2/temp_7_mux00067                 1     2     
+U2/temp_7_not00011                 2     2     
+clk_sortie                         3     3     
+
+** 2 Inputs **
+
+Signal                             User
+Name                               Assignment
+btn_entree                         B8
+clk_entree                         V10
+
+*******************************  Equations  ********************************
+
+********** UnMapped Logic **********
+
+** Outputs **
+
+FDCPE_led_sortie0: FDCPE port map (led_sortie(0),led_sortie_D(0),clk_sortie,'0','0');
+led_sortie_D(0) <= ((U2/temp_0_mux0006 AND CE0_)
+	OR (NOT CE0_ AND led_sortie(0)));
+
+FDCPE_led_sortie1: FDCPE port map (led_sortie(1),led_sortie_D(1),clk_sortie,'0','0');
+led_sortie_D(1) <= ((U2/temp_1_mux0006 AND CE1_)
+	OR (NOT CE1_ AND led_sortie(1)));
+
+FDCPE_led_sortie2: FDCPE port map (led_sortie(2),led_sortie_D(2),clk_sortie,'0','0');
+led_sortie_D(2) <= ((U2/temp_2_mux0006 AND CE2_)
+	OR (NOT CE2_ AND led_sortie(2)));
+
+FDCPE_led_sortie3: FDCPE port map (led_sortie(3),led_sortie_D(3),clk_sortie,'0','0');
+led_sortie_D(3) <= ((U2/temp_3_mux0006 AND CE3_)
+	OR (NOT CE3_ AND led_sortie(3)));
+
+FDCPE_led_sortie4: FDCPE port map (led_sortie(4),led_sortie_D(4),clk_sortie,'0','0');
+led_sortie_D(4) <= ((U2/temp_4_mux0006 AND CE4_)
+	OR (NOT CE4_ AND led_sortie(4)));
+
+FDCPE_led_sortie5: FDCPE port map (led_sortie(5),led_sortie_D(5),clk_sortie,'0','0');
+led_sortie_D(5) <= ((U2/temp_5_mux0006 AND CE5_)
+	OR (NOT CE5_ AND led_sortie(5)));
+
+FDCPE_led_sortie6: FDCPE port map (led_sortie(6),led_sortie_D(6),clk_sortie,'0','0');
+led_sortie_D(6) <= ((U2/temp_6_mux0006 AND CE6_)
+	OR (NOT CE6_ AND led_sortie(6)));
+
+FDCPE_led_sortie7: FDCPE port map (led_sortie(7),led_sortie_D(7),clk_sortie,'0','0');
+led_sortie_D(7) <= ((U2/temp_7_mux0006 AND CE7_)
+	OR (NOT CE7_ AND led_sortie(7)));
+
+** Buried Nodes **
+
+
+CE0_ <= NOT U2/temp_0_not00011;
+
+
+CE1_ <= NOT U2/temp_1_or0002;
+
+
+CE2_ <= NOT U2/temp_2_or0002;
+
+
+CE3_ <= NOT U2/temp_3_or0002;
+
+
+CE4_ <= NOT U2/temp_4_or0002;
+
+
+CE5_ <= NOT U2/temp_5_or0002;
+
+
+CE6_ <= NOT U2/temp_6_or0002;
+
+
+CE7_ <= NOT U2/temp_7_not00011;
+
+
+U1/Madd_compt_addsub0000__and0000 <= (U1/compt(0) AND U1/compt(1));
+
+
+U1/Madd_compt_addsub0000__and0001 <= (U1/compt(2) AND U1/Madd_compt_addsub0000__and0000);
+
+
+U1/Madd_compt_addsub0000__and0002 <= (U1/compt(3) AND U1/Madd_compt_addsub0000__and0001);
+
+
+U1/Madd_compt_addsub0000__and0003 <= (U1/compt(4) AND U1/Madd_compt_addsub0000__and0002);
+
+
+U1/Madd_compt_addsub0000__and0004 <= (U1/compt(5) AND U1/Madd_compt_addsub0000__and0003);
+
+
+U1/Madd_compt_addsub0000__and0005 <= (U1/compt(6) AND U1/Madd_compt_addsub0000__and0004);
+
+
+U1/Madd_compt_addsub0000__and0006 <= (U1/compt(7) AND U1/Madd_compt_addsub0000__and0005);
+
+
+U1/Madd_compt_addsub0000__and0007 <= (U1/compt(8) AND U1/Madd_compt_addsub0000__and0006);
+
+
+U1/Madd_compt_addsub0000__and0008 <= (U1/compt(9) AND U1/Madd_compt_addsub0000__and0007);
+
+
+U1/Madd_compt_addsub0000__and0009 <= (U1/compt(10) AND U1/Madd_compt_addsub0000__and0008);
+
+
+U1/Madd_compt_addsub0000__and0010 <= (U1/compt(11) AND U1/Madd_compt_addsub0000__and0009);
+
+
+U1/Madd_compt_addsub0000__and0011 <= (U1/compt(12) AND U1/Madd_compt_addsub0000__and0010);
+
+
+U1/Madd_compt_addsub0000__and0012 <= (U1/compt(13) AND U1/Madd_compt_addsub0000__and0011);
+
+
+U1/Madd_compt_addsub0000__and0013 <= (U1/compt(14) AND U1/Madd_compt_addsub0000__and0012);
+
+
+U1/Madd_compt_addsub0000__and0014 <= (U1/compt(15) AND U1/Madd_compt_addsub0000__and0013);
+
+
+U1/Madd_compt_addsub0000__and0015 <= (U1/compt(16) AND U1/Madd_compt_addsub0000__and0014);
+
+
+U1/Madd_compt_addsub0000__and0016 <= (U1/compt(17) AND U1/Madd_compt_addsub0000__and0015);
+
+
+U1/Madd_compt_addsub0000__and0017 <= (U1/compt(18) AND U1/Madd_compt_addsub0000__and0016);
+
+
+U1/Madd_compt_addsub0000__and0018 <= (U1/compt(19) AND U1/Madd_compt_addsub0000__and0017);
+
+
+U1/Madd_compt_addsub0000__and0019 <= (U1/compt(20) AND U1/Madd_compt_addsub0000__and0018);
+
+
+U1/Madd_compt_addsub0000__and0020 <= (U1/compt(21) AND U1/Madd_compt_addsub0000__and0019);
+
+
+U1/Madd_compt_addsub0000__and0021 <= (U1/compt(22) AND U1/Madd_compt_addsub0000__and0020);
+
+FDCPE_U1/compt0: FDCPE port map (U1/compt(0),U1/compt_D(0),clk_entree,'0','0');
+U1/compt_D(0) <= (NOT U1/compt_cmp_eq0000 AND NOT U1/compt(0));
+
+FDCPE_U1/compt1: FDCPE port map (U1/compt(1),U1/compt_D(1),clk_entree,'0','0');
+U1/compt_D(1) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(1));
+
+FDCPE_U1/compt2: FDCPE port map (U1/compt(2),U1/compt_D(2),clk_entree,'0','0');
+U1/compt_D(2) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(2));
+
+FDCPE_U1/compt3: FDCPE port map (U1/compt(3),U1/compt_D(3),clk_entree,'0','0');
+U1/compt_D(3) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(3));
+
+FDCPE_U1/compt4: FDCPE port map (U1/compt(4),U1/compt_D(4),clk_entree,'0','0');
+U1/compt_D(4) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(4));
+
+FDCPE_U1/compt5: FDCPE port map (U1/compt(5),U1/compt_D(5),clk_entree,'0','0');
+U1/compt_D(5) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(5));
+
+FDCPE_U1/compt6: FDCPE port map (U1/compt(6),U1/compt_D(6),clk_entree,'0','0');
+U1/compt_D(6) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(6));
+
+FDCPE_U1/compt7: FDCPE port map (U1/compt(7),U1/compt_D(7),clk_entree,'0','0');
+U1/compt_D(7) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(7));
+
+FDCPE_U1/compt8: FDCPE port map (U1/compt(8),U1/compt_D(8),clk_entree,'0','0');
+U1/compt_D(8) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(8));
+
+FDCPE_U1/compt9: FDCPE port map (U1/compt(9),U1/compt_D(9),clk_entree,'0','0');
+U1/compt_D(9) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(9));
+
+FDCPE_U1/compt10: FDCPE port map (U1/compt(10),U1/compt_D(10),clk_entree,'0','0');
+U1/compt_D(10) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(10));
+
+FDCPE_U1/compt11: FDCPE port map (U1/compt(11),U1/compt_D(11),clk_entree,'0','0');
+U1/compt_D(11) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(11));
+
+FDCPE_U1/compt12: FDCPE port map (U1/compt(12),U1/compt_D(12),clk_entree,'0','0');
+U1/compt_D(12) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(12));
+
+FDCPE_U1/compt13: FDCPE port map (U1/compt(13),U1/compt_D(13),clk_entree,'0','0');
+U1/compt_D(13) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(13));
+
+FDCPE_U1/compt14: FDCPE port map (U1/compt(14),U1/compt_D(14),clk_entree,'0','0');
+U1/compt_D(14) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(14));
+
+FDCPE_U1/compt15: FDCPE port map (U1/compt(15),U1/compt_D(15),clk_entree,'0','0');
+U1/compt_D(15) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(15));
+
+FDCPE_U1/compt16: FDCPE port map (U1/compt(16),U1/compt_D(16),clk_entree,'0','0');
+U1/compt_D(16) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(16));
+
+FDCPE_U1/compt17: FDCPE port map (U1/compt(17),U1/compt_D(17),clk_entree,'0','0');
+U1/compt_D(17) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(17));
+
+FDCPE_U1/compt18: FDCPE port map (U1/compt(18),U1/compt_D(18),clk_entree,'0','0');
+U1/compt_D(18) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(18));
+
+FDCPE_U1/compt19: FDCPE port map (U1/compt(19),U1/compt_D(19),clk_entree,'0','0');
+U1/compt_D(19) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(19));
+
+FDCPE_U1/compt20: FDCPE port map (U1/compt(20),U1/compt_D(20),clk_entree,'0','0');
+U1/compt_D(20) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(20));
+
+FDCPE_U1/compt21: FDCPE port map (U1/compt(21),U1/compt_D(21),clk_entree,'0','0');
+U1/compt_D(21) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(21));
+
+FDCPE_U1/compt22: FDCPE port map (U1/compt(22),U1/compt_D(22),clk_entree,'0','0');
+U1/compt_D(22) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(22));
+
+FDCPE_U1/compt23: FDCPE port map (U1/compt(23),U1/compt_D(23),clk_entree,'0','0');
+U1/compt_D(23) <= (NOT U1/compt_cmp_eq0000 AND U1/compt_addsub0000(23));
+
+
+U1/compt_addsub0000(1) <= U1/compt(1)
+	 XOR 
+U1/compt_addsub0000(1) <= U1/compt(0);
+
+
+U1/compt_addsub0000(2) <= U1/compt(2)
+	 XOR 
+U1/compt_addsub0000(2) <= U1/Madd_compt_addsub0000__and0000;
+
+
+U1/compt_addsub0000(3) <= U1/compt(3)
+	 XOR 
+U1/compt_addsub0000(3) <= U1/Madd_compt_addsub0000__and0001;
+
+
+U1/compt_addsub0000(4) <= U1/compt(4)
+	 XOR 
+U1/compt_addsub0000(4) <= U1/Madd_compt_addsub0000__and0002;
+
+
+U1/compt_addsub0000(5) <= U1/compt(5)
+	 XOR 
+U1/compt_addsub0000(5) <= U1/Madd_compt_addsub0000__and0003;
+
+
+U1/compt_addsub0000(6) <= U1/compt(6)
+	 XOR 
+U1/compt_addsub0000(6) <= U1/Madd_compt_addsub0000__and0004;
+
+
+U1/compt_addsub0000(7) <= U1/compt(7)
+	 XOR 
+U1/compt_addsub0000(7) <= U1/Madd_compt_addsub0000__and0005;
+
+
+U1/compt_addsub0000(8) <= U1/compt(8)
+	 XOR 
+U1/compt_addsub0000(8) <= U1/Madd_compt_addsub0000__and0006;
+
+
+U1/compt_addsub0000(9) <= U1/compt(9)
+	 XOR 
+U1/compt_addsub0000(9) <= U1/Madd_compt_addsub0000__and0007;
+
+
+U1/compt_addsub0000(10) <= U1/compt(10)
+	 XOR 
+U1/compt_addsub0000(10) <= U1/Madd_compt_addsub0000__and0008;
+
+
+U1/compt_addsub0000(11) <= U1/compt(11)
+	 XOR 
+U1/compt_addsub0000(11) <= U1/Madd_compt_addsub0000__and0009;
+
+
+U1/compt_addsub0000(12) <= U1/compt(12)
+	 XOR 
+U1/compt_addsub0000(12) <= U1/Madd_compt_addsub0000__and0010;
+
+
+U1/compt_addsub0000(13) <= U1/compt(13)
+	 XOR 
+U1/compt_addsub0000(13) <= U1/Madd_compt_addsub0000__and0011;
+
+
+U1/compt_addsub0000(14) <= U1/compt(14)
+	 XOR 
+U1/compt_addsub0000(14) <= U1/Madd_compt_addsub0000__and0012;
+
+
+U1/compt_addsub0000(15) <= U1/compt(15)
+	 XOR 
+U1/compt_addsub0000(15) <= U1/Madd_compt_addsub0000__and0013;
+
+
+U1/compt_addsub0000(16) <= U1/compt(16)
+	 XOR 
+U1/compt_addsub0000(16) <= U1/Madd_compt_addsub0000__and0014;
+
+
+U1/compt_addsub0000(17) <= U1/compt(17)
+	 XOR 
+U1/compt_addsub0000(17) <= U1/Madd_compt_addsub0000__and0015;
+
+
+U1/compt_addsub0000(18) <= U1/compt(18)
+	 XOR 
+U1/compt_addsub0000(18) <= U1/Madd_compt_addsub0000__and0016;
+
+
+U1/compt_addsub0000(19) <= U1/compt(19)
+	 XOR 
+U1/compt_addsub0000(19) <= U1/Madd_compt_addsub0000__and0017;
+
+
+U1/compt_addsub0000(20) <= U1/compt(20)
+	 XOR 
+U1/compt_addsub0000(20) <= U1/Madd_compt_addsub0000__and0018;
+
+
+U1/compt_addsub0000(21) <= U1/compt(21)
+	 XOR 
+U1/compt_addsub0000(21) <= U1/Madd_compt_addsub0000__and0019;
+
+
+U1/compt_addsub0000(22) <= U1/compt(22)
+	 XOR 
+U1/compt_addsub0000(22) <= U1/Madd_compt_addsub0000__and0020;
+
+
+U1/compt_addsub0000(23) <= U1/compt(23)
+	 XOR 
+U1/compt_addsub0000(23) <= U1/Madd_compt_addsub0000__and0021;
+
+
+U1/compt_cmp_eq0000 <= (U1/compt_cmp_eq00001 AND U1/compt_cmp_eq000016 AND 
+	U1/compt_cmp_eq000015);
+
+
+U1/compt_cmp_eq00001 <= (U1/compt(0) AND U1/compt_addsub0000(5) AND 
+	U1/compt_addsub0000(10) AND U1/compt_addsub0000(11) AND U1/compt_addsub0000(13) AND 
+	U1/compt_addsub0000(12) AND U1/compt_addsub0000(17) AND U1/compt_addsub0000(15));
+
+
+U1/compt_cmp_eq000014 <= (NOT U1/compt_addsub0000(1) AND NOT U1/compt_addsub0000(2) AND 
+	U1/compt_addsub0000(21) AND NOT U1/compt_addsub0000(4));
+
+
+U1/compt_cmp_eq000015 <= (NOT U1/compt_addsub0000(14) AND NOT U1/compt_addsub0000(16) AND 
+	NOT U1/compt_addsub0000(22) AND NOT U1/compt_addsub0000(3) AND NOT U1/compt_addsub0000(6) AND 
+	NOT U1/compt_addsub0000(7) AND NOT U1/compt_addsub0000(8) AND NOT U1/compt_addsub0000(9));
+
+
+U1/compt_cmp_eq000016 <= (U1/compt_cmp_eq00002 AND U1/compt_cmp_eq000014);
+
+
+U1/compt_cmp_eq00002 <= (U1/compt_addsub0000(18) AND U1/compt_addsub0000(19) AND 
+	U1/compt_addsub0000(20) AND U1/compt_addsub0000(23));
+
+
+U2/Msub_i_addsub0000__or0000 <= ((U2/i(0))
+	OR (U2/i(1)));
+
+
+U2/Msub_i_addsub0000__or0001 <= ((U2/i(2))
+	OR (U2/Msub_i_addsub0000__or0000));
+
+
+U2/Msub_i_addsub0000__or0002 <= ((U2/i(3))
+	OR (U2/Msub_i_addsub0000__or0001));
+
+
+U2/Msub_i_addsub0000__or0003 <= ((U2/i(4))
+	OR (U2/Msub_i_addsub0000__or0002));
+
+
+U2/Msub_i_addsub0000__or0004 <= ((U2/i(5))
+	OR (U2/Msub_i_addsub0000__or0003));
+
+
+U2/Msub_i_addsub0000__or0005 <= ((U2/i(6))
+	OR (U2/Msub_i_addsub0000__or0004));
+
+
+U2/Msub_i_addsub0000__or0006 <= ((U2/i(7))
+	OR (U2/Msub_i_addsub0000__or0005));
+
+
+U2/Msub_i_addsub0000__or0007 <= ((U2/i(8))
+	OR (U2/Msub_i_addsub0000__or0006));
+
+
+U2/Msub_i_addsub0000__or0008 <= ((U2/i(9))
+	OR (U2/Msub_i_addsub0000__or0007));
+
+
+U2/Msub_i_addsub0000__or0009 <= ((U2/i(10))
+	OR (U2/Msub_i_addsub0000__or0008));
+
+
+U2/Msub_i_addsub0000__or0010 <= ((U2/i(11))
+	OR (U2/Msub_i_addsub0000__or0009));
+
+
+U2/Msub_i_addsub0000__or0011 <= ((U2/i(12))
+	OR (U2/Msub_i_addsub0000__or0010));
+
+
+U2/Msub_i_addsub0000__or0012 <= ((U2/i(13))
+	OR (U2/Msub_i_addsub0000__or0011));
+
+
+U2/Msub_i_addsub0000__or0013 <= ((U2/i(14))
+	OR (U2/Msub_i_addsub0000__or0012));
+
+
+U2/Msub_i_addsub0000__or0014 <= ((U2/i(15))
+	OR (U2/Msub_i_addsub0000__or0013));
+
+
+U2/Msub_i_addsub0000__or0015 <= ((U2/i(16))
+	OR (U2/Msub_i_addsub0000__or0014));
+
+
+U2/Msub_i_addsub0000__or0016 <= ((U2/i(17))
+	OR (U2/Msub_i_addsub0000__or0015));
+
+
+U2/Msub_i_addsub0000__or0017 <= ((U2/i(18))
+	OR (U2/Msub_i_addsub0000__or0016));
+
+
+U2/Msub_i_addsub0000__or0018 <= ((U2/i(19))
+	OR (U2/Msub_i_addsub0000__or0017));
+
+
+U2/Msub_i_addsub0000__or0019 <= ((U2/i(20))
+	OR (U2/Msub_i_addsub0000__or0018));
+
+
+U2/Msub_i_addsub0000__or0020 <= ((U2/i(21))
+	OR (U2/Msub_i_addsub0000__or0019));
+
+
+U2/Msub_i_addsub0000__or0021 <= ((U2/i(22))
+	OR (U2/Msub_i_addsub0000__or0020));
+
+
+U2/Msub_i_addsub0000__or0022 <= ((U2/i(23))
+	OR (U2/Msub_i_addsub0000__or0021));
+
+
+U2/Msub_i_addsub0000__or0023 <= ((U2/i(24))
+	OR (U2/Msub_i_addsub0000__or0022));
+
+
+U2/Msub_i_addsub0000__or0024 <= ((U2/i(25))
+	OR (U2/Msub_i_addsub0000__or0023));
+
+
+U2/Msub_i_addsub0000__or0025 <= ((U2/i(26))
+	OR (U2/Msub_i_addsub0000__or0024));
+
+
+U2/Msub_i_addsub0000__or0026 <= ((U2/i(27))
+	OR (U2/Msub_i_addsub0000__or0025));
+
+
+U2/Msub_i_addsub0000__or0027 <= ((U2/i(28))
+	OR (U2/Msub_i_addsub0000__or0026));
+
+
+U2/Msub_i_addsub0000__or0028 <= ((U2/i(29))
+	OR (U2/Msub_i_addsub0000__or0027));
+
+
+U2/Msub_i_addsub0000__or0029 <= ((U2/i(30))
+	OR (U2/Msub_i_addsub0000__or0028));
+
+FDCPE_U2/i0: FDCPE port map (U2/i(0),U2/i_D(0),clk_sortie,'0','0');
+U2/i_D(0) <= (NOT U2/i_0__and00001 AND U2/i_Q_mux0000(0));
+
+FDCPE_U2/i1: FDCPE port map (U2/i(1),U2/i_D(1),clk_sortie,'0','0');
+U2/i_D(1) <= (NOT U2/i_1__and00001 AND U2/i_Q_mux0000(1));
+
+FDCPE_U2/i2: FDCPE port map (U2/i(2),U2/i_D(2),clk_sortie,'0','0');
+U2/i_D(2) <= (NOT U2/i_2__and00001 AND U2/i_Q_mux0000(2));
+
+FDCPE_U2/i3: FDCPE port map (U2/i(3),U2/i_D(3),clk_sortie,'0','0');
+U2/i_D(3) <= (NOT U2/i_3__and00001 AND U2/i_Q_mux0000(3));
+
+FDCPE_U2/i4: FDCPE port map (U2/i(4),U2/i_D(4),clk_sortie,'0','0');
+U2/i_D(4) <= (NOT U2/i_4__and00001 AND U2/i_Q_mux0000(4));
+
+FDCPE_U2/i5: FDCPE port map (U2/i(5),U2/i_D(5),clk_sortie,'0','0');
+U2/i_D(5) <= (NOT U2/i_5__and00001 AND U2/i_Q_mux0000(5));
+
+FDCPE_U2/i6: FDCPE port map (U2/i(6),U2/i_D(6),clk_sortie,'0','0');
+U2/i_D(6) <= (NOT U2/i_6__and00001 AND U2/i_Q_mux0000(6));
+
+FDCPE_U2/i7: FDCPE port map (U2/i(7),U2/i_D(7),clk_sortie,'0','0');
+U2/i_D(7) <= (NOT U2/i_7__and00001 AND U2/i_Q_mux0000(7));
+
+FDCPE_U2/i8: FDCPE port map (U2/i(8),U2/i_D(8),clk_sortie,'0','0');
+U2/i_D(8) <= (NOT U2/i_8__and00001 AND U2/i_Q_mux0000(8));
+
+FDCPE_U2/i9: FDCPE port map (U2/i(9),U2/i_D(9),clk_sortie,'0','0');
+U2/i_D(9) <= (NOT U2/i_9__and00001 AND U2/i_Q_mux0000(9));
+
+FDCPE_U2/i10: FDCPE port map (U2/i(10),U2/i_D(10),clk_sortie,'0','0');
+U2/i_D(10) <= (NOT U2/i_10__and00001 AND U2/i_Q_mux0000(10));
+
+FDCPE_U2/i11: FDCPE port map (U2/i(11),U2/i_D(11),clk_sortie,'0','0');
+U2/i_D(11) <= (NOT U2/i_11__and00001 AND U2/i_Q_mux0000(11));
+
+FDCPE_U2/i12: FDCPE port map (U2/i(12),U2/i_D(12),clk_sortie,'0','0');
+U2/i_D(12) <= (NOT U2/i_12__and00001 AND U2/i_Q_mux0000(12));
+
+FDCPE_U2/i13: FDCPE port map (U2/i(13),U2/i_D(13),clk_sortie,'0','0');
+U2/i_D(13) <= (NOT U2/i_13__and00001 AND U2/i_Q_mux0000(13));
+
+FDCPE_U2/i14: FDCPE port map (U2/i(14),U2/i_D(14),clk_sortie,'0','0');
+U2/i_D(14) <= (NOT U2/i_14__and00001 AND U2/i_Q_mux0000(14));
+
+FDCPE_U2/i15: FDCPE port map (U2/i(15),U2/i_D(15),clk_sortie,'0','0');
+U2/i_D(15) <= (NOT U2/i_15__and00001 AND U2/i_Q_mux0000(15));
+
+FDCPE_U2/i16: FDCPE port map (U2/i(16),U2/i_D(16),clk_sortie,'0','0');
+U2/i_D(16) <= (NOT U2/i_16__and00001 AND U2/i_Q_mux0000(16));
+
+FDCPE_U2/i17: FDCPE port map (U2/i(17),U2/i_D(17),clk_sortie,'0','0');
+U2/i_D(17) <= (NOT U2/i_17__and00001 AND U2/i_Q_mux0000(17));
+
+FDCPE_U2/i18: FDCPE port map (U2/i(18),U2/i_D(18),clk_sortie,'0','0');
+U2/i_D(18) <= (NOT U2/i_18__and00001 AND U2/i_Q_mux0000(18));
+
+FDCPE_U2/i19: FDCPE port map (U2/i(19),U2/i_D(19),clk_sortie,'0','0');
+U2/i_D(19) <= (NOT U2/i_19__and00001 AND U2/i_Q_mux0000(19));
+
+FDCPE_U2/i20: FDCPE port map (U2/i(20),U2/i_D(20),clk_sortie,'0','0');
+U2/i_D(20) <= (NOT U2/i_20__and00001 AND U2/i_Q_mux0000(20));
+
+FDCPE_U2/i21: FDCPE port map (U2/i(21),U2/i_D(21),clk_sortie,'0','0');
+U2/i_D(21) <= (NOT U2/i_21__and00001 AND U2/i_Q_mux0000(21));
+
+FDCPE_U2/i22: FDCPE port map (U2/i(22),U2/i_D(22),clk_sortie,'0','0');
+U2/i_D(22) <= (NOT U2/i_22__and00001 AND U2/i_Q_mux0000(22));
+
+FDCPE_U2/i23: FDCPE port map (U2/i(23),U2/i_D(23),clk_sortie,'0','0');
+U2/i_D(23) <= (NOT U2/i_23__and00001 AND U2/i_Q_mux0000(23));
+
+FDCPE_U2/i24: FDCPE port map (U2/i(24),U2/i_D(24),clk_sortie,'0','0');
+U2/i_D(24) <= (NOT U2/i_24__and00001 AND U2/i_Q_mux0000(24));
+
+FDCPE_U2/i25: FDCPE port map (U2/i(25),U2/i_D(25),clk_sortie,'0','0');
+U2/i_D(25) <= (NOT U2/i_25__and00001 AND U2/i_Q_mux0000(25));
+
+FDCPE_U2/i26: FDCPE port map (U2/i(26),U2/i_D(26),clk_sortie,'0','0');
+U2/i_D(26) <= (NOT U2/i_26__and00001 AND U2/i_Q_mux0000(26));
+
+FDCPE_U2/i27: FDCPE port map (U2/i(27),U2/i_D(27),clk_sortie,'0','0');
+U2/i_D(27) <= (NOT U2/i_27__and00001 AND U2/i_Q_mux0000(27));
+
+FDCPE_U2/i28: FDCPE port map (U2/i(28),U2/i_D(28),clk_sortie,'0','0');
+U2/i_D(28) <= (NOT U2/i_28__and00001 AND U2/i_Q_mux0000(28));
+
+FDCPE_U2/i29: FDCPE port map (U2/i(29),U2/i_D(29),clk_sortie,'0','0');
+U2/i_D(29) <= (NOT U2/i_29__and00001 AND U2/i_Q_mux0000(29));
+
+FDCPE_U2/i30: FDCPE port map (U2/i(30),U2/i_D(30),clk_sortie,'0','0');
+U2/i_D(30) <= (NOT U2/i_30__and00001 AND U2/i_Q_mux0000(30));
+
+FDCPE_U2/i31: FDCPE port map (U2/i(31),U2/i_D(31),clk_sortie,'0','0');
+U2/i_D(31) <= (NOT U2/i_31__and00001 AND U2/i_Q_mux0000(31));
+
+
+U2/i_0__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_10__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_11__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_12__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_13__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_14__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_15__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_16__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_17__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_18__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_19__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_1__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_20__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_21__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_22__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_23__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_24__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_25__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_26__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_27__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_28__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_29__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_2__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_30__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_31__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_3__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_4__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_5__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_6__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_7__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_8__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_9__and00001 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/i_Madd__add0000__and0000 <= (U2/i(0) AND U2/i(1));
+
+
+U2/i_Madd__add0000__and0001 <= (U2/i(2) AND U2/i_Madd__add0000__and0000);
+
+
+U2/i_Madd__add0000__and0002 <= (U2/i(3) AND U2/i_Madd__add0000__and0001);
+
+
+U2/i_Madd__add0000__and0003 <= (U2/i(4) AND U2/i_Madd__add0000__and0002);
+
+
+U2/i_Madd__add0000__and0004 <= (U2/i(5) AND U2/i_Madd__add0000__and0003);
+
+
+U2/i_Madd__add0000__and0005 <= (U2/i(6) AND U2/i_Madd__add0000__and0004);
+
+
+U2/i_Madd__add0000__and0006 <= (U2/i(7) AND U2/i_Madd__add0000__and0005);
+
+
+U2/i_Madd__add0000__and0007 <= (U2/i(8) AND U2/i_Madd__add0000__and0006);
+
+
+U2/i_Madd__add0000__and0008 <= (U2/i(9) AND U2/i_Madd__add0000__and0007);
+
+
+U2/i_Madd__add0000__and0009 <= (U2/i(10) AND U2/i_Madd__add0000__and0008);
+
+
+U2/i_Madd__add0000__and0010 <= (U2/i(11) AND U2/i_Madd__add0000__and0009);
+
+
+U2/i_Madd__add0000__and0011 <= (U2/i(12) AND U2/i_Madd__add0000__and0010);
+
+
+U2/i_Madd__add0000__and0012 <= (U2/i(13) AND U2/i_Madd__add0000__and0011);
+
+
+U2/i_Madd__add0000__and0013 <= (U2/i(14) AND U2/i_Madd__add0000__and0012);
+
+
+U2/i_Madd__add0000__and0014 <= (U2/i(15) AND U2/i_Madd__add0000__and0013);
+
+
+U2/i_Madd__add0000__and0015 <= (U2/i(16) AND U2/i_Madd__add0000__and0014);
+
+
+U2/i_Madd__add0000__and0016 <= (U2/i(17) AND U2/i_Madd__add0000__and0015);
+
+
+U2/i_Madd__add0000__and0017 <= (U2/i(18) AND U2/i_Madd__add0000__and0016);
+
+
+U2/i_Madd__add0000__and0018 <= (U2/i(19) AND U2/i_Madd__add0000__and0017);
+
+
+U2/i_Madd__add0000__and0019 <= (U2/i(20) AND U2/i_Madd__add0000__and0018);
+
+
+U2/i_Madd__add0000__and0020 <= (U2/i(21) AND U2/i_Madd__add0000__and0019);
+
+
+U2/i_Madd__add0000__and0021 <= (U2/i(22) AND U2/i_Madd__add0000__and0020);
+
+
+U2/i_Madd__add0000__and0022 <= (U2/i(23) AND U2/i_Madd__add0000__and0021);
+
+
+U2/i_Madd__add0000__and0023 <= (U2/i(24) AND U2/i_Madd__add0000__and0022);
+
+
+U2/i_Madd__add0000__and0024 <= (U2/i(25) AND U2/i_Madd__add0000__and0023);
+
+
+U2/i_Madd__add0000__and0025 <= (U2/i(26) AND U2/i_Madd__add0000__and0024);
+
+
+U2/i_Madd__add0000__and0026 <= (U2/i(27) AND U2/i_Madd__add0000__and0025);
+
+
+U2/i_Madd__add0000__and0027 <= (U2/i(28) AND U2/i_Madd__add0000__and0026);
+
+
+U2/i_Madd__add0000__and0028 <= (U2/i(29) AND U2/i_Madd__add0000__and0027);
+
+
+U2/i_Madd__add0000__and0029 <= (U2/i(30) AND U2/i_Madd__add0000__and0028);
+
+
+U2/i_Q_mux0000(0)4 <= (btn_entree AND NOT U2/i(0));
+
+
+U2/i_Q_mux0000(0)6 <= (NOT btn_entree AND U2/i_Q_mux0000(0)5);
+
+
+U2/i_Q_mux0000(0)5 <= ((U2/i_cmp_eq0000)
+	OR (NOT U2/i(0)));
+
+
+U2/i_Q_mux0000(0) <= ((U2/i_Q_mux0000(0)4)
+	OR (U2/i_Q_mux0000(0)6));
+
+
+U2/i_Q_mux0000(1)4 <= (NOT btn_entree AND U2/i_Q_mux0000(1)2);
+
+
+U2/i_Q_mux0000(1) <= ((U2/i_Q_mux0000(1)1)
+	OR (U2/i_Q_mux0000(1)4));
+
+
+U2/i_Q_mux0000(1)1 <= (btn_entree AND U2/i__add0000(1));
+
+
+U2/i_Q_mux0000(1)2 <= ((U2/i_cmp_eq0000)
+	OR (U2/i_addsub0000(1)));
+
+
+U2/i_Q_mux0000(2) <= ((U2/i_Q_mux0000(2)1)
+	OR (U2/i_Q_mux0000(2)4));
+
+
+U2/i_Q_mux0000(2)2 <= ((U2/i_cmp_eq0000)
+	OR (U2/i_addsub0000(2)));
+
+
+U2/i_Q_mux0000(2)4 <= (NOT btn_entree AND U2/i_Q_mux0000(2)2);
+
+
+U2/i_Q_mux0000(2)1 <= (btn_entree AND U2/i__add0000(2));
+
+
+U2/i_Q_mux0000(3)1 <= (btn_entree AND U2/i__add0000(3));
+
+
+U2/i_Q_mux0000(3) <= ((U2/i_Q_mux0000(3)1)
+	OR (U2/i_Q_mux0000(3)4));
+
+
+U2/i_Q_mux0000(3)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(3));
+
+
+U2/i_Q_mux0000(4)1 <= (btn_entree AND U2/i__add0000(4));
+
+
+U2/i_Q_mux0000(4)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(4));
+
+
+U2/i_Q_mux0000(4) <= ((U2/i_Q_mux0000(4)1)
+	OR (U2/i_Q_mux0000(4)4));
+
+
+U2/i_Q_mux0000(5)1 <= (btn_entree AND U2/i__add0000(5));
+
+
+U2/i_Q_mux0000(5)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(5));
+
+
+U2/i_Q_mux0000(5) <= ((U2/i_Q_mux0000(5)1)
+	OR (U2/i_Q_mux0000(5)4));
+
+
+U2/i_Q_mux0000(6)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(6));
+
+
+U2/i_Q_mux0000(6) <= ((U2/i_Q_mux0000(6)1)
+	OR (U2/i_Q_mux0000(6)4));
+
+
+U2/i_Q_mux0000(6)1 <= (btn_entree AND U2/i__add0000(6));
+
+
+U2/i_Q_mux0000(7)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(7));
+
+
+U2/i_Q_mux0000(7)1 <= (btn_entree AND U2/i__add0000(7));
+
+
+U2/i_Q_mux0000(7) <= ((U2/i_Q_mux0000(7)1)
+	OR (U2/i_Q_mux0000(7)4));
+
+
+U2/i_Q_mux0000(8)1 <= (btn_entree AND U2/i__add0000(8));
+
+
+U2/i_Q_mux0000(8) <= ((U2/i_Q_mux0000(8)1)
+	OR (U2/i_Q_mux0000(8)4));
+
+
+U2/i_Q_mux0000(8)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(8));
+
+
+U2/i_Q_mux0000(9)1 <= (btn_entree AND U2/i__add0000(9));
+
+
+U2/i_Q_mux0000(9)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(9));
+
+
+U2/i_Q_mux0000(9) <= ((U2/i_Q_mux0000(9)1)
+	OR (U2/i_Q_mux0000(9)4));
+
+
+U2/i_Q_mux0000(10)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(10));
+
+
+U2/i_Q_mux0000(10)1 <= (btn_entree AND U2/i__add0000(10));
+
+
+U2/i_Q_mux0000(10) <= ((U2/i_Q_mux0000(10)1)
+	OR (U2/i_Q_mux0000(10)4));
+
+
+U2/i_Q_mux0000(11) <= ((U2/i_Q_mux0000(11)1)
+	OR (U2/i_Q_mux0000(11)4));
+
+
+U2/i_Q_mux0000(11)1 <= (btn_entree AND U2/i__add0000(11));
+
+
+U2/i_Q_mux0000(11)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(11));
+
+
+U2/i_Q_mux0000(12)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(12));
+
+
+U2/i_Q_mux0000(12) <= ((U2/i_Q_mux0000(12)1)
+	OR (U2/i_Q_mux0000(12)4));
+
+
+U2/i_Q_mux0000(12)1 <= (btn_entree AND U2/i__add0000(12));
+
+
+U2/i_Q_mux0000(13)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(13));
+
+
+U2/i_Q_mux0000(13)1 <= (btn_entree AND U2/i__add0000(13));
+
+
+U2/i_Q_mux0000(13) <= ((U2/i_Q_mux0000(13)1)
+	OR (U2/i_Q_mux0000(13)4));
+
+
+U2/i_Q_mux0000(14)1 <= (btn_entree AND U2/i__add0000(14));
+
+
+U2/i_Q_mux0000(14)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(14));
+
+
+U2/i_Q_mux0000(14) <= ((U2/i_Q_mux0000(14)1)
+	OR (U2/i_Q_mux0000(14)4));
+
+
+U2/i_Q_mux0000(15)1 <= (btn_entree AND U2/i__add0000(15));
+
+
+U2/i_Q_mux0000(15) <= ((U2/i_Q_mux0000(15)1)
+	OR (U2/i_Q_mux0000(15)4));
+
+
+U2/i_Q_mux0000(15)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(15));
+
+
+U2/i_Q_mux0000(16)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(16));
+
+
+U2/i_Q_mux0000(16) <= ((U2/i_Q_mux0000(16)1)
+	OR (U2/i_Q_mux0000(16)4));
+
+
+U2/i_Q_mux0000(16)1 <= (btn_entree AND U2/i__add0000(16));
+
+
+U2/i_Q_mux0000(17)1 <= (btn_entree AND U2/i__add0000(17));
+
+
+U2/i_Q_mux0000(17)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(17));
+
+
+U2/i_Q_mux0000(17) <= ((U2/i_Q_mux0000(17)1)
+	OR (U2/i_Q_mux0000(17)4));
+
+
+U2/i_Q_mux0000(18) <= ((U2/i_Q_mux0000(18)1)
+	OR (U2/i_Q_mux0000(18)4));
+
+
+U2/i_Q_mux0000(18)1 <= (btn_entree AND U2/i__add0000(18));
+
+
+U2/i_Q_mux0000(18)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(18));
+
+
+U2/i_Q_mux0000(19) <= ((U2/i_Q_mux0000(19)1)
+	OR (U2/i_Q_mux0000(19)4));
+
+
+U2/i_Q_mux0000(19)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(19));
+
+
+U2/i_Q_mux0000(19)1 <= (btn_entree AND U2/i__add0000(19));
+
+
+U2/i_Q_mux0000(20) <= ((U2/i_Q_mux0000(20)1)
+	OR (U2/i_Q_mux0000(20)4));
+
+
+U2/i_Q_mux0000(20)1 <= (btn_entree AND U2/i__add0000(20));
+
+
+U2/i_Q_mux0000(20)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(20));
+
+
+U2/i_Q_mux0000(21) <= ((U2/i_Q_mux0000(21)1)
+	OR (U2/i_Q_mux0000(21)4));
+
+
+U2/i_Q_mux0000(21)1 <= (btn_entree AND U2/i__add0000(21));
+
+
+U2/i_Q_mux0000(21)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(21));
+
+
+U2/i_Q_mux0000(22) <= ((U2/i_Q_mux0000(22)1)
+	OR (U2/i_Q_mux0000(22)4));
+
+
+U2/i_Q_mux0000(22)1 <= (btn_entree AND U2/i__add0000(22));
+
+
+U2/i_Q_mux0000(22)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(22));
+
+
+U2/i_Q_mux0000(23) <= ((U2/i_Q_mux0000(23)1)
+	OR (U2/i_Q_mux0000(23)4));
+
+
+U2/i_Q_mux0000(23)1 <= (btn_entree AND U2/i__add0000(23));
+
+
+U2/i_Q_mux0000(23)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(23));
+
+
+U2/i_Q_mux0000(24) <= ((U2/i_Q_mux0000(24)1)
+	OR (U2/i_Q_mux0000(24)4));
+
+
+U2/i_Q_mux0000(24)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(24));
+
+
+U2/i_Q_mux0000(24)1 <= (btn_entree AND U2/i__add0000(24));
+
+
+U2/i_Q_mux0000(25)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(25));
+
+
+U2/i_Q_mux0000(25) <= ((U2/i_Q_mux0000(25)1)
+	OR (U2/i_Q_mux0000(25)4));
+
+
+U2/i_Q_mux0000(25)1 <= (btn_entree AND U2/i__add0000(25));
+
+
+U2/i_Q_mux0000(26) <= ((U2/i_Q_mux0000(26)1)
+	OR (U2/i_Q_mux0000(26)4));
+
+
+U2/i_Q_mux0000(26)1 <= (btn_entree AND U2/i__add0000(26));
+
+
+U2/i_Q_mux0000(26)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(26));
+
+
+U2/i_Q_mux0000(27)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(27));
+
+
+U2/i_Q_mux0000(27) <= ((U2/i_Q_mux0000(27)1)
+	OR (U2/i_Q_mux0000(27)4));
+
+
+U2/i_Q_mux0000(27)1 <= (btn_entree AND U2/i__add0000(27));
+
+
+U2/i_Q_mux0000(28) <= ((U2/i_Q_mux0000(28)1)
+	OR (U2/i_Q_mux0000(28)4));
+
+
+U2/i_Q_mux0000(28)1 <= (btn_entree AND U2/i__add0000(28));
+
+
+U2/i_Q_mux0000(28)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(28));
+
+
+U2/i_Q_mux0000(29)1 <= (btn_entree AND U2/i__add0000(29));
+
+
+U2/i_Q_mux0000(29)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(29));
+
+
+U2/i_Q_mux0000(29) <= ((U2/i_Q_mux0000(29)1)
+	OR (U2/i_Q_mux0000(29)4));
+
+
+U2/i_Q_mux0000(30) <= ((U2/i_Q_mux0000(30)1)
+	OR (U2/i_Q_mux0000(30)4));
+
+
+U2/i_Q_mux0000(30)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(30));
+
+
+U2/i_Q_mux0000(30)1 <= (btn_entree AND U2/i__add0000(30));
+
+
+U2/i_Q_mux0000(31)1 <= (btn_entree AND U2/i__add0000(31));
+
+
+U2/i_Q_mux0000(31)4 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/i_addsub0000(31));
+
+
+U2/i_Q_mux0000(31) <= ((U2/i_Q_mux0000(31)1)
+	OR (U2/i_Q_mux0000(31)4));
+
+
+U2/i__add0000(1) <= U2/i(1)
+	 XOR 
+U2/i__add0000(1) <= U2/i(0);
+
+
+U2/i__add0000(2) <= U2/i(2)
+	 XOR 
+U2/i__add0000(2) <= U2/i_Madd__add0000__and0000;
+
+
+U2/i__add0000(3) <= U2/i(3)
+	 XOR 
+U2/i__add0000(3) <= U2/i_Madd__add0000__and0001;
+
+
+U2/i__add0000(4) <= U2/i(4)
+	 XOR 
+U2/i__add0000(4) <= U2/i_Madd__add0000__and0002;
+
+
+U2/i__add0000(5) <= U2/i(5)
+	 XOR 
+U2/i__add0000(5) <= U2/i_Madd__add0000__and0003;
+
+
+U2/i__add0000(6) <= U2/i(6)
+	 XOR 
+U2/i__add0000(6) <= U2/i_Madd__add0000__and0004;
+
+
+U2/i__add0000(7) <= U2/i(7)
+	 XOR 
+U2/i__add0000(7) <= U2/i_Madd__add0000__and0005;
+
+
+U2/i__add0000(8) <= U2/i(8)
+	 XOR 
+U2/i__add0000(8) <= U2/i_Madd__add0000__and0006;
+
+
+U2/i__add0000(9) <= U2/i(9)
+	 XOR 
+U2/i__add0000(9) <= U2/i_Madd__add0000__and0007;
+
+
+U2/i__add0000(10) <= U2/i(10)
+	 XOR 
+U2/i__add0000(10) <= U2/i_Madd__add0000__and0008;
+
+
+U2/i__add0000(11) <= U2/i(11)
+	 XOR 
+U2/i__add0000(11) <= U2/i_Madd__add0000__and0009;
+
+
+U2/i__add0000(12) <= U2/i(12)
+	 XOR 
+U2/i__add0000(12) <= U2/i_Madd__add0000__and0010;
+
+
+U2/i__add0000(13) <= U2/i(13)
+	 XOR 
+U2/i__add0000(13) <= U2/i_Madd__add0000__and0011;
+
+
+U2/i__add0000(14) <= U2/i(14)
+	 XOR 
+U2/i__add0000(14) <= U2/i_Madd__add0000__and0012;
+
+
+U2/i__add0000(15) <= U2/i(15)
+	 XOR 
+U2/i__add0000(15) <= U2/i_Madd__add0000__and0013;
+
+
+U2/i__add0000(16) <= U2/i(16)
+	 XOR 
+U2/i__add0000(16) <= U2/i_Madd__add0000__and0014;
+
+
+U2/i__add0000(17) <= U2/i(17)
+	 XOR 
+U2/i__add0000(17) <= U2/i_Madd__add0000__and0015;
+
+
+U2/i__add0000(18) <= U2/i(18)
+	 XOR 
+U2/i__add0000(18) <= U2/i_Madd__add0000__and0016;
+
+
+U2/i__add0000(19) <= U2/i(19)
+	 XOR 
+U2/i__add0000(19) <= U2/i_Madd__add0000__and0017;
+
+
+U2/i__add0000(20) <= U2/i(20)
+	 XOR 
+U2/i__add0000(20) <= U2/i_Madd__add0000__and0018;
+
+
+U2/i__add0000(21) <= U2/i(21)
+	 XOR 
+U2/i__add0000(21) <= U2/i_Madd__add0000__and0019;
+
+
+U2/i__add0000(22) <= U2/i(22)
+	 XOR 
+U2/i__add0000(22) <= U2/i_Madd__add0000__and0020;
+
+
+U2/i__add0000(23) <= U2/i(23)
+	 XOR 
+U2/i__add0000(23) <= U2/i_Madd__add0000__and0021;
+
+
+U2/i__add0000(24) <= U2/i(24)
+	 XOR 
+U2/i__add0000(24) <= U2/i_Madd__add0000__and0022;
+
+
+U2/i__add0000(25) <= U2/i(25)
+	 XOR 
+U2/i__add0000(25) <= U2/i_Madd__add0000__and0023;
+
+
+U2/i__add0000(26) <= U2/i(26)
+	 XOR 
+U2/i__add0000(26) <= U2/i_Madd__add0000__and0024;
+
+
+U2/i__add0000(27) <= U2/i(27)
+	 XOR 
+U2/i__add0000(27) <= U2/i_Madd__add0000__and0025;
+
+
+U2/i__add0000(28) <= U2/i(28)
+	 XOR 
+U2/i__add0000(28) <= U2/i_Madd__add0000__and0026;
+
+
+U2/i__add0000(29) <= U2/i(29)
+	 XOR 
+U2/i__add0000(29) <= U2/i_Madd__add0000__and0027;
+
+
+U2/i__add0000(30) <= U2/i(30)
+	 XOR 
+U2/i__add0000(30) <= U2/i_Madd__add0000__and0028;
+
+
+U2/i__add0000(31) <= U2/i(31)
+	 XOR 
+U2/i__add0000(31) <= U2/i_Madd__add0000__and0029;
+
+
+U2/i_addsub0000(1) <= NOT U2/i(1)
+	 XOR 
+U2/i_addsub0000(1) <= U2/i(0);
+
+
+U2/i_addsub0000(2) <= NOT U2/i(2)
+	 XOR 
+U2/i_addsub0000(2) <= U2/Msub_i_addsub0000__or0000;
+
+
+U2/i_addsub0000(3) <= NOT U2/i(3)
+	 XOR 
+U2/i_addsub0000(3) <= U2/Msub_i_addsub0000__or0001;
+
+
+U2/i_addsub0000(4) <= NOT U2/i(4)
+	 XOR 
+U2/i_addsub0000(4) <= U2/Msub_i_addsub0000__or0002;
+
+
+U2/i_addsub0000(5) <= NOT U2/i(5)
+	 XOR 
+U2/i_addsub0000(5) <= U2/Msub_i_addsub0000__or0003;
+
+
+U2/i_addsub0000(6) <= NOT U2/i(6)
+	 XOR 
+U2/i_addsub0000(6) <= U2/Msub_i_addsub0000__or0004;
+
+
+U2/i_addsub0000(7) <= NOT U2/i(7)
+	 XOR 
+U2/i_addsub0000(7) <= U2/Msub_i_addsub0000__or0005;
+
+
+U2/i_addsub0000(8) <= NOT U2/i(8)
+	 XOR 
+U2/i_addsub0000(8) <= U2/Msub_i_addsub0000__or0006;
+
+
+U2/i_addsub0000(9) <= NOT U2/i(9)
+	 XOR 
+U2/i_addsub0000(9) <= U2/Msub_i_addsub0000__or0007;
+
+
+U2/i_addsub0000(10) <= NOT U2/i(10)
+	 XOR 
+U2/i_addsub0000(10) <= U2/Msub_i_addsub0000__or0008;
+
+
+U2/i_addsub0000(11) <= NOT U2/i(11)
+	 XOR 
+U2/i_addsub0000(11) <= U2/Msub_i_addsub0000__or0009;
+
+
+U2/i_addsub0000(12) <= NOT U2/i(12)
+	 XOR 
+U2/i_addsub0000(12) <= U2/Msub_i_addsub0000__or0010;
+
+
+U2/i_addsub0000(13) <= NOT U2/i(13)
+	 XOR 
+U2/i_addsub0000(13) <= U2/Msub_i_addsub0000__or0011;
+
+
+U2/i_addsub0000(14) <= NOT U2/i(14)
+	 XOR 
+U2/i_addsub0000(14) <= U2/Msub_i_addsub0000__or0012;
+
+
+U2/i_addsub0000(15) <= NOT U2/i(15)
+	 XOR 
+U2/i_addsub0000(15) <= U2/Msub_i_addsub0000__or0013;
+
+
+U2/i_addsub0000(16) <= NOT U2/i(16)
+	 XOR 
+U2/i_addsub0000(16) <= U2/Msub_i_addsub0000__or0014;
+
+
+U2/i_addsub0000(17) <= NOT U2/i(17)
+	 XOR 
+U2/i_addsub0000(17) <= U2/Msub_i_addsub0000__or0015;
+
+
+U2/i_addsub0000(18) <= NOT U2/i(18)
+	 XOR 
+U2/i_addsub0000(18) <= U2/Msub_i_addsub0000__or0016;
+
+
+U2/i_addsub0000(19) <= NOT U2/i(19)
+	 XOR 
+U2/i_addsub0000(19) <= U2/Msub_i_addsub0000__or0017;
+
+
+U2/i_addsub0000(20) <= NOT U2/i(20)
+	 XOR 
+U2/i_addsub0000(20) <= U2/Msub_i_addsub0000__or0018;
+
+
+U2/i_addsub0000(21) <= NOT U2/i(21)
+	 XOR 
+U2/i_addsub0000(21) <= U2/Msub_i_addsub0000__or0019;
+
+
+U2/i_addsub0000(22) <= NOT U2/i(22)
+	 XOR 
+U2/i_addsub0000(22) <= U2/Msub_i_addsub0000__or0020;
+
+
+U2/i_addsub0000(23) <= NOT U2/i(23)
+	 XOR 
+U2/i_addsub0000(23) <= U2/Msub_i_addsub0000__or0021;
+
+
+U2/i_addsub0000(24) <= NOT U2/i(24)
+	 XOR 
+U2/i_addsub0000(24) <= U2/Msub_i_addsub0000__or0022;
+
+
+U2/i_addsub0000(25) <= NOT U2/i(25)
+	 XOR 
+U2/i_addsub0000(25) <= U2/Msub_i_addsub0000__or0023;
+
+
+U2/i_addsub0000(26) <= NOT U2/i(26)
+	 XOR 
+U2/i_addsub0000(26) <= U2/Msub_i_addsub0000__or0024;
+
+
+U2/i_addsub0000(27) <= NOT U2/i(27)
+	 XOR 
+U2/i_addsub0000(27) <= U2/Msub_i_addsub0000__or0025;
+
+
+U2/i_addsub0000(28) <= NOT U2/i(28)
+	 XOR 
+U2/i_addsub0000(28) <= U2/Msub_i_addsub0000__or0026;
+
+
+U2/i_addsub0000(29) <= NOT U2/i(29)
+	 XOR 
+U2/i_addsub0000(29) <= U2/Msub_i_addsub0000__or0027;
+
+
+U2/i_addsub0000(30) <= NOT U2/i(30)
+	 XOR 
+U2/i_addsub0000(30) <= U2/Msub_i_addsub0000__or0028;
+
+
+U2/i_addsub0000(31) <= NOT U2/i(31)
+	 XOR 
+U2/i_addsub0000(31) <= U2/Msub_i_addsub0000__or0029;
+
+
+U2/i_cmp_eq0000 <= (U2/i_cmp_eq000033 AND U2/i_cmp_eq000034 AND 
+	U2/i_cmp_eq000035 AND U2/i_cmp_eq000036);
+
+
+U2/i_cmp_eq000033 <= (NOT U2/i(0) AND NOT U2/i(1) AND NOT U2/i(2) AND NOT U2/i(3) AND 
+	NOT U2/i(4) AND NOT U2/i(5) AND NOT U2/i(6) AND NOT U2/i(7));
+
+
+U2/i_cmp_eq000034 <= (NOT U2/i(10) AND NOT U2/i(11) AND NOT U2/i(12) AND NOT U2/i(13) AND 
+	NOT U2/i(14) AND NOT U2/i(15) AND NOT U2/i(8) AND NOT U2/i(9));
+
+
+U2/i_cmp_eq000035 <= (NOT U2/i(16) AND NOT U2/i(17) AND NOT U2/i(18) AND NOT U2/i(19) AND 
+	NOT U2/i(20) AND NOT U2/i(21) AND NOT U2/i(22) AND NOT U2/i(23));
+
+
+U2/i_cmp_eq000036 <= (NOT U2/i(24) AND NOT U2/i(25) AND NOT U2/i(26) AND NOT U2/i(27) AND 
+	NOT U2/i(28) AND NOT U2/i(29) AND NOT U2/i(30) AND NOT U2/i(31));
+
+
+U2/temp_0_and0000 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	NOT U2/temp_0_cmp_eq0000);
+
+
+U2/temp_0_and0001 <= (btn_entree AND NOT U2/temp_0_cmp_eq0001 AND 
+	NOT U2/temp_0_cmp_eq0002 AND NOT U2/i_cmp_eq0000);
+
+
+U2/temp_0_cmp_eq0000 <= (U2/temp_0_cmp_eq000032 AND U2/temp_0_cmp_eq000033 AND 
+	U2/temp_0_cmp_eq000034 AND U2/temp_0_cmp_eq000035);
+
+
+U2/temp_0_cmp_eq000032 <= (U2/i(0) AND NOT U2/i(1) AND NOT U2/i(2) AND NOT U2/i(3) AND 
+	NOT U2/i(4) AND NOT U2/i(5) AND NOT U2/i(6) AND NOT U2/i(7));
+
+
+U2/temp_0_cmp_eq000033 <= (NOT U2/i(10) AND NOT U2/i(11) AND NOT U2/i(12) AND NOT U2/i(13) AND 
+	NOT U2/i(14) AND NOT U2/i(15) AND NOT U2/i(8) AND NOT U2/i(9));
+
+
+U2/temp_0_cmp_eq000034 <= (NOT U2/i(16) AND NOT U2/i(17) AND NOT U2/i(18) AND NOT U2/i(19) AND 
+	NOT U2/i(20) AND NOT U2/i(21) AND NOT U2/i(22) AND NOT U2/i(23));
+
+
+U2/temp_0_cmp_eq000035 <= (NOT U2/i(24) AND NOT U2/i(25) AND NOT U2/i(26) AND NOT U2/i(27) AND 
+	NOT U2/i(28) AND NOT U2/i(29) AND NOT U2/i(30) AND NOT U2/i(31));
+
+
+U2/temp_0_cmp_eq0001 <= (U2/temp_0_cmp_eq000136 AND U2/temp_0_cmp_eq000133 AND 
+	U2/temp_0_cmp_eq000137);
+
+
+U2/temp_0_cmp_eq00011 <= (U2/i(0) AND U2/i(1));
+
+
+U2/temp_0_cmp_eq000131 <= (U2/i(2) AND NOT U2/i(3));
+
+
+U2/temp_0_cmp_eq000132 <= (NOT U2/i(4) AND NOT U2/i(5) AND NOT U2/i(6) AND NOT U2/i(7));
+
+
+U2/temp_0_cmp_eq000133 <= (NOT U2/i(10) AND NOT U2/i(11) AND NOT U2/i(12) AND NOT U2/i(13) AND 
+	NOT U2/i(14) AND NOT U2/i(15) AND NOT U2/i(8) AND NOT U2/i(9));
+
+
+U2/temp_0_cmp_eq000134 <= (NOT U2/i(16) AND NOT U2/i(17) AND NOT U2/i(18) AND NOT U2/i(19) AND 
+	NOT U2/i(20) AND NOT U2/i(21) AND NOT U2/i(22) AND NOT U2/i(23));
+
+
+U2/temp_0_cmp_eq000135 <= (NOT U2/i(24) AND NOT U2/i(25) AND NOT U2/i(26) AND NOT U2/i(27) AND 
+	NOT U2/i(28) AND NOT U2/i(29) AND NOT U2/i(30) AND NOT U2/i(31));
+
+
+U2/temp_0_cmp_eq000136 <= (U2/temp_0_cmp_eq00011 AND U2/temp_0_cmp_eq000131 AND 
+	U2/temp_0_cmp_eq000132);
+
+
+U2/temp_0_cmp_eq000137 <= (U2/temp_0_cmp_eq000134 AND U2/temp_0_cmp_eq000135);
+
+
+U2/temp_0_cmp_eq0002 <= (U2/temp_0_cmp_eq00021 AND U2/temp_0_cmp_eq00022 AND 
+	U2/temp_0_cmp_eq00023 AND U2/temp_0_cmp_eq00024);
+
+
+U2/temp_0_cmp_eq00021 <= (U2/i(0) AND U2/i(1) AND U2/i(2) AND U2/i(3) AND 
+	U2/i(4) AND U2/i(5) AND U2/i(6) AND U2/i(7));
+
+
+U2/temp_0_cmp_eq00022 <= (U2/i(10) AND U2/i(11) AND U2/i(12) AND U2/i(13) AND 
+	U2/i(14) AND U2/i(15) AND U2/i(8) AND U2/i(9));
+
+
+U2/temp_0_cmp_eq00023 <= (U2/i(16) AND U2/i(17) AND U2/i(18) AND U2/i(19) AND 
+	U2/i(20) AND U2/i(21) AND U2/i(22) AND U2/i(23));
+
+
+U2/temp_0_cmp_eq00024 <= (U2/i(24) AND U2/i(25) AND U2/i(26) AND U2/i(27) AND 
+	U2/i(28) AND U2/i(29) AND U2/i(30) AND U2/i(31));
+
+
+U2/temp_0_mux0006 <= ((U2/temp_0_mux00065)
+	OR (U2/temp_0_mux00066));
+
+
+U2/temp_0_mux00061 <= (btn_entree AND U2/temp_0_cmp_eq0002);
+
+
+U2/temp_0_mux00062 <= (btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/temp_0_mux00065 <= ((U2/temp_0_mux00061)
+	OR (U2/temp_0_mux00062));
+
+
+U2/temp_0_mux00066 <= (NOT btn_entree AND NOT U2/i_cmp_eq0000 AND 
+	U2/temp_0_cmp_eq0000);
+
+
+U2/temp_0_not00011 <= ((U2/temp_0_and0001)
+	OR (U2/temp_0_and0000));
+
+
+U2/temp_1_cmp_eq0000 <= (U2/temp_1_cmp_eq000032 AND U2/temp_1_cmp_eq000033 AND 
+	U2/temp_1_cmp_eq000034 AND U2/temp_1_cmp_eq000035);
+
+
+U2/temp_1_cmp_eq000032 <= (NOT U2/i(0) AND U2/i(1) AND NOT U2/i(2) AND NOT U2/i(3) AND 
+	NOT U2/i(4) AND NOT U2/i(5) AND NOT U2/i(6) AND NOT U2/i(7));
+
+
+U2/temp_1_cmp_eq000033 <= (NOT U2/i(10) AND NOT U2/i(11) AND NOT U2/i(12) AND NOT U2/i(13) AND 
+	NOT U2/i(14) AND NOT U2/i(15) AND NOT U2/i(8) AND NOT U2/i(9));
+
+
+U2/temp_1_cmp_eq000034 <= (NOT U2/i(16) AND NOT U2/i(17) AND NOT U2/i(18) AND NOT U2/i(19) AND 
+	NOT U2/i(20) AND NOT U2/i(21) AND NOT U2/i(22) AND NOT U2/i(23));
+
+
+U2/temp_1_cmp_eq000035 <= (NOT U2/i(24) AND NOT U2/i(25) AND NOT U2/i(26) AND NOT U2/i(27) AND 
+	NOT U2/i(28) AND NOT U2/i(29) AND NOT U2/i(30) AND NOT U2/i(31));
+
+
+U2/temp_1_mux0006 <= ((U2/temp_1_mux00061)
+	OR (U2/temp_1_mux00063));
+
+
+U2/temp_1_mux00061 <= (btn_entree AND U2/i_cmp_eq0000);
+
+
+U2/temp_1_mux00063 <= (NOT btn_entree AND U2/temp_1_cmp_eq0000);
+
+
+U2/temp_1_or0000 <= ((U2/i_cmp_eq0000)
+	OR (U2/temp_1_or00003));
+
+
+U2/temp_1_or00003 <= (NOT U2/temp_0_cmp_eq0000 AND NOT U2/temp_1_cmp_eq0000);
+
+
+U2/temp_1_or0001 <= ((U2/temp_0_cmp_eq0001)
+	OR (U2/temp_1_or00013));
+
+
+U2/temp_1_or00013 <= (NOT U2/i_cmp_eq0000 AND NOT U2/temp_0_cmp_eq0000);
+
+
+U2/temp_1_or0002 <= ((U2/temp_1_or00021)
+	OR (U2/temp_1_or00023));
+
+
+U2/temp_1_or00021 <= (btn_entree AND U2/temp_1_or0001);
+
+
+U2/temp_1_or00023 <= (NOT btn_entree AND U2/temp_1_or0000);
+
+
+U2/temp_2_cmp_eq0000 <= (U2/temp_2_cmp_eq000037 AND U2/temp_2_cmp_eq000034 AND 
+	U2/temp_2_cmp_eq000038);
+
+
+U2/temp_2_cmp_eq00001 <= (U2/i(0) AND U2/i(1));
+
+
+U2/temp_2_cmp_eq000032 <= (NOT U2/i(2) AND NOT U2/i(3));
+
+
+U2/temp_2_cmp_eq000033 <= (NOT U2/i(4) AND NOT U2/i(5) AND NOT U2/i(6) AND NOT U2/i(7));
+
+
+U2/temp_2_cmp_eq000034 <= (NOT U2/i(10) AND NOT U2/i(11) AND NOT U2/i(12) AND NOT U2/i(13) AND 
+	NOT U2/i(14) AND NOT U2/i(15) AND NOT U2/i(8) AND NOT U2/i(9));
+
+
+U2/temp_2_cmp_eq000035 <= (NOT U2/i(16) AND NOT U2/i(17) AND NOT U2/i(18) AND NOT U2/i(19) AND 
+	NOT U2/i(20) AND NOT U2/i(21) AND NOT U2/i(22) AND NOT U2/i(23));
+
+
+U2/temp_2_cmp_eq000036 <= (NOT U2/i(24) AND NOT U2/i(25) AND NOT U2/i(26) AND NOT U2/i(27) AND 
+	NOT U2/i(28) AND NOT U2/i(29) AND NOT U2/i(30) AND NOT U2/i(31));
+
+
+U2/temp_2_cmp_eq000037 <= (U2/temp_2_cmp_eq00001 AND U2/temp_2_cmp_eq000032 AND 
+	U2/temp_2_cmp_eq000033);
+
+
+U2/temp_2_cmp_eq000038 <= (U2/temp_2_cmp_eq000035 AND U2/temp_2_cmp_eq000036);
+
+
+U2/temp_2_mux0006 <= ((U2/temp_2_mux00061)
+	OR (U2/temp_2_mux00063));
+
+
+U2/temp_2_mux00061 <= (btn_entree AND U2/temp_0_cmp_eq0000);
+
+
+U2/temp_2_mux00063 <= (NOT btn_entree AND U2/temp_2_cmp_eq0000);
+
+
+U2/temp_2_or0000 <= ((U2/i_cmp_eq0000)
+	OR (U2/temp_2_or00003));
+
+
+U2/temp_2_or00003 <= (NOT U2/temp_1_cmp_eq0000 AND NOT U2/temp_2_cmp_eq0000);
+
+
+U2/temp_2_or0001 <= ((U2/temp_0_cmp_eq0001)
+	OR (U2/temp_2_or00013));
+
+
+U2/temp_2_or00013 <= (NOT U2/temp_0_cmp_eq0000 AND NOT U2/temp_1_cmp_eq0000);
+
+
+U2/temp_2_or0002 <= ((U2/temp_2_or00021)
+	OR (U2/temp_2_or00023));
+
+
+U2/temp_2_or00021 <= (btn_entree AND U2/temp_2_or0001);
+
+
+U2/temp_2_or00023 <= (NOT btn_entree AND U2/temp_2_or0000);
+
+
+U2/temp_3_cmp_eq0000 <= (U2/temp_3_cmp_eq000032 AND U2/temp_3_cmp_eq000033 AND 
+	U2/temp_3_cmp_eq000034 AND U2/temp_3_cmp_eq000035);
+
+
+U2/temp_3_cmp_eq000032 <= (NOT U2/i(0) AND NOT U2/i(1) AND U2/i(2) AND NOT U2/i(3) AND 
+	NOT U2/i(4) AND NOT U2/i(5) AND NOT U2/i(6) AND NOT U2/i(7));
+
+
+U2/temp_3_cmp_eq000033 <= (NOT U2/i(10) AND NOT U2/i(11) AND NOT U2/i(12) AND NOT U2/i(13) AND 
+	NOT U2/i(14) AND NOT U2/i(15) AND NOT U2/i(8) AND NOT U2/i(9));
+
+
+U2/temp_3_cmp_eq000034 <= (NOT U2/i(16) AND NOT U2/i(17) AND NOT U2/i(18) AND NOT U2/i(19) AND 
+	NOT U2/i(20) AND NOT U2/i(21) AND NOT U2/i(22) AND NOT U2/i(23));
+
+
+U2/temp_3_cmp_eq000035 <= (NOT U2/i(24) AND NOT U2/i(25) AND NOT U2/i(26) AND NOT U2/i(27) AND 
+	NOT U2/i(28) AND NOT U2/i(29) AND NOT U2/i(30) AND NOT U2/i(31));
+
+
+U2/temp_3_mux0006 <= ((U2/temp_3_mux00061)
+	OR (U2/temp_3_mux00063));
+
+
+U2/temp_3_mux00061 <= (btn_entree AND U2/temp_1_cmp_eq0000);
+
+
+U2/temp_3_mux00063 <= (NOT btn_entree AND U2/temp_3_cmp_eq0000);
+
+
+U2/temp_3_or0000 <= ((U2/i_cmp_eq0000)
+	OR (U2/temp_3_or00003));
+
+
+U2/temp_3_or00003 <= (NOT U2/temp_2_cmp_eq0000 AND NOT U2/temp_3_cmp_eq0000);
+
+
+U2/temp_3_or0001 <= ((U2/temp_0_cmp_eq0001)
+	OR (U2/temp_3_or00013));
+
+
+U2/temp_3_or00013 <= (NOT U2/temp_1_cmp_eq0000 AND NOT U2/temp_2_cmp_eq0000);
+
+
+U2/temp_3_or0002 <= ((U2/temp_3_or00021)
+	OR (U2/temp_3_or00023));
+
+
+U2/temp_3_or00021 <= (btn_entree AND U2/temp_3_or0001);
+
+
+U2/temp_3_or00023 <= (NOT btn_entree AND U2/temp_3_or0000);
+
+
+U2/temp_4_cmp_eq0000 <= (U2/temp_4_cmp_eq000037 AND U2/temp_4_cmp_eq000034 AND 
+	U2/temp_4_cmp_eq000038);
+
+
+U2/temp_4_cmp_eq00001 <= (U2/i(0) AND U2/i(2));
+
+
+U2/temp_4_cmp_eq000032 <= (NOT U2/i(1) AND NOT U2/i(3));
+
+
+U2/temp_4_cmp_eq000033 <= (NOT U2/i(4) AND NOT U2/i(5) AND NOT U2/i(6) AND NOT U2/i(7));
+
+
+U2/temp_4_cmp_eq000034 <= (NOT U2/i(10) AND NOT U2/i(11) AND NOT U2/i(12) AND NOT U2/i(13) AND 
+	NOT U2/i(14) AND NOT U2/i(15) AND NOT U2/i(8) AND NOT U2/i(9));
+
+
+U2/temp_4_cmp_eq000035 <= (NOT U2/i(16) AND NOT U2/i(17) AND NOT U2/i(18) AND NOT U2/i(19) AND 
+	NOT U2/i(20) AND NOT U2/i(21) AND NOT U2/i(22) AND NOT U2/i(23));
+
+
+U2/temp_4_cmp_eq000036 <= (NOT U2/i(24) AND NOT U2/i(25) AND NOT U2/i(26) AND NOT U2/i(27) AND 
+	NOT U2/i(28) AND NOT U2/i(29) AND NOT U2/i(30) AND NOT U2/i(31));
+
+
+U2/temp_4_cmp_eq000037 <= (U2/temp_4_cmp_eq00001 AND U2/temp_4_cmp_eq000032 AND 
+	U2/temp_4_cmp_eq000033);
+
+
+U2/temp_4_cmp_eq000038 <= (U2/temp_4_cmp_eq000035 AND U2/temp_4_cmp_eq000036);
+
+
+U2/temp_4_mux0006 <= ((U2/temp_4_mux00061)
+	OR (U2/temp_4_mux00063));
+
+
+U2/temp_4_mux00061 <= (btn_entree AND U2/temp_2_cmp_eq0000);
+
+
+U2/temp_4_mux00063 <= (NOT btn_entree AND U2/temp_4_cmp_eq0000);
+
+
+U2/temp_4_or0000 <= ((U2/i_cmp_eq0000)
+	OR (U2/temp_4_or00003));
+
+
+U2/temp_4_or00003 <= (NOT U2/temp_3_cmp_eq0000 AND NOT U2/temp_4_cmp_eq0000);
+
+
+U2/temp_4_or0001 <= ((U2/temp_0_cmp_eq0001)
+	OR (U2/temp_4_or00013));
+
+
+U2/temp_4_or00013 <= (NOT U2/temp_2_cmp_eq0000 AND NOT U2/temp_3_cmp_eq0000);
+
+
+U2/temp_4_or0002 <= ((U2/temp_4_or00021)
+	OR (U2/temp_4_or00023));
+
+
+U2/temp_4_or00021 <= (btn_entree AND U2/temp_4_or0001);
+
+
+U2/temp_4_or00023 <= (NOT btn_entree AND U2/temp_4_or0000);
+
+
+U2/temp_5_cmp_eq0000 <= (U2/temp_5_cmp_eq000037 AND U2/temp_5_cmp_eq000034 AND 
+	U2/temp_5_cmp_eq000038);
+
+
+U2/temp_5_cmp_eq00001 <= (U2/i(1) AND U2/i(2));
+
+
+U2/temp_5_cmp_eq000032 <= (NOT U2/i(0) AND NOT U2/i(3));
+
+
+U2/temp_5_cmp_eq000033 <= (NOT U2/i(4) AND NOT U2/i(5) AND NOT U2/i(6) AND NOT U2/i(7));
+
+
+U2/temp_5_cmp_eq000034 <= (NOT U2/i(10) AND NOT U2/i(11) AND NOT U2/i(12) AND NOT U2/i(13) AND 
+	NOT U2/i(14) AND NOT U2/i(15) AND NOT U2/i(8) AND NOT U2/i(9));
+
+
+U2/temp_5_cmp_eq000035 <= (NOT U2/i(16) AND NOT U2/i(17) AND NOT U2/i(18) AND NOT U2/i(19) AND 
+	NOT U2/i(20) AND NOT U2/i(21) AND NOT U2/i(22) AND NOT U2/i(23));
+
+
+U2/temp_5_cmp_eq000036 <= (NOT U2/i(24) AND NOT U2/i(25) AND NOT U2/i(26) AND NOT U2/i(27) AND 
+	NOT U2/i(28) AND NOT U2/i(29) AND NOT U2/i(30) AND NOT U2/i(31));
+
+
+U2/temp_5_cmp_eq000037 <= (U2/temp_5_cmp_eq00001 AND U2/temp_5_cmp_eq000032 AND 
+	U2/temp_5_cmp_eq000033);
+
+
+U2/temp_5_cmp_eq000038 <= (U2/temp_5_cmp_eq000035 AND U2/temp_5_cmp_eq000036);
+
+
+U2/temp_5_mux0006 <= ((U2/temp_5_mux00061)
+	OR (U2/temp_5_mux00063));
+
+
+U2/temp_5_mux00061 <= (btn_entree AND U2/temp_3_cmp_eq0000);
+
+
+U2/temp_5_mux00063 <= (NOT btn_entree AND U2/temp_5_cmp_eq0000);
+
+
+U2/temp_5_or0000 <= ((U2/i_cmp_eq0000)
+	OR (U2/temp_5_or00003));
+
+
+U2/temp_5_or00003 <= (NOT U2/temp_4_cmp_eq0000 AND NOT U2/temp_5_cmp_eq0000);
+
+
+U2/temp_5_or0001 <= ((U2/temp_0_cmp_eq0001)
+	OR (U2/temp_5_or00013));
+
+
+U2/temp_5_or00013 <= (NOT U2/temp_3_cmp_eq0000 AND NOT U2/temp_4_cmp_eq0000);
+
+
+U2/temp_5_or0002 <= ((U2/temp_5_or00021)
+	OR (U2/temp_5_or00023));
+
+
+U2/temp_5_or00021 <= (btn_entree AND U2/temp_5_or0001);
+
+
+U2/temp_5_or00023 <= (NOT btn_entree AND U2/temp_5_or0000);
+
+
+U2/temp_6_mux0006 <= ((U2/temp_6_mux00061)
+	OR (U2/temp_6_mux00063));
+
+
+U2/temp_6_mux00061 <= (btn_entree AND U2/temp_4_cmp_eq0000);
+
+
+U2/temp_6_mux00063 <= (NOT btn_entree AND U2/temp_0_cmp_eq0001);
+
+
+U2/temp_6_or0000 <= ((U2/i_cmp_eq0000)
+	OR (U2/temp_6_or00003));
+
+
+U2/temp_6_or00003 <= (NOT U2/temp_0_cmp_eq0001 AND NOT U2/temp_5_cmp_eq0000);
+
+
+U2/temp_6_or0001 <= ((U2/temp_0_cmp_eq0001)
+	OR (U2/temp_6_or00013));
+
+
+U2/temp_6_or00013 <= (NOT U2/temp_4_cmp_eq0000 AND NOT U2/temp_5_cmp_eq0000);
+
+
+U2/temp_6_or0002 <= ((U2/temp_6_or00021)
+	OR (U2/temp_6_or00023));
+
+
+U2/temp_6_or00021 <= (btn_entree AND U2/temp_6_or0001);
+
+
+U2/temp_6_or00023 <= (NOT btn_entree AND U2/temp_6_or0000);
+
+
+U2/temp_7_and0000 <= (NOT btn_entree AND NOT U2/temp_0_cmp_eq0001 AND 
+	NOT U2/i_cmp_eq0000 AND NOT U2/temp_7_cmp_eq0000);
+
+
+U2/temp_7_and0001 <= (btn_entree AND NOT U2/temp_0_cmp_eq0001 AND 
+	NOT U2/temp_5_cmp_eq0000);
+
+
+U2/temp_7_cmp_eq0000 <= (U2/temp_7_cmp_eq000032 AND U2/temp_7_cmp_eq000033 AND 
+	U2/temp_7_cmp_eq000034 AND U2/temp_7_cmp_eq000035);
+
+
+U2/temp_7_cmp_eq000032 <= (NOT U2/i(0) AND NOT U2/i(1) AND NOT U2/i(2) AND U2/i(3) AND 
+	NOT U2/i(4) AND NOT U2/i(5) AND NOT U2/i(6) AND NOT U2/i(7));
+
+
+U2/temp_7_cmp_eq000033 <= (NOT U2/i(10) AND NOT U2/i(11) AND NOT U2/i(12) AND NOT U2/i(13) AND 
+	NOT U2/i(14) AND NOT U2/i(15) AND NOT U2/i(8) AND NOT U2/i(9));
+
+
+U2/temp_7_cmp_eq000034 <= (NOT U2/i(16) AND NOT U2/i(17) AND NOT U2/i(18) AND NOT U2/i(19) AND 
+	NOT U2/i(20) AND NOT U2/i(21) AND NOT U2/i(22) AND NOT U2/i(23));
+
+
+U2/temp_7_cmp_eq000035 <= (NOT U2/i(24) AND NOT U2/i(25) AND NOT U2/i(26) AND NOT U2/i(27) AND 
+	NOT U2/i(28) AND NOT U2/i(29) AND NOT U2/i(30) AND NOT U2/i(31));
+
+
+U2/temp_7_mux0006 <= ((U2/temp_7_mux00065)
+	OR (U2/temp_7_mux00066)
+	OR (U2/temp_7_mux00067));
+
+
+U2/temp_7_mux00063 <= (btn_entree AND U2/temp_5_cmp_eq0000);
+
+
+U2/temp_7_mux00065 <= (NOT btn_entree AND U2/i_cmp_eq0000);
+
+
+U2/temp_7_mux00066 <= (NOT btn_entree AND U2/temp_7_cmp_eq0000);
+
+
+U2/temp_7_mux00067 <= (NOT U2/temp_0_cmp_eq0001 AND U2/temp_7_mux00063);
+
+
+U2/temp_7_not00011 <= ((U2/temp_7_and0001)
+	OR (U2/temp_7_and0000));
+
+FDCPE_clk_sortie: FDCPE port map (clk_sortie,NOT clk_sortie,clk_entree,'0','0',U1/compt_cmp_eq0000);
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xa95*xl-*-*
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : LOW
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25
+</pre>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

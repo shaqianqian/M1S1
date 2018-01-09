@@ -1,0 +1,15 @@
+Branche_absolu 0 Branche_relatif CALL 
+#master
+7seg 5 btn Return               //print
+16 M2S b>>x b>>y		//put the 16  into the register, communication sur l'axe x and l'axe y
+spmd wait spmd wait		//active a pc fonction in slave "pf" and wait, the same for s2
+S2M  >>x  			//put the the result into register,communication torique sur l'axe des x des buffers de 				//chaque esclave
+				//WAIT suspend le traitement du maître tant que tous les esclaves actifs ne sont pas en fin d'exécution sur une instruction HALT.
+CALL 0 Branche_relatif_4 S2M
+CALL 0 Branche_relatif_4 Return
+CALL 0 Branche_relatif_8 HALT
+CALL 0 Branche_relatif_12 HALT
+#slave
+get HALT nop HALT  //get the data dans register
+xnum add put HALT //get the data dans register
+Return

@@ -1,0 +1,7 @@
+vhdl work "shift_vector.vhd"
+vhdl work "clk_div.vhd"
+vhdl work "moore.vhd"
+vhdl work "Enable190.vhd"
+vhdl work "chenillard.vhd"
+vhdl work "btn_pulse.vhd"
+vhdl work "toplevel.vhd"

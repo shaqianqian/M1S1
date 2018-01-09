@@ -1,0 +1,24 @@
+Running: /home/parallels/Desktop/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/parallels/Desktop/control_final/control_q4_shabi/IP_FLITER_isim_beh.exe -prj /home/parallels/Desktop/control_final/control_q4_shabi/IP_FLITER_beh.prj work.IP_FLITER 
+ISim M.81d (signature 0x9ca8bed6)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/parallels/Desktop/control_final/control_q4_shabi/IP_FLITER.vhd" into library work
+Parsing VHDL file "/home/parallels/Desktop/control_final/control_q4_shabi/acompt_1s.vhd" into library work
+Parsing VHDL file "/home/parallels/Desktop/control_final/control_q4_shabi/fsm.vhd" into library work
+WARNING:HDLCompiler:685 - "/home/parallels/Desktop/control_final/control_q4_shabi/fsm.vhd" Line 5: Overwriting existing primary unit ip_fliter
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 74096 KB
+Fuse CPU Usage: 110 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Compiling architecture behavioral of entity acompt_1s [acompt_1s_default]
+Compiling architecture fsm of entity ip_fliter
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Built simulation executable /home/parallels/Desktop/control_final/control_q4_shabi/IP_FLITER_isim_beh.exe
+Fuse Memory Usage: 374184 KB
+Fuse CPU Usage: 120 ms
+GCC CPU Usage: 290 ms

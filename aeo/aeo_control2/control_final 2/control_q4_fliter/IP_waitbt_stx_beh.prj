@@ -1,0 +1,3 @@
+vhdl isim_temp "reg1c.vhd"
+vhdl isim_temp "pulse.vhf"
+vhdl isim_temp "IPwaitBT1.vhd"

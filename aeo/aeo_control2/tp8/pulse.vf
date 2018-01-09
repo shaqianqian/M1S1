@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 12.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : pulse.vf
+// /___/   /\     Timestamp : 11/28/2017 15:52:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/m1/ma/aeo/tp8/pulse.vf -w /home/m1/ma/aeo/tp8/pulse.sch
+//Design Name: pulse
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module pulse(clk, 
+             inp, 
+             outp);
+
+    input clk;
+    input inp;
+   output outp;
+   
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(clk), 
+              .D(inp), 
+              .Q(XLXN_4));
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(clk), 
+              .D(XLXN_4), 
+              .Q(XLXN_5));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(clk), 
+              .D(XLXN_5), 
+              .Q(XLXN_6));
+   AND3  XLXI_4 (.I0(XLXN_7), 
+                .I1(XLXN_5), 
+                .I2(XLXN_4), 
+                .O(outp));
+   INV  XLXI_5 (.I(XLXN_6), 
+               .O(XLXN_7));
+endmodule

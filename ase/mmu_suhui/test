@@ -1,0 +1,140 @@
+Avec une seule page physique :
+
+
+Test n°1 :
+Ajout de deux matrices :
+Commande tapée : ./mmu_manager | ./oracle
+
+[Starting oracle]
+timestamp: 0x875b, operation: 0, checksum: 0xbd84
+initializing matrices
+adding VM matrices .................... done
+new checksum: 0xbd84 [ok]
+
+Test n°2 :
+Ajout de deux matrices :
+Commande tapée : ./mmu_manager | tee /dev/stderr | ./oracle
+
+[Starting user process]
+matrices size: 400x400
+vm used:   468 pages
+pm space:   256 pages
+vm space:  4096 pages
+initializing matrices
+adding VM matrices .................... done
+timestamp: 0x87ca, operation: 0, checksum: 0x450c
+[Starting oracle]
+timestamp: 0x87ca, operation: 0, checksum: 0x450c
+initializing matrices
+adding VM matrices .................... done
+new checksum: 0x450c [ok]
+
+Test n°3 : ça a pris environ 3h20 !!!
+Multiplication de deux matrices :
+Commande tapée : ./mmu_manager | tee /dev/stderr | ./oracle
+
+[Starting user process]
+matrices size: 400x400
+vm used:   468 pages
+pm space:   256 pages
+vm space:  4096 pages
+initializing matrices
+multiplying matrices .................... done
+timestamp: 0x647f, operation: 1, checksum: 0x0539
+[Starting oracle]
+timestamp: 0x647f, operation: 1, checksum: 0x0539
+initializing matrices
+multiplying matrices .................... done
+new checksum: 0x0539 [ok]
+
+-----------------
+
+Avec toutes les pages physiques disponibles :
+
+Test n°1 :
+
+[Starting user process]
+matrices size: 400x400
+vm used:   468 pages
+pm space:   256 pages
+vm space:  4096 pages
+initializing matrices
+adding VM matrices .................... done
+timestamp: 0x660e, operation: 0, checksum: 0x5262
+[Starting oracle]
+timestamp: 0x660e, operation: 0, checksum: 0x5262
+initializing matrices
+adding VM matrices .................... done
+new checksum: 0x3a69 [ko]
+
+Test n°2 :
+
+[Starting user process]
+matrices size: 20x20
+vm used:     1 pages
+pm space:   256 pages
+vm space:  4096 pages
+initializing matrices
+adding VM matrices .................... done
+timestamp: 0x6629, operation: 0, checksum: 0x8ac2
+[Starting oracle]
+timestamp: 0x6629, operation: 0, checksum: 0x8ac2
+initializing matrices
+adding VM matrices .................... done
+new checksum: 0x8ac2 [ok]
+
+Test n°3 :
+
+[Starting user process]
+matrices size: 295x295
+vm used:   254 pages
+pm space:   256 pages
+vm space:  4096 pages
+initializing matrices
+adding VM matrices ..................... done
+timestamp: 0x6800, operation: 0, checksum: 0x084d
+[Starting oracle]
+timestamp: 0x6800, operation: 0, checksum: 0x084d
+initializing matrices
+adding VM matrices ..................... done
+new checksum: 0x084d [ok]
+
+Test n°4 :
+
+[Starting user process]
+matrices size: 296x296
+vm used:   256 pages
+pm space:   256 pages
+vm space:  4096 pages
+initializing matrices
+adding VM matrices ..................... done
+timestamp: 0x681c, operation: 0, checksum: 0xa77a
+[Starting oracle]
+timestamp: 0x681c, operation: 0, checksum: 0xa77a
+initializing matrices
+adding VM matrices ..................... done
+new checksum: 0xa77a [ok]
+
+Après modification du code (on a enlevé la variable vpage_courante) :
+
+Test n°5 :
+
+[Starting user process]
+matrices size: 400x400
+vm used:   468 pages
+pm space:   256 pages
+vm space:  4096 pages
+initializing matrices
+adding VM matrices .................... done
+timestamp: 0x6ea3, operation: 0, checksum: 0x51c3
+[Starting oracle]
+timestamp: 0x6ea3, operation: 0, checksum: 0x51c3
+initializing matrices
+adding VM matrices .................... done
+new checksum: 0x51c3 [ok]
+
+Test n°6 (multiplication) :
+
+
+
+

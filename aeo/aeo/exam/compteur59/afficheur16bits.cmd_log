@@ -1,0 +1,255 @@
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 
+xst -intstyle ise -ifn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.xst" -ofn "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 afficheur16bits.ngc afficheur16bits.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o afficheur16bits_map.ncd afficheur16bits.ngd afficheur16bits.pcf 
+par -w -intstyle ise -ol high -mt off afficheur16bits_map.ncd afficheur16bits.ncd afficheur16bits.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml afficheur16bits.twx afficheur16bits.ncd -o afficheur16bits.twr afficheur16bits.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f afficheur16bits.ut afficheur16bits.ncd 

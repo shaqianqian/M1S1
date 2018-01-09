@@ -1,0 +1,6 @@
+vhdl work "x7seg.vhd"
+vhdl work "fsm.vhd"
+vhdl work "comp.vhd"
+vhdl work "clock.vhd"
+vhdl work "calc.vhd"
+vhdl work "toplevel.vhd"

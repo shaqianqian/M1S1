@@ -1,0 +1,1658 @@
+MDF Database:  version 1.0
+MDF_INFO | chenillard | XA95144XL-15-CS144
+MACROCELL | 2 | 1 | clk_sortie
+ATTRIBUTES | 4358977 | 0
+OUTPUTMC | 40 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12
+INPUTS | 20 | U1/compt<10>  | U1/compt<11>  | U1/compt<5>  | U1/compt<6>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/compt<23>  | U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2  | U1/compt_addsub0000<12>/U1/compt_addsub0000<12>_D  | U1/compt_addsub0000<13>/U1/compt_addsub0000<13>_D  | U1/compt_addsub0000<14>/U1/compt_addsub0000<14>_D  | U1/compt_addsub0000<15>/U1/compt_addsub0000<15>_D  | U1/compt_addsub0000<16>/U1/compt_addsub0000<16>_D  | U1/compt_addsub0000<17>/U1/compt_addsub0000<17>_D  | U1/compt_addsub0000<18>/U1/compt_addsub0000<18>_D  | U1/compt_addsub0000<19>/U1/compt_addsub0000<19>_D  | U1/compt_addsub0000<20>/U1/compt_addsub0000<20>_D  | U1/compt_addsub0000<21>/U1/compt_addsub0000<21>_D  | U1/compt_addsub0000<22>/U1/compt_addsub0000<22>_D
+INPUTMC | 20 | 2 | 17 | 2 | 16 | 2 | 14 | 2 | 13 | 4 | 13 | 4 | 1 | 4 | 0 | 2 | 15 | 4 | 12 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2
+EQ | 11 | 
+   clk_sortie.T = Vcc;
+   clk_sortie.CLK = clk_entree;	// GCK
+   clk_sortie.CE = U1/compt<10> & U1/compt<11> & !U1/compt<5> & 
+	!U1/compt<6> & !U1/compt<7> & !U1/compt<8> & !U1/compt<9> & 
+	U1/compt<23> & 
+	U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2 & U1/compt_addsub0000<12>/U1/compt_addsub0000<12>_D & 
+	U1/compt_addsub0000<13>/U1/compt_addsub0000<13>_D & !U1/compt_addsub0000<14>/U1/compt_addsub0000<14>_D & 
+	U1/compt_addsub0000<15>/U1/compt_addsub0000<15>_D & !U1/compt_addsub0000<16>/U1/compt_addsub0000<16>_D & 
+	U1/compt_addsub0000<17>/U1/compt_addsub0000<17>_D & U1/compt_addsub0000<18>/U1/compt_addsub0000<18>_D & 
+	U1/compt_addsub0000<19>/U1/compt_addsub0000<19>_D & U1/compt_addsub0000<20>/U1/compt_addsub0000<20>_D & 
+	U1/compt_addsub0000<21>/U1/compt_addsub0000<21>_D & !U1/compt_addsub0000<22>/U1/compt_addsub0000<22>_D;
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 7 | 2 | led_sortie_0_OBUF
+ATTRIBUTES | 8782627 | 0
+OUTPUTMC | 1 | 7 | 2
+INPUTS | 36 | led_sortie<0>  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | btn_entree  | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>  | clk_sortie
+INPUTMC | 35 | 7 | 2 | 6 | 1 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12 | 2 | 1
+INPUTP | 1 | 143
+EQ | 25 | 
+   led_sortie<0>.D = led_sortie<0> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# btn_entree & U2/i<0> & U2/i<10> & U2/i<11> & 
+	U2/i<12> & U2/i<13> & U2/i<14> & U2/i<15> & U2/i<16> & 
+	U2/i<17> & U2/i<18> & U2/i<19> & U2/i<1> & U2/i<20> & 
+	U2/i<21> & U2/i<22> & U2/i<23> & U2/i<24> & U2/i<25> & 
+	U2/i<26> & U2/i<27> & U2/i<28> & U2/i<29> & U2/i<2> & 
+	U2/i<30> & U2/i<3> & U2/i<4> & U2/i<5> & U2/i<6> & 
+	U2/i<7> & U2/i<8> & U2/i<9> & U2/i<31>
+	# btn_entree & U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>
+	# !btn_entree & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2;
+   led_sortie<0>.CLK = clk_sortie;
+
+MACROCELL | 6 | 7 | led_sortie_1_OBUF
+ATTRIBUTES | 8782627 | 0
+OUTPUTMC | 1 | 6 | 7
+INPUTS | 36 | led_sortie<1>  | U2/temp_1_or0002/U2/temp_1_or0002_D2  | btn_entree  | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>  | clk_sortie
+INPUTMC | 35 | 6 | 7 | 6 | 14 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12 | 2 | 1
+INPUTP | 1 | 143
+EQ | 19 | 
+   led_sortie<1>.D = led_sortie<1> & 
+	!U2/temp_1_or0002/U2/temp_1_or0002_D2
+	# btn_entree & !U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31> & 
+	U2/temp_1_or0002/U2/temp_1_or0002_D2
+	# !btn_entree & !U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31> & 
+	U2/temp_1_or0002/U2/temp_1_or0002_D2;
+   led_sortie<1>.CLK = clk_sortie;
+
+MACROCELL | 7 | 10 | led_sortie_2_OBUF
+ATTRIBUTES | 8782627 | 0
+OUTPUTMC | 1 | 7 | 10
+INPUTS | 36 | led_sortie<2>  | $OpTx$FX_DC$244  | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>  | btn_entree  | clk_sortie
+INPUTMC | 35 | 7 | 10 | 6 | 9 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12 | 2 | 1
+INPUTP | 1 | 143
+EQ | 23 | 
+   !led_sortie<2>.D = !led_sortie<2> & !$OpTx$FX_DC$244
+	# !U2/i<0> & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31> & !$OpTx$FX_DC$244
+	# btn_entree & !led_sortie<2> & U2/i<0> & !U2/i<10> & 
+	!U2/i<11> & !U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & 
+	!U2/i<16> & !U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & 
+	!U2/i<20> & !U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & 
+	!U2/i<25> & !U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & 
+	U2/i<2> & !U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & 
+	!U2/i<6> & !U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>
+	# !btn_entree & !led_sortie<2> & !U2/i<0> & !U2/i<10> & 
+	!U2/i<11> & !U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & 
+	!U2/i<16> & !U2/i<17> & !U2/i<18> & !U2/i<19> & !U2/i<1> & 
+	!U2/i<20> & !U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & 
+	!U2/i<25> & !U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & 
+	!U2/i<2> & !U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & 
+	!U2/i<6> & !U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>;
+   led_sortie<2>.CLK = clk_sortie;
+
+MACROCELL | 0 | 1 | led_sortie_3_OBUF
+ATTRIBUTES | 8782627 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 36 | led_sortie<3>  | U2/temp_3_or0002/U2/temp_3_or0002_D2  | btn_entree  | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>  | clk_sortie
+INPUTMC | 35 | 0 | 1 | 6 | 13 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12 | 2 | 1
+INPUTP | 1 | 143
+EQ | 19 | 
+   led_sortie<3>.D = led_sortie<3> & 
+	!U2/temp_3_or0002/U2/temp_3_or0002_D2
+	# btn_entree & !U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31> & 
+	U2/temp_3_or0002/U2/temp_3_or0002_D2
+	# !btn_entree & !U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31> & 
+	U2/temp_3_or0002/U2/temp_3_or0002_D2;
+   led_sortie<3>.CLK = clk_sortie;
+
+MACROCELL | 0 | 8 | led_sortie_4_OBUF
+ATTRIBUTES | 8782627 | 0
+OUTPUTMC | 1 | 0 | 8
+INPUTS | 36 | led_sortie<4>  | U2/temp_4_or0002/U2/temp_4_or0002_D2  | btn_entree  | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>  | clk_sortie
+INPUTMC | 35 | 0 | 8 | 6 | 11 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12 | 2 | 1
+INPUTP | 1 | 143
+EQ | 19 | 
+   led_sortie<4>.D = led_sortie<4> & 
+	!U2/temp_4_or0002/U2/temp_4_or0002_D2
+	# btn_entree & U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31> & 
+	U2/temp_4_or0002/U2/temp_4_or0002_D2
+	# !btn_entree & U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31> & 
+	U2/temp_4_or0002/U2/temp_4_or0002_D2;
+   led_sortie<4>.CLK = clk_sortie;
+
+MACROCELL | 6 | 2 | led_sortie_5_OBUF
+ATTRIBUTES | 8782627 | 0
+OUTPUTMC | 1 | 6 | 2
+INPUTS | 37 | led_sortie<5>  | $OpTx$FX_DC$247  | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>  | U2/temp_6_or0002/U2/temp_6_or0002_D2  | btn_entree  | clk_sortie
+INPUTMC | 36 | 6 | 2 | 6 | 8 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12 | 6 | 10 | 2 | 1
+INPUTP | 1 | 143
+EQ | 24 | 
+   !led_sortie<5>.D = !led_sortie<5> & !$OpTx$FX_DC$247
+	# U2/i<0> & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31> & !$OpTx$FX_DC$247
+	# !btn_entree & !led_sortie<5> & !U2/i<0> & !U2/i<10> & 
+	!U2/i<11> & !U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & 
+	!U2/i<16> & !U2/i<17> & !U2/i<18> & !U2/i<19> & !U2/i<1> & 
+	!U2/i<20> & !U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & 
+	!U2/i<25> & !U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & 
+	!U2/i<2> & !U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & 
+	!U2/i<6> & !U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>
+	# !led_sortie<5> & U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31> & 
+	!U2/temp_6_or0002/U2/temp_6_or0002_D2;
+   led_sortie<5>.CLK = clk_sortie;
+
+MACROCELL | 6 | 12 | led_sortie_6_OBUF
+ATTRIBUTES | 8782627 | 0
+OUTPUTMC | 1 | 6 | 12
+INPUTS | 36 | led_sortie<6>  | U2/temp_6_or0002/U2/temp_6_or0002_D2  | btn_entree  | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>  | clk_sortie
+INPUTMC | 35 | 6 | 12 | 6 | 10 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12 | 2 | 1
+INPUTP | 1 | 143
+EQ | 19 | 
+   led_sortie<6>.D = led_sortie<6> & 
+	!U2/temp_6_or0002/U2/temp_6_or0002_D2
+	# btn_entree & U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31> & 
+	U2/temp_6_or0002/U2/temp_6_or0002_D2
+	# !btn_entree & U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31> & 
+	U2/temp_6_or0002/U2/temp_6_or0002_D2;
+   led_sortie<6>.CLK = clk_sortie;
+
+MACROCELL | 1 | 3 | led_sortie_7_OBUF
+ATTRIBUTES | 8782631 | 0
+OUTPUTMC | 1 | 1 | 3
+INPUTS | 36 | led_sortie<7>  | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2  | btn_entree  | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>  | U2/i<3>  | clk_sortie
+INPUTMC | 35 | 1 | 3 | 6 | 0 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12 | 6 | 17 | 2 | 1
+INPUTP | 1 | 143
+EQ | 18 | 
+   led_sortie<7>.D = led_sortie<7> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2
+	# !btn_entree & !U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & 
+	!U2/i<30> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31>
+	# btn_entree & !U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2;
+   led_sortie<7>.CLK = clk_sortie;
+
+MACROCELL | 6 | 5 | U2/i<0>
+ATTRIBUTES | 4326181 | 0
+OUTPUTMC | 21 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 6 | 16 | 6 | 15 | 6 | 17 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 6 | 4 | 6 | 6
+INPUTS | 1 | clk_sortie
+INPUTMC | 1 | 2 | 1
+EQ | 2 | 
+   !U2/i<0>.T = Gnd;
+   U2/i<0>.CLK = clk_sortie;
+
+MACROCELL | 0 | 16 | U2/i<10>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 20 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 0 | 16 | 0 | 17 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 0 | 12 | 0 | 14
+INPUTS | 8 | btn_entree  | U2/i<8>  | U2/i<9>  | U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0008/U2/Msub_i_addsub0000__or0008_D2  | U2/i<10>  | clk_sortie
+INPUTMC | 7 | 3 | 9 | 3 | 2 | 6 | 3 | 6 | 1 | 5 | 14 | 0 | 16 | 2 | 1
+INPUTP | 1 | 143
+EQ | 7 | 
+   U2/i<10>.T = !btn_entree & U2/i<10> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0008/U2/Msub_i_addsub0000__or0008_D2
+	# btn_entree & U2/i<8> & U2/i<9> & 
+	U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2;
+   U2/i<10>.CLK = clk_sortie;
+
+MACROCELL | 0 | 17 | U2/i<11>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 19 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 0 | 17 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 0 | 12 | 0 | 14
+INPUTS | 10 | btn_entree  | U2/i<10>  | U2/i<11>  | U2/i<8>  | U2/i<9>  | U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2  | U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0008/U2/Msub_i_addsub0000__or0008_D2  | clk_sortie
+INPUTMC | 9 | 0 | 16 | 0 | 17 | 3 | 9 | 3 | 2 | 6 | 3 | 0 | 12 | 6 | 1 | 5 | 14 | 2 | 1
+INPUTP | 1 | 143
+EQ | 12 | 
+   U2/i<11>.T = btn_entree & U2/i<11> & 
+	U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2
+	# !btn_entree & U2/i<11> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<10> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0008/U2/Msub_i_addsub0000__or0008_D2
+	# btn_entree & U2/i<10> & !U2/i<11> & U2/i<8> & 
+	U2/i<9> & 
+	U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2 & 
+	!U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2;
+   U2/i<11>.CLK = clk_sortie;
+
+MACROCELL | 1 | 17 | U2/i<12>
+ATTRIBUTES | 8520481 | 0
+OUTPUTMC | 22 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 1 | 12 | 0 | 11
+INPUTS | 7 | btn_entree  | U2/i<12>  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0010/U2/Msub_i_addsub0000__or0010_D2  | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2  | U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2  | clk_sortie
+INPUTMC | 6 | 1 | 17 | 6 | 1 | 0 | 14 | 6 | 0 | 0 | 12 | 2 | 1
+INPUTP | 1 | 143
+EQ | 13 | 
+   U2/i<12>.D = btn_entree & U2/i<12> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	!U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2
+	# btn_entree & !U2/i<12> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2
+	# !btn_entree & U2/i<12> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	!U2/Msub_i_addsub0000__or0010/U2/Msub_i_addsub0000__or0010_D2
+	# !btn_entree & !U2/i<12> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0010/U2/Msub_i_addsub0000__or0010_D2;
+   U2/i<12>.CLK = clk_sortie;
+
+MACROCELL | 1 | 14 | U2/i<13>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 21 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 1 | 14 | 0 | 15 | 1 | 16 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 1 | 12 | 0 | 11
+INPUTS | 7 | btn_entree  | U2/i<12>  | U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0010/U2/Msub_i_addsub0000__or0010_D2  | U2/i<13>  | clk_sortie
+INPUTMC | 6 | 1 | 17 | 0 | 12 | 6 | 1 | 0 | 14 | 1 | 14 | 2 | 1
+INPUTP | 1 | 143
+EQ | 8 | 
+   U2/i<13>.T = btn_entree & U2/i<12> & 
+	U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2
+	# !btn_entree & U2/i<13> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<12> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0010/U2/Msub_i_addsub0000__or0010_D2;
+   U2/i<13>.CLK = clk_sortie;
+
+MACROCELL | 0 | 15 | U2/i<14>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 20 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 0 | 15 | 1 | 16 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 0 | 11 | 0 | 13
+INPUTS | 8 | btn_entree  | U2/i<12>  | U2/i<13>  | U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0012/U2/Msub_i_addsub0000__or0012_D2  | U2/i<14>  | clk_sortie
+INPUTMC | 7 | 1 | 17 | 1 | 14 | 0 | 12 | 6 | 1 | 1 | 12 | 0 | 15 | 2 | 1
+INPUTP | 1 | 143
+EQ | 7 | 
+   U2/i<14>.T = !btn_entree & U2/i<14> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0012/U2/Msub_i_addsub0000__or0012_D2
+	# btn_entree & U2/i<12> & U2/i<13> & 
+	U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2;
+   U2/i<14>.CLK = clk_sortie;
+
+MACROCELL | 1 | 16 | U2/i<15>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 19 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 1 | 16 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 0 | 11 | 0 | 13
+INPUTS | 10 | btn_entree  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2  | U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0012/U2/Msub_i_addsub0000__or0012_D2  | clk_sortie
+INPUTMC | 9 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 0 | 12 | 0 | 11 | 6 | 1 | 1 | 12 | 2 | 1
+INPUTP | 1 | 143
+EQ | 12 | 
+   U2/i<15>.T = btn_entree & U2/i<15> & 
+	U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2
+	# !btn_entree & U2/i<15> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<14> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0012/U2/Msub_i_addsub0000__or0012_D2
+	# btn_entree & U2/i<12> & U2/i<13> & U2/i<14> & 
+	!U2/i<15> & 
+	U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2 & 
+	!U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2;
+   U2/i<15>.CLK = clk_sortie;
+
+MACROCELL | 3 | 17 | U2/i<16>
+ATTRIBUTES | 8520481 | 0
+OUTPUTMC | 22 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 5 | 13 | 1 | 10
+INPUTS | 7 | btn_entree  | U2/i<16>  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0014/U2/Msub_i_addsub0000__or0014_D2  | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2  | U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2  | clk_sortie
+INPUTMC | 6 | 3 | 17 | 6 | 1 | 0 | 13 | 6 | 0 | 0 | 11 | 2 | 1
+INPUTP | 1 | 143
+EQ | 13 | 
+   U2/i<16>.D = btn_entree & U2/i<16> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	!U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2
+	# btn_entree & !U2/i<16> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2
+	# !btn_entree & U2/i<16> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	!U2/Msub_i_addsub0000__or0014/U2/Msub_i_addsub0000__or0014_D2
+	# !btn_entree & !U2/i<16> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0014/U2/Msub_i_addsub0000__or0014_D2;
+   U2/i<16>.CLK = clk_sortie;
+
+MACROCELL | 3 | 8 | U2/i<17>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 21 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 5 | 13 | 1 | 10
+INPUTS | 7 | btn_entree  | U2/i<16>  | U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0014/U2/Msub_i_addsub0000__or0014_D2  | U2/i<17>  | clk_sortie
+INPUTMC | 6 | 3 | 17 | 0 | 11 | 6 | 1 | 0 | 13 | 3 | 8 | 2 | 1
+INPUTP | 1 | 143
+EQ | 8 | 
+   U2/i<17>.T = btn_entree & U2/i<16> & 
+	U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2
+	# !btn_entree & U2/i<17> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<16> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0014/U2/Msub_i_addsub0000__or0014_D2;
+   U2/i<17>.CLK = clk_sortie;
+
+MACROCELL | 1 | 13 | U2/i<18>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 20 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 1 | 13 | 1 | 15 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 1 | 10 | 1 | 11
+INPUTS | 8 | btn_entree  | U2/i<16>  | U2/i<17>  | U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0016/U2/Msub_i_addsub0000__or0016_D2  | U2/i<18>  | clk_sortie
+INPUTMC | 7 | 3 | 17 | 3 | 8 | 0 | 11 | 6 | 1 | 5 | 13 | 1 | 13 | 2 | 1
+INPUTP | 1 | 143
+EQ | 7 | 
+   U2/i<18>.T = !btn_entree & U2/i<18> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0016/U2/Msub_i_addsub0000__or0016_D2
+	# btn_entree & U2/i<16> & U2/i<17> & 
+	U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2;
+   U2/i<18>.CLK = clk_sortie;
+
+MACROCELL | 1 | 15 | U2/i<19>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 19 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 1 | 15 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 1 | 10 | 1 | 11
+INPUTS | 10 | btn_entree  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2  | U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0016/U2/Msub_i_addsub0000__or0016_D2  | clk_sortie
+INPUTMC | 9 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 0 | 11 | 1 | 10 | 6 | 1 | 5 | 13 | 2 | 1
+INPUTP | 1 | 143
+EQ | 12 | 
+   U2/i<19>.T = btn_entree & U2/i<19> & 
+	U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2
+	# !btn_entree & U2/i<19> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<18> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0016/U2/Msub_i_addsub0000__or0016_D2
+	# btn_entree & U2/i<16> & U2/i<17> & U2/i<18> & 
+	!U2/i<19> & 
+	U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2 & 
+	!U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2;
+   U2/i<19>.CLK = clk_sortie;
+
+MACROCELL | 6 | 16 | U2/i<1>
+ATTRIBUTES | 4326181 | 0
+OUTPUTMC | 20 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 6 | 15 | 6 | 17 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 6 | 4 | 6 | 6
+INPUTS | 5 | btn_entree  | U2/i<0>  | clk_sortie  | U2/i<3>  | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2
+INPUTMC | 4 | 6 | 5 | 2 | 1 | 6 | 17 | 6 | 0
+INPUTP | 1 | 143
+EXPORTS | 1 | 6 | 17
+EQ | 5 | 
+   !U2/i<1>.T = btn_entree & !U2/i<0>
+	# !btn_entree & U2/i<0>;
+   U2/i<1>.CLK = clk_sortie;
+    U2/i<1>.EXP  =  btn_entree & U2/i<3> & 
+	U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2
+
+MACROCELL | 3 | 16 | U2/i<20>
+ATTRIBUTES | 8520481 | 0
+OUTPUTMC | 22 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 5 | 12 | 1 | 9
+INPUTS | 7 | btn_entree  | U2/i<20>  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0018/U2/Msub_i_addsub0000__or0018_D2  | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2  | U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2  | clk_sortie
+INPUTMC | 6 | 3 | 16 | 6 | 1 | 1 | 11 | 6 | 0 | 1 | 10 | 2 | 1
+INPUTP | 1 | 143
+EQ | 13 | 
+   U2/i<20>.D = btn_entree & U2/i<20> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	!U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2
+	# btn_entree & !U2/i<20> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2
+	# !btn_entree & U2/i<20> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	!U2/Msub_i_addsub0000__or0018/U2/Msub_i_addsub0000__or0018_D2
+	# !btn_entree & !U2/i<20> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0018/U2/Msub_i_addsub0000__or0018_D2;
+   U2/i<20>.CLK = clk_sortie;
+
+MACROCELL | 3 | 7 | U2/i<21>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 21 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 7 | 7 | 15 | 7 | 17 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 5 | 12 | 1 | 9
+INPUTS | 7 | btn_entree  | U2/i<20>  | U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0018/U2/Msub_i_addsub0000__or0018_D2  | U2/i<21>  | clk_sortie
+INPUTMC | 6 | 3 | 16 | 1 | 10 | 6 | 1 | 1 | 11 | 3 | 7 | 2 | 1
+INPUTP | 1 | 143
+EQ | 8 | 
+   U2/i<21>.T = btn_entree & U2/i<20> & 
+	U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2
+	# !btn_entree & U2/i<21> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<20> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0018/U2/Msub_i_addsub0000__or0018_D2;
+   U2/i<21>.CLK = clk_sortie;
+
+MACROCELL | 7 | 15 | U2/i<22>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 20 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 7 | 15 | 7 | 17 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 1 | 9 | 7 | 13
+INPUTS | 8 | btn_entree  | U2/i<20>  | U2/i<21>  | U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0020/U2/Msub_i_addsub0000__or0020_D2  | U2/i<22>  | clk_sortie
+INPUTMC | 7 | 3 | 16 | 3 | 7 | 1 | 10 | 6 | 1 | 5 | 12 | 7 | 15 | 2 | 1
+INPUTP | 1 | 143
+EQ | 7 | 
+   U2/i<22>.T = !btn_entree & U2/i<22> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0020/U2/Msub_i_addsub0000__or0020_D2
+	# btn_entree & U2/i<20> & U2/i<21> & 
+	U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2;
+   U2/i<22>.CLK = clk_sortie;
+
+MACROCELL | 7 | 17 | U2/i<23>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 19 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 7 | 17 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 1 | 9 | 7 | 13
+INPUTS | 10 | btn_entree  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2  | U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0020/U2/Msub_i_addsub0000__or0020_D2  | clk_sortie
+INPUTMC | 9 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 1 | 10 | 1 | 9 | 6 | 1 | 5 | 12 | 2 | 1
+INPUTP | 1 | 143
+EQ | 12 | 
+   U2/i<23>.T = btn_entree & U2/i<23> & 
+	U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2
+	# !btn_entree & U2/i<23> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<22> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0020/U2/Msub_i_addsub0000__or0020_D2
+	# btn_entree & U2/i<20> & U2/i<21> & U2/i<22> & 
+	!U2/i<23> & 
+	U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2 & 
+	!U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2;
+   U2/i<23>.CLK = clk_sortie;
+
+MACROCELL | 3 | 15 | U2/i<24>
+ATTRIBUTES | 8520481 | 0
+OUTPUTMC | 22 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 5 | 11 | 7 | 11
+INPUTS | 7 | btn_entree  | U2/i<24>  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0022/U2/Msub_i_addsub0000__or0022_D2  | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2  | U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2  | clk_sortie
+INPUTMC | 6 | 3 | 15 | 6 | 1 | 7 | 13 | 6 | 0 | 1 | 9 | 2 | 1
+INPUTP | 1 | 143
+EQ | 13 | 
+   U2/i<24>.D = btn_entree & U2/i<24> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	!U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2
+	# btn_entree & !U2/i<24> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2
+	# !btn_entree & U2/i<24> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	!U2/Msub_i_addsub0000__or0022/U2/Msub_i_addsub0000__or0022_D2
+	# !btn_entree & !U2/i<24> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0022/U2/Msub_i_addsub0000__or0022_D2;
+   U2/i<24>.CLK = clk_sortie;
+
+MACROCELL | 3 | 6 | U2/i<25>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 21 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 6 | 7 | 14 | 7 | 16 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 5 | 11 | 7 | 11
+INPUTS | 7 | btn_entree  | U2/i<24>  | U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0022/U2/Msub_i_addsub0000__or0022_D2  | U2/i<25>  | clk_sortie
+INPUTMC | 6 | 3 | 15 | 1 | 9 | 6 | 1 | 7 | 13 | 3 | 6 | 2 | 1
+INPUTP | 1 | 143
+EQ | 8 | 
+   U2/i<25>.T = btn_entree & U2/i<24> & 
+	U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2
+	# !btn_entree & U2/i<25> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<24> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0022/U2/Msub_i_addsub0000__or0022_D2;
+   U2/i<25>.CLK = clk_sortie;
+
+MACROCELL | 7 | 14 | U2/i<26>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 20 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 7 | 14 | 7 | 16 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 7 | 11 | 7 | 12
+INPUTS | 8 | btn_entree  | U2/i<24>  | U2/i<25>  | U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0024/U2/Msub_i_addsub0000__or0024_D2  | U2/i<26>  | clk_sortie
+INPUTMC | 7 | 3 | 15 | 3 | 6 | 1 | 9 | 6 | 1 | 5 | 11 | 7 | 14 | 2 | 1
+INPUTP | 1 | 143
+EQ | 7 | 
+   U2/i<26>.T = !btn_entree & U2/i<26> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0024/U2/Msub_i_addsub0000__or0024_D2
+	# btn_entree & U2/i<24> & U2/i<25> & 
+	U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2;
+   U2/i<26>.CLK = clk_sortie;
+
+MACROCELL | 7 | 16 | U2/i<27>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 19 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 7 | 16 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 7 | 11 | 7 | 12
+INPUTS | 10 | btn_entree  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2  | U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0024/U2/Msub_i_addsub0000__or0024_D2  | clk_sortie
+INPUTMC | 9 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 1 | 9 | 7 | 11 | 6 | 1 | 5 | 11 | 2 | 1
+INPUTP | 1 | 143
+EQ | 12 | 
+   U2/i<27>.T = btn_entree & U2/i<27> & 
+	U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2
+	# !btn_entree & U2/i<27> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<26> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0024/U2/Msub_i_addsub0000__or0024_D2
+	# btn_entree & U2/i<24> & U2/i<25> & U2/i<26> & 
+	!U2/i<27> & 
+	U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2 & 
+	!U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2;
+   U2/i<27>.CLK = clk_sortie;
+
+MACROCELL | 3 | 14 | U2/i<28>
+ATTRIBUTES | 8520481 | 0
+OUTPUTMC | 21 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 14 | 3 | 5 | 3 | 13 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 7 | 9 | 5 | 10
+INPUTS | 7 | btn_entree  | U2/i<28>  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0026/U2/Msub_i_addsub0000__or0026_D2  | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2  | U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2  | clk_sortie
+INPUTMC | 6 | 3 | 14 | 6 | 1 | 7 | 12 | 6 | 0 | 7 | 11 | 2 | 1
+INPUTP | 1 | 143
+EQ | 13 | 
+   U2/i<28>.D = btn_entree & U2/i<28> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	!U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2
+	# btn_entree & !U2/i<28> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2
+	# !btn_entree & U2/i<28> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	!U2/Msub_i_addsub0000__or0026/U2/Msub_i_addsub0000__or0026_D2
+	# !btn_entree & !U2/i<28> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0026/U2/Msub_i_addsub0000__or0026_D2;
+   U2/i<28>.CLK = clk_sortie;
+
+MACROCELL | 3 | 5 | U2/i<29>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 20 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 5 | 3 | 13 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 7 | 9 | 5 | 10
+INPUTS | 7 | btn_entree  | U2/i<28>  | U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0026/U2/Msub_i_addsub0000__or0026_D2  | U2/i<29>  | clk_sortie
+INPUTMC | 6 | 3 | 14 | 7 | 11 | 6 | 1 | 7 | 12 | 3 | 5 | 2 | 1
+INPUTP | 1 | 143
+EQ | 8 | 
+   U2/i<29>.T = btn_entree & U2/i<28> & 
+	U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2
+	# !btn_entree & U2/i<29> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<28> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0026/U2/Msub_i_addsub0000__or0026_D2;
+   U2/i<29>.CLK = clk_sortie;
+
+MACROCELL | 6 | 15 | U2/i<2>
+ATTRIBUTES | 4326181 | 0
+OUTPUTMC | 19 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 6 | 17 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 6 | 4 | 6 | 6
+INPUTS | 4 | btn_entree  | U2/i<0>  | U2/i<1>  | clk_sortie
+INPUTMC | 3 | 6 | 5 | 6 | 16 | 2 | 1
+INPUTP | 1 | 143
+EQ | 3 | 
+   U2/i<2>.T = btn_entree & U2/i<0> & U2/i<1>
+	# !btn_entree & !U2/i<0> & !U2/i<1>;
+   U2/i<2>.CLK = clk_sortie;
+
+MACROCELL | 3 | 13 | U2/i<30>
+ATTRIBUTES | 8520481 | 0
+OUTPUTMC | 19 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 13 | 3 | 12 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 7 | 9
+INPUTS | 9 | btn_entree  | U2/i<30>  | U2/i_Madd__add0000__and0029/U2/i_Madd__add0000__and0029_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0028/U2/Msub_i_addsub0000__or0028_D2  | U2/i<28>  | U2/i<29>  | U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2  | clk_sortie
+INPUTMC | 8 | 3 | 13 | 7 | 9 | 6 | 1 | 5 | 10 | 3 | 14 | 3 | 5 | 7 | 11 | 2 | 1
+INPUTP | 1 | 143
+EQ | 12 | 
+   U2/i<30>.D = btn_entree & U2/i<30> & 
+	!U2/i_Madd__add0000__and0029/U2/i_Madd__add0000__and0029_D2
+	# !btn_entree & U2/i<30> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	!U2/Msub_i_addsub0000__or0028/U2/Msub_i_addsub0000__or0028_D2
+	# !btn_entree & !U2/i<30> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0028/U2/Msub_i_addsub0000__or0028_D2
+	# btn_entree & U2/i<28> & U2/i<29> & 
+	U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2 & 
+	!U2/i_Madd__add0000__and0029/U2/i_Madd__add0000__and0029_D2;
+   U2/i<30>.CLK = clk_sortie;
+
+MACROCELL | 6 | 17 | U2/i<3>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 20 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 6 | 17 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 6 | 4 | 6 | 6 | 6 | 16
+INPUTS | 10 | btn_entree  | U2/i<0>  | U2/i<1>  | U2/i<2>  | U2/i<3>  | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2  | U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | clk_sortie  | U2/i<1>.EXP
+INPUTMC | 9 | 6 | 5 | 6 | 16 | 6 | 15 | 6 | 17 | 6 | 0 | 6 | 4 | 6 | 1 | 2 | 1 | 6 | 16
+INPUTP | 1 | 143
+IMPORTS | 1 | 6 | 16
+EQ | 13 | 
+   U2/i<3>.T = btn_entree & U2/i<3> & 
+	U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2
+	# !btn_entree & U2/i<3> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<0> & !U2/i<1> & !U2/i<2> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# btn_entree & U2/i<0> & U2/i<1> & U2/i<2> & 
+	!U2/i<3> & !U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	!U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2
+;Imported pterms FB7_17
+	# btn_entree & U2/i<3> & 
+	U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2;
+   U2/i<3>.CLK = clk_sortie;
+
+MACROCELL | 3 | 11 | U2/i<4>
+ATTRIBUTES | 8520481 | 0
+OUTPUTMC | 22 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 6 | 3 | 3 | 1
+INPUTS | 7 | btn_entree  | U2/i<4>  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0002/U2/Msub_i_addsub0000__or0002_D2  | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2  | U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2  | clk_sortie
+INPUTMC | 6 | 3 | 11 | 6 | 1 | 6 | 6 | 6 | 0 | 6 | 4 | 2 | 1
+INPUTP | 1 | 143
+EQ | 13 | 
+   U2/i<4>.D = btn_entree & U2/i<4> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	!U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2
+	# btn_entree & !U2/i<4> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2
+	# !btn_entree & U2/i<4> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	!U2/Msub_i_addsub0000__or0002/U2/Msub_i_addsub0000__or0002_D2
+	# !btn_entree & !U2/i<4> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0002/U2/Msub_i_addsub0000__or0002_D2;
+   U2/i<4>.CLK = clk_sortie;
+
+MACROCELL | 3 | 4 | U2/i<5>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 21 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 4 | 3 | 3 | 3 | 10 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 6 | 3 | 3 | 1
+INPUTS | 7 | btn_entree  | U2/i<4>  | U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0002/U2/Msub_i_addsub0000__or0002_D2  | U2/i<5>  | clk_sortie
+INPUTMC | 6 | 3 | 11 | 6 | 4 | 6 | 1 | 6 | 6 | 3 | 4 | 2 | 1
+INPUTP | 1 | 143
+EQ | 8 | 
+   U2/i<5>.T = btn_entree & U2/i<4> & 
+	U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2
+	# !btn_entree & U2/i<5> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<4> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0002/U2/Msub_i_addsub0000__or0002_D2;
+   U2/i<5>.CLK = clk_sortie;
+
+MACROCELL | 3 | 3 | U2/i<6>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 20 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 3 | 3 | 10 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 6 | 3 | 3 | 0
+INPUTS | 8 | btn_entree  | U2/i<4>  | U2/i<5>  | U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0004/U2/Msub_i_addsub0000__or0004_D2  | U2/i<6>  | clk_sortie
+INPUTMC | 7 | 3 | 11 | 3 | 4 | 6 | 4 | 6 | 1 | 3 | 1 | 3 | 3 | 2 | 1
+INPUTP | 1 | 143
+EQ | 7 | 
+   U2/i<6>.T = !btn_entree & U2/i<6> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0004/U2/Msub_i_addsub0000__or0004_D2
+	# btn_entree & U2/i<4> & U2/i<5> & 
+	U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2;
+   U2/i<6>.CLK = clk_sortie;
+
+MACROCELL | 3 | 10 | U2/i<7>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 19 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 10 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 6 | 3 | 3 | 0
+INPUTS | 10 | btn_entree  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2  | U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0004/U2/Msub_i_addsub0000__or0004_D2  | clk_sortie
+INPUTMC | 9 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 6 | 3 | 6 | 4 | 6 | 1 | 3 | 1 | 2 | 1
+INPUTP | 1 | 143
+EQ | 12 | 
+   U2/i<7>.T = btn_entree & U2/i<7> & 
+	U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2
+	# !btn_entree & U2/i<7> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<6> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0004/U2/Msub_i_addsub0000__or0004_D2
+	# btn_entree & U2/i<4> & U2/i<5> & U2/i<6> & 
+	!U2/i<7> & 
+	!U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2 & 
+	U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2;
+   U2/i<7>.CLK = clk_sortie;
+
+MACROCELL | 3 | 9 | U2/i<8>
+ATTRIBUTES | 8520481 | 0
+OUTPUTMC | 22 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 0 | 16 | 0 | 17 | 3 | 9 | 3 | 2 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 5 | 14 | 0 | 12
+INPUTS | 7 | btn_entree  | U2/i<8>  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0006/U2/Msub_i_addsub0000__or0006_D2  | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2  | U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2  | clk_sortie
+INPUTMC | 6 | 3 | 9 | 6 | 1 | 3 | 0 | 6 | 0 | 6 | 3 | 2 | 1
+INPUTP | 1 | 143
+EQ | 13 | 
+   U2/i<8>.D = btn_entree & U2/i<8> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	!U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2
+	# btn_entree & !U2/i<8> & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2
+	# !btn_entree & U2/i<8> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	!U2/Msub_i_addsub0000__or0006/U2/Msub_i_addsub0000__or0006_D2
+	# !btn_entree & !U2/i<8> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0006/U2/Msub_i_addsub0000__or0006_D2;
+   U2/i<8>.CLK = clk_sortie;
+
+MACROCELL | 3 | 2 | U2/i<9>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 21 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 0 | 16 | 0 | 17 | 3 | 2 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0 | 5 | 14 | 0 | 12
+INPUTS | 7 | btn_entree  | U2/i<8>  | U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0006/U2/Msub_i_addsub0000__or0006_D2  | U2/i<9>  | clk_sortie
+INPUTMC | 6 | 3 | 9 | 6 | 3 | 6 | 1 | 3 | 0 | 3 | 2 | 2 | 1
+INPUTP | 1 | 143
+EQ | 8 | 
+   U2/i<9>.T = btn_entree & U2/i<8> & 
+	U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2
+	# !btn_entree & U2/i<9> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<8> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0006/U2/Msub_i_addsub0000__or0006_D2;
+   U2/i<9>.CLK = clk_sortie;
+
+MACROCELL | 3 | 12 | U2/i<31>
+ATTRIBUTES | 4326177 | 0
+OUTPUTMC | 17 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 3 | 12 | 6 | 1 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10 | 6 | 0
+INPUTS | 8 | btn_entree  | U2/i<30>  | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2  | U2/Msub_i_addsub0000__or0028/U2/Msub_i_addsub0000__or0028_D2  | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2  | U2/i_Madd__add0000__and0029/U2/i_Madd__add0000__and0029_D2  | U2/i<31>  | clk_sortie
+INPUTMC | 7 | 3 | 13 | 6 | 1 | 5 | 10 | 6 | 0 | 7 | 9 | 3 | 12 | 2 | 1
+INPUTP | 1 | 143
+EQ | 11 | 
+   U2/i<31>.T = btn_entree & U2/i<31> & 
+	U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2
+	# btn_entree & 
+	!U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 & 
+	U2/i_Madd__add0000__and0029/U2/i_Madd__add0000__and0029_D2
+	# !btn_entree & U2/i<31> & 
+	U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+	# !btn_entree & !U2/i<30> & 
+	!U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 & 
+	U2/Msub_i_addsub0000__or0028/U2/Msub_i_addsub0000__or0028_D2;
+   U2/i<31>.CLK = clk_sortie;
+
+MACROCELL | 4 | 10 | U1/compt<0>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 6 | 4 | 10 | 4 | 17 | 4 | 16 | 4 | 15 | 4 | 14 | 4 | 12
+INPUTS | 2 | U1/compt<0>  | clk_sortie/clk_sortie_CE
+INPUTMC | 2 | 4 | 10 | 2 | 0
+EQ | 2 | 
+   U1/compt<0>.D = !U1/compt<0> & !clk_sortie/clk_sortie_CE;
+   U1/compt<0>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 2 | 17 | U1/compt<10>
+ATTRIBUTES | 4358913 | 0
+OUTPUTMC | 16 | 2 | 1 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 0
+INPUTS | 6 | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2  | clk_sortie/clk_sortie_CE  | U1/compt<10>
+INPUTMC | 6 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11 | 2 | 0 | 2 | 17
+EQ | 4 | 
+   U1/compt<10>.T = U1/compt<10> & clk_sortie/clk_sortie_CE
+	# U1/compt<7> & U1/compt<8> & U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2 & !clk_sortie/clk_sortie_CE;
+   U1/compt<10>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 2 | 16 | U1/compt<11>
+ATTRIBUTES | 4358913 | 0
+OUTPUTMC | 15 | 2 | 1 | 2 | 16 | 2 | 15 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 0
+INPUTS | 7 | U1/compt<10>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2  | clk_sortie/clk_sortie_CE  | U1/compt<11>
+INPUTMC | 7 | 2 | 17 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11 | 2 | 0 | 2 | 16
+EQ | 5 | 
+   U1/compt<11>.T = U1/compt<11> & clk_sortie/clk_sortie_CE
+	# U1/compt<10> & U1/compt<7> & U1/compt<8> & 
+	U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2 & !clk_sortie/clk_sortie_CE;
+   U1/compt<11>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 9 | U1/compt<12>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 12 | 2 | 15 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2
+INPUTS | 2 | U1/compt_addsub0000<12>/U1/compt_addsub0000<12>_D  | clk_sortie/clk_sortie_CE
+INPUTMC | 2 | 2 | 12 | 2 | 0
+EQ | 3 | 
+   U1/compt<12>.D = U1/compt_addsub0000<12>/U1/compt_addsub0000<12>_D & 
+	!clk_sortie/clk_sortie_CE;
+   U1/compt<12>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 8 | U1/compt<13>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 11 | 2 | 15 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2
+INPUTS | 2 | U1/compt_addsub0000<13>/U1/compt_addsub0000<13>_D  | clk_sortie/clk_sortie_CE
+INPUTMC | 2 | 2 | 11 | 2 | 0
+EQ | 3 | 
+   U1/compt<13>.D = U1/compt_addsub0000<13>/U1/compt_addsub0000<13>_D & 
+	!clk_sortie/clk_sortie_CE;
+   U1/compt<13>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 5 | 17 | U1/compt<14>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 10 | 2 | 15 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2
+INPUTS | 1 | U1/compt_addsub0000<14>/U1/compt_addsub0000<14>_D
+INPUTMC | 1 | 2 | 10
+EQ | 2 | 
+   U1/compt<14>.D = U1/compt_addsub0000<14>/U1/compt_addsub0000<14>_D;
+   U1/compt<14>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 7 | U1/compt<15>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 9 | 2 | 15 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2
+INPUTS | 2 | U1/compt_addsub0000<15>/U1/compt_addsub0000<15>_D  | clk_sortie/clk_sortie_CE
+INPUTMC | 2 | 2 | 9 | 2 | 0
+EQ | 3 | 
+   U1/compt<15>.D = U1/compt_addsub0000<15>/U1/compt_addsub0000<15>_D & 
+	!clk_sortie/clk_sortie_CE;
+   U1/compt<15>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 5 | 16 | U1/compt<16>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 8 | 2 | 15 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2
+INPUTS | 1 | U1/compt_addsub0000<16>/U1/compt_addsub0000<16>_D
+INPUTMC | 1 | 2 | 8
+EQ | 2 | 
+   U1/compt<16>.D = U1/compt_addsub0000<16>/U1/compt_addsub0000<16>_D;
+   U1/compt<16>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 6 | U1/compt<17>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 7 | 2 | 15 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2
+INPUTS | 2 | U1/compt_addsub0000<17>/U1/compt_addsub0000<17>_D  | clk_sortie/clk_sortie_CE
+INPUTMC | 2 | 2 | 7 | 2 | 0
+EQ | 3 | 
+   U1/compt<17>.D = U1/compt_addsub0000<17>/U1/compt_addsub0000<17>_D & 
+	!clk_sortie/clk_sortie_CE;
+   U1/compt<17>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 5 | U1/compt<18>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 6 | 2 | 15 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2
+INPUTS | 2 | U1/compt_addsub0000<18>/U1/compt_addsub0000<18>_D  | clk_sortie/clk_sortie_CE
+INPUTMC | 2 | 2 | 6 | 2 | 0
+EQ | 3 | 
+   U1/compt<18>.D = U1/compt_addsub0000<18>/U1/compt_addsub0000<18>_D & 
+	!clk_sortie/clk_sortie_CE;
+   U1/compt<18>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 4 | U1/compt<19>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 5 | 2 | 15 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2
+INPUTS | 2 | U1/compt_addsub0000<19>/U1/compt_addsub0000<19>_D  | clk_sortie/clk_sortie_CE
+INPUTMC | 2 | 2 | 5 | 2 | 0
+EQ | 3 | 
+   U1/compt<19>.D = U1/compt_addsub0000<19>/U1/compt_addsub0000<19>_D & 
+	!clk_sortie/clk_sortie_CE;
+   U1/compt<19>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 17 | U1/compt<1>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 5 | 4 | 17 | 4 | 16 | 4 | 15 | 4 | 14 | 4 | 12
+INPUTS | 3 | U1/compt<0>  | U1/compt<1>  | clk_sortie/clk_sortie_CE
+INPUTMC | 3 | 4 | 10 | 4 | 17 | 2 | 0
+EQ | 5 | 
+   U1/compt<1>.D = U1/compt<0> & !U1/compt<1> & 
+	!clk_sortie/clk_sortie_CE
+	# !U1/compt<0> & U1/compt<1> & 
+	!clk_sortie/clk_sortie_CE;
+   U1/compt<1>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 3 | U1/compt<20>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 4 | 2 | 15 | 2 | 4 | 2 | 3 | 2 | 2
+INPUTS | 2 | U1/compt_addsub0000<20>/U1/compt_addsub0000<20>_D  | clk_sortie/clk_sortie_CE
+INPUTMC | 2 | 2 | 4 | 2 | 0
+EQ | 3 | 
+   U1/compt<20>.D = U1/compt_addsub0000<20>/U1/compt_addsub0000<20>_D & 
+	!clk_sortie/clk_sortie_CE;
+   U1/compt<20>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 2 | U1/compt<21>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 3 | 2 | 15 | 2 | 3 | 2 | 2
+INPUTS | 2 | U1/compt_addsub0000<21>/U1/compt_addsub0000<21>_D  | clk_sortie/clk_sortie_CE
+INPUTMC | 2 | 2 | 3 | 2 | 0
+EQ | 3 | 
+   U1/compt<21>.D = U1/compt_addsub0000<21>/U1/compt_addsub0000<21>_D & 
+	!clk_sortie/clk_sortie_CE;
+   U1/compt<21>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 5 | 15 | U1/compt<22>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 2 | 2 | 15 | 2 | 2
+INPUTS | 1 | U1/compt_addsub0000<22>/U1/compt_addsub0000<22>_D
+INPUTMC | 1 | 2 | 2
+EQ | 2 | 
+   U1/compt<22>.D = U1/compt_addsub0000<22>/U1/compt_addsub0000<22>_D;
+   U1/compt<22>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 16 | U1/compt<2>
+ATTRIBUTES | 4358913 | 0
+OUTPUTMC | 4 | 4 | 16 | 4 | 15 | 4 | 14 | 4 | 12
+INPUTS | 4 | U1/compt<0>  | U1/compt<1>  | clk_sortie/clk_sortie_CE  | U1/compt<2>
+INPUTMC | 4 | 4 | 10 | 4 | 17 | 2 | 0 | 4 | 16
+EQ | 4 | 
+   U1/compt<2>.T = U1/compt<2> & clk_sortie/clk_sortie_CE
+	# U1/compt<0> & U1/compt<1> & 
+	!clk_sortie/clk_sortie_CE;
+   U1/compt<2>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 15 | U1/compt<3>
+ATTRIBUTES | 4358913 | 0
+OUTPUTMC | 3 | 4 | 15 | 4 | 14 | 4 | 12
+INPUTS | 5 | U1/compt<0>  | U1/compt<1>  | U1/compt<2>  | clk_sortie/clk_sortie_CE  | U1/compt<3>
+INPUTMC | 5 | 4 | 10 | 4 | 17 | 4 | 16 | 2 | 0 | 4 | 15
+EQ | 4 | 
+   U1/compt<3>.T = U1/compt<3> & clk_sortie/clk_sortie_CE
+	# U1/compt<0> & U1/compt<1> & U1/compt<2> & 
+	!clk_sortie/clk_sortie_CE;
+   U1/compt<3>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 14 | U1/compt<4>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 2 | 4 | 14 | 4 | 12
+INPUTS | 6 | U1/compt<4>  | U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2  | U1/compt<0>  | U1/compt<1>  | U1/compt<2>  | U1/compt<3>
+INPUTMC | 6 | 4 | 14 | 4 | 12 | 4 | 10 | 4 | 17 | 4 | 16 | 4 | 15
+EQ | 6 | 
+   U1/compt<4>.D = U1/compt<4> & 
+	!U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2
+	# U1/compt<0> & U1/compt<1> & U1/compt<2> & 
+	U1/compt<3> & 
+	!U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2;
+   U1/compt<4>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 2 | 14 | U1/compt<5>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 5 | 2 | 1 | 2 | 14 | 2 | 13 | 4 | 11 | 2 | 0
+INPUTS | 3 | U1/compt<5>  | U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2  | clk_sortie/clk_sortie_CE
+INPUTMC | 3 | 2 | 14 | 4 | 12 | 2 | 0
+EQ | 5 | 
+   U1/compt<5>.D = U1/compt<5> & 
+	!U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2 & !clk_sortie/clk_sortie_CE
+	# !U1/compt<5> & 
+	U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2 & !clk_sortie/clk_sortie_CE;
+   U1/compt<5>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 2 | 13 | U1/compt<6>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 4 | 2 | 1 | 2 | 13 | 4 | 11 | 2 | 0
+INPUTS | 4 | U1/compt<6>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2  | U1/compt<5>  | U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2
+INPUTMC | 4 | 2 | 13 | 4 | 11 | 2 | 14 | 4 | 12
+EQ | 6 | 
+   U1/compt<6>.D = U1/compt<6> & 
+	!U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+	# U1/compt<5> & 
+	U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2 & 
+	!U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+   U1/compt<6>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 13 | U1/compt<7>
+ATTRIBUTES | 8553217 | 0
+OUTPUTMC | 19 | 2 | 1 | 2 | 17 | 2 | 16 | 4 | 13 | 4 | 1 | 4 | 0 | 2 | 15 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 0
+INPUTS | 3 | U1/compt<7>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2  | clk_sortie/clk_sortie_CE
+INPUTMC | 3 | 4 | 13 | 4 | 11 | 2 | 0
+EQ | 5 | 
+   U1/compt<7>.D = U1/compt<7> & 
+	!U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2 & !clk_sortie/clk_sortie_CE
+	# !U1/compt<7> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2 & !clk_sortie/clk_sortie_CE;
+   U1/compt<7>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 1 | U1/compt<8>
+ATTRIBUTES | 4358913 | 0
+OUTPUTMC | 17 | 2 | 1 | 2 | 17 | 2 | 16 | 4 | 0 | 2 | 15 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 0
+INPUTS | 2 | U1/compt<7>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 2 | 4 | 13 | 4 | 11
+EQ | 3 | 
+   U1/compt<8>.T = U1/compt<7> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+   U1/compt<8>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 0 | U1/compt<9>
+ATTRIBUTES | 4358913 | 0
+OUTPUTMC | 16 | 2 | 1 | 2 | 17 | 2 | 16 | 2 | 15 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 0
+INPUTS | 3 | U1/compt<7>  | U1/compt<8>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 3 | 4 | 13 | 4 | 1 | 4 | 11
+EQ | 3 | 
+   U1/compt<9>.T = U1/compt<7> & U1/compt<8> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+   U1/compt<9>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 2 | 15 | U1/compt<23>
+ATTRIBUTES | 4358913 | 0
+OUTPUTMC | 3 | 2 | 1 | 2 | 15 | 2 | 0
+INPUTS | 19 | U1/compt<10>  | U1/compt<11>  | U1/compt<12>  | U1/compt<13>  | U1/compt<14>  | U1/compt<15>  | U1/compt<16>  | U1/compt<17>  | U1/compt<18>  | U1/compt<19>  | U1/compt<20>  | U1/compt<21>  | U1/compt<22>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2  | clk_sortie/clk_sortie_CE  | U1/compt<23>
+INPUTMC | 19 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 5 | 17 | 4 | 7 | 5 | 16 | 4 | 6 | 4 | 5 | 4 | 4 | 4 | 3 | 4 | 2 | 5 | 15 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11 | 2 | 0 | 2 | 15
+EQ | 8 | 
+   U1/compt<23>.T = U1/compt<23> & clk_sortie/clk_sortie_CE
+	# U1/compt<10> & U1/compt<11> & U1/compt<12> & 
+	U1/compt<13> & U1/compt<14> & U1/compt<15> & U1/compt<16> & 
+	U1/compt<17> & U1/compt<18> & U1/compt<19> & U1/compt<20> & 
+	U1/compt<21> & U1/compt<22> & U1/compt<7> & U1/compt<8> & 
+	U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2 & !clk_sortie/clk_sortie_CE;
+   U1/compt<23>.CLK = clk_entree;	// GCK
+GLOBALS | 1 | 2 | clk_entree
+
+MACROCELL | 4 | 12 | U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 6 | 2 | 1 | 4 | 14 | 2 | 14 | 2 | 13 | 4 | 11 | 2 | 0
+INPUTS | 5 | U1/compt<0>  | U1/compt<1>  | U1/compt<2>  | U1/compt<3>  | U1/compt<4>
+INPUTMC | 5 | 4 | 10 | 4 | 17 | 4 | 16 | 4 | 15 | 4 | 14
+EQ | 2 | 
+   U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2 = U1/compt<0> & U1/compt<1> & U1/compt<2> & 
+	U1/compt<3> & U1/compt<4>;
+
+MACROCELL | 2 | 12 | U1/compt_addsub0000<12>/U1/compt_addsub0000<12>_D
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 2 | 1 | 4 | 9 | 2 | 0
+INPUTS | 7 | U1/compt<12>  | U1/compt<10>  | U1/compt<11>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 7 | 4 | 9 | 2 | 17 | 2 | 16 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11
+EQ | 4 | 
+   U1/compt_addsub0000<12>/U1/compt_addsub0000<12>_D = U1/compt<12>
+	$ U1/compt<10> & U1/compt<11> & U1/compt<7> & 
+	U1/compt<8> & U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+
+MACROCELL | 4 | 11 | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 18 | 2 | 17 | 2 | 16 | 2 | 13 | 4 | 13 | 4 | 1 | 4 | 0 | 2 | 15 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2
+INPUTS | 3 | U1/compt<5>  | U1/compt<6>  | U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2
+INPUTMC | 3 | 2 | 14 | 2 | 13 | 4 | 12
+EQ | 2 | 
+   U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2 = U1/compt<5> & U1/compt<6> & 
+	U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2;
+
+MACROCELL | 2 | 11 | U1/compt_addsub0000<13>/U1/compt_addsub0000<13>_D
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 2 | 1 | 4 | 8 | 2 | 0
+INPUTS | 8 | U1/compt<13>  | U1/compt<10>  | U1/compt<11>  | U1/compt<12>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 8 | 4 | 8 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11
+EQ | 4 | 
+   U1/compt_addsub0000<13>/U1/compt_addsub0000<13>_D = U1/compt<13>
+	$ U1/compt<10> & U1/compt<11> & U1/compt<12> & 
+	U1/compt<7> & U1/compt<8> & U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+
+MACROCELL | 2 | 10 | U1/compt_addsub0000<14>/U1/compt_addsub0000<14>_D
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 2 | 1 | 5 | 17 | 2 | 0
+INPUTS | 9 | U1/compt<14>  | U1/compt<10>  | U1/compt<11>  | U1/compt<12>  | U1/compt<13>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 9 | 5 | 17 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11
+EQ | 4 | 
+   U1/compt_addsub0000<14>/U1/compt_addsub0000<14>_D = U1/compt<14>
+	$ U1/compt<10> & U1/compt<11> & U1/compt<12> & 
+	U1/compt<13> & U1/compt<7> & U1/compt<8> & U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+
+MACROCELL | 2 | 9 | U1/compt_addsub0000<15>/U1/compt_addsub0000<15>_D
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 2 | 1 | 4 | 7 | 2 | 0
+INPUTS | 10 | U1/compt<15>  | U1/compt<10>  | U1/compt<11>  | U1/compt<12>  | U1/compt<13>  | U1/compt<14>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 10 | 4 | 7 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 5 | 17 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11
+EQ | 5 | 
+   U1/compt_addsub0000<15>/U1/compt_addsub0000<15>_D = U1/compt<15>
+	$ U1/compt<10> & U1/compt<11> & U1/compt<12> & 
+	U1/compt<13> & U1/compt<14> & U1/compt<7> & U1/compt<8> & 
+	U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+
+MACROCELL | 2 | 8 | U1/compt_addsub0000<16>/U1/compt_addsub0000<16>_D
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 2 | 1 | 5 | 16 | 2 | 0
+INPUTS | 11 | U1/compt<16>  | U1/compt<10>  | U1/compt<11>  | U1/compt<12>  | U1/compt<13>  | U1/compt<14>  | U1/compt<15>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 11 | 5 | 16 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 5 | 17 | 4 | 7 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11
+EQ | 5 | 
+   U1/compt_addsub0000<16>/U1/compt_addsub0000<16>_D = U1/compt<16>
+	$ U1/compt<10> & U1/compt<11> & U1/compt<12> & 
+	U1/compt<13> & U1/compt<14> & U1/compt<15> & U1/compt<7> & 
+	U1/compt<8> & U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+
+MACROCELL | 2 | 7 | U1/compt_addsub0000<17>/U1/compt_addsub0000<17>_D
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 2 | 1 | 4 | 6 | 2 | 0
+INPUTS | 12 | U1/compt<17>  | U1/compt<10>  | U1/compt<11>  | U1/compt<12>  | U1/compt<13>  | U1/compt<14>  | U1/compt<15>  | U1/compt<16>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 12 | 4 | 6 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 5 | 17 | 4 | 7 | 5 | 16 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11
+EQ | 5 | 
+   U1/compt_addsub0000<17>/U1/compt_addsub0000<17>_D = U1/compt<17>
+	$ U1/compt<10> & U1/compt<11> & U1/compt<12> & 
+	U1/compt<13> & U1/compt<14> & U1/compt<15> & U1/compt<16> & 
+	U1/compt<7> & U1/compt<8> & U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+
+MACROCELL | 2 | 6 | U1/compt_addsub0000<18>/U1/compt_addsub0000<18>_D
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 2 | 1 | 4 | 5 | 2 | 0
+INPUTS | 13 | U1/compt<18>  | U1/compt<10>  | U1/compt<11>  | U1/compt<12>  | U1/compt<13>  | U1/compt<14>  | U1/compt<15>  | U1/compt<16>  | U1/compt<17>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 13 | 4 | 5 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 5 | 17 | 4 | 7 | 5 | 16 | 4 | 6 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11
+EQ | 5 | 
+   U1/compt_addsub0000<18>/U1/compt_addsub0000<18>_D = U1/compt<18>
+	$ U1/compt<10> & U1/compt<11> & U1/compt<12> & 
+	U1/compt<13> & U1/compt<14> & U1/compt<15> & U1/compt<16> & 
+	U1/compt<17> & U1/compt<7> & U1/compt<8> & U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+
+MACROCELL | 2 | 5 | U1/compt_addsub0000<19>/U1/compt_addsub0000<19>_D
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 2 | 1 | 4 | 4 | 2 | 0
+INPUTS | 14 | U1/compt<19>  | U1/compt<10>  | U1/compt<11>  | U1/compt<12>  | U1/compt<13>  | U1/compt<14>  | U1/compt<15>  | U1/compt<16>  | U1/compt<17>  | U1/compt<18>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 14 | 4 | 4 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 5 | 17 | 4 | 7 | 5 | 16 | 4 | 6 | 4 | 5 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11
+EQ | 6 | 
+   U1/compt_addsub0000<19>/U1/compt_addsub0000<19>_D = U1/compt<19>
+	$ U1/compt<10> & U1/compt<11> & U1/compt<12> & 
+	U1/compt<13> & U1/compt<14> & U1/compt<15> & U1/compt<16> & 
+	U1/compt<17> & U1/compt<18> & U1/compt<7> & U1/compt<8> & 
+	U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+
+MACROCELL | 2 | 4 | U1/compt_addsub0000<20>/U1/compt_addsub0000<20>_D
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 2 | 1 | 4 | 3 | 2 | 0
+INPUTS | 15 | U1/compt<20>  | U1/compt<10>  | U1/compt<11>  | U1/compt<12>  | U1/compt<13>  | U1/compt<14>  | U1/compt<15>  | U1/compt<16>  | U1/compt<17>  | U1/compt<18>  | U1/compt<19>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 15 | 4 | 3 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 5 | 17 | 4 | 7 | 5 | 16 | 4 | 6 | 4 | 5 | 4 | 4 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11
+EQ | 6 | 
+   U1/compt_addsub0000<20>/U1/compt_addsub0000<20>_D = U1/compt<20>
+	$ U1/compt<10> & U1/compt<11> & U1/compt<12> & 
+	U1/compt<13> & U1/compt<14> & U1/compt<15> & U1/compt<16> & 
+	U1/compt<17> & U1/compt<18> & U1/compt<19> & U1/compt<7> & 
+	U1/compt<8> & U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+
+MACROCELL | 2 | 3 | U1/compt_addsub0000<21>/U1/compt_addsub0000<21>_D
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 2 | 1 | 4 | 2 | 2 | 0
+INPUTS | 16 | U1/compt<21>  | U1/compt<10>  | U1/compt<11>  | U1/compt<12>  | U1/compt<13>  | U1/compt<14>  | U1/compt<15>  | U1/compt<16>  | U1/compt<17>  | U1/compt<18>  | U1/compt<19>  | U1/compt<20>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 16 | 4 | 2 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 5 | 17 | 4 | 7 | 5 | 16 | 4 | 6 | 4 | 5 | 4 | 4 | 4 | 3 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11
+EQ | 6 | 
+   U1/compt_addsub0000<21>/U1/compt_addsub0000<21>_D = U1/compt<21>
+	$ U1/compt<10> & U1/compt<11> & U1/compt<12> & 
+	U1/compt<13> & U1/compt<14> & U1/compt<15> & U1/compt<16> & 
+	U1/compt<17> & U1/compt<18> & U1/compt<19> & U1/compt<20> & 
+	U1/compt<7> & U1/compt<8> & U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+
+MACROCELL | 2 | 2 | U1/compt_addsub0000<22>/U1/compt_addsub0000<22>_D
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 2 | 1 | 5 | 15 | 2 | 0
+INPUTS | 17 | U1/compt<22>  | U1/compt<10>  | U1/compt<11>  | U1/compt<12>  | U1/compt<13>  | U1/compt<14>  | U1/compt<15>  | U1/compt<16>  | U1/compt<17>  | U1/compt<18>  | U1/compt<19>  | U1/compt<20>  | U1/compt<21>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2
+INPUTMC | 17 | 5 | 15 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 5 | 17 | 4 | 7 | 5 | 16 | 4 | 6 | 4 | 5 | 4 | 4 | 4 | 3 | 4 | 2 | 4 | 13 | 4 | 1 | 4 | 0 | 4 | 11
+EQ | 6 | 
+   U1/compt_addsub0000<22>/U1/compt_addsub0000<22>_D = U1/compt<22>
+	$ U1/compt<10> & U1/compt<11> & U1/compt<12> & 
+	U1/compt<13> & U1/compt<14> & U1/compt<15> & U1/compt<16> & 
+	U1/compt<17> & U1/compt<18> & U1/compt<19> & U1/compt<20> & 
+	U1/compt<21> & U1/compt<7> & U1/compt<8> & U1/compt<9> & 
+	U1/Madd_compt_addsub0000__and0005/U1/Madd_compt_addsub0000__and0005_D2;
+
+MACROCELL | 6 | 1 | U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 30 | 7 | 2 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12
+INPUTS | 32 | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>
+INPUTMC | 32 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12
+EQ | 7 | 
+   U2/i_cmp_eq0000/U2/i_cmp_eq0000_D2 = !U2/i<0> & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31>;
+
+MACROCELL | 6 | 14 | U2/temp_1_or0002/U2/temp_1_or0002_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 6 | 7
+INPUTS | 33 | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>  | btn_entree
+INPUTMC | 32 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12
+INPUTP | 1 | 143
+EQ | 21 | 
+   U2/temp_1_or0002/U2/temp_1_or0002_D2 = btn_entree & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31>
+	# U2/i<0> & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31>
+	# !btn_entree & !U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>;
+
+MACROCELL | 6 | 9 | $OpTx$FX_DC$244
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 7 | 10
+INPUTS | 33 | btn_entree  | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>
+INPUTMC | 32 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12
+INPUTP | 1 | 143
+EQ | 14 | 
+   $OpTx$FX_DC$244 = btn_entree & U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>
+	# !btn_entree & U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>;
+
+MACROCELL | 6 | 13 | U2/temp_3_or0002/U2/temp_3_or0002_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 33 | btn_entree  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>  | U2/i<0>
+INPUTMC | 32 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12 | 6 | 5
+INPUTP | 1 | 143
+EQ | 21 | 
+   U2/temp_3_or0002/U2/temp_3_or0002_D2 = btn_entree & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31>
+	# U2/i<0> & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31>
+	# !btn_entree & !U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>;
+
+MACROCELL | 6 | 11 | U2/temp_4_or0002/U2/temp_4_or0002_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 8
+INPUTS | 33 | btn_entree  | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>
+INPUTMC | 32 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12
+INPUTP | 1 | 143
+EQ | 21 | 
+   U2/temp_4_or0002/U2/temp_4_or0002_D2 = !btn_entree & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31>
+	# !U2/i<0> & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31>
+	# btn_entree & U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & !U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>;
+
+MACROCELL | 6 | 8 | $OpTx$FX_DC$247
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 6 | 2
+INPUTS | 33 | btn_entree  | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>
+INPUTMC | 32 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12
+INPUTP | 1 | 143
+EQ | 14 | 
+   $OpTx$FX_DC$247 = btn_entree & !U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>
+	# !btn_entree & !U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>;
+
+MACROCELL | 6 | 10 | U2/temp_6_or0002/U2/temp_6_or0002_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 2 | 6 | 2 | 6 | 12
+INPUTS | 33 | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>  | btn_entree
+INPUTMC | 32 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12
+INPUTP | 1 | 143
+EQ | 21 | 
+   U2/temp_6_or0002/U2/temp_6_or0002_D2 = !btn_entree & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31>
+	# !U2/i<0> & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31>
+	# btn_entree & U2/i<0> & !U2/i<10> & !U2/i<11> & 
+	!U2/i<12> & !U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & 
+	!U2/i<17> & !U2/i<18> & !U2/i<19> & !U2/i<1> & !U2/i<20> & 
+	!U2/i<21> & !U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & 
+	!U2/i<26> & !U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & 
+	!U2/i<30> & !U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & 
+	!U2/i<7> & !U2/i<8> & !U2/i<9> & !U2/i<31>;
+
+MACROCELL | 6 | 0 | U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 11 | 1 | 3 | 1 | 17 | 3 | 17 | 3 | 16 | 3 | 15 | 3 | 14 | 6 | 17 | 3 | 11 | 3 | 9 | 3 | 12 | 6 | 16
+INPUTS | 32 | U2/i<0>  | U2/i<10>  | U2/i<11>  | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i<1>  | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i<28>  | U2/i<29>  | U2/i<2>  | U2/i<30>  | U2/i<3>  | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i<8>  | U2/i<9>  | U2/i<31>
+INPUTMC | 32 | 6 | 5 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12
+EQ | 7 | 
+   U2/temp_0_cmp_eq0001/U2/temp_0_cmp_eq0001_D2 = U2/i<0> & !U2/i<10> & !U2/i<11> & !U2/i<12> & 
+	!U2/i<13> & !U2/i<14> & !U2/i<15> & !U2/i<16> & !U2/i<17> & 
+	!U2/i<18> & !U2/i<19> & U2/i<1> & !U2/i<20> & !U2/i<21> & 
+	!U2/i<22> & !U2/i<23> & !U2/i<24> & !U2/i<25> & !U2/i<26> & 
+	!U2/i<27> & !U2/i<28> & !U2/i<29> & U2/i<2> & !U2/i<30> & 
+	!U2/i<3> & !U2/i<4> & !U2/i<5> & !U2/i<6> & !U2/i<7> & 
+	!U2/i<8> & !U2/i<9> & !U2/i<31>;
+
+MACROCELL | 6 | 3 | U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 6 | 0 | 16 | 0 | 17 | 3 | 10 | 3 | 9 | 3 | 2 | 0 | 12
+INPUTS | 5 | U2/i<4>  | U2/i<5>  | U2/i<6>  | U2/i<7>  | U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2
+INPUTMC | 5 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 6 | 4
+EQ | 2 | 
+   U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2 = U2/i<4> & U2/i<5> & U2/i<6> & U2/i<7> & 
+	U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2;
+
+MACROCELL | 6 | 4 | U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 6 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 6 | 3
+INPUTS | 4 | U2/i<0>  | U2/i<1>  | U2/i<2>  | U2/i<3>
+INPUTMC | 4 | 6 | 5 | 6 | 16 | 6 | 15 | 6 | 17
+EQ | 1 | 
+   U2/i_Madd__add0000__and0002/U2/i_Madd__add0000__and0002_D2 = U2/i<0> & U2/i<1> & U2/i<2> & U2/i<3>;
+
+MACROCELL | 5 | 14 | U2/Msub_i_addsub0000__or0008/U2/Msub_i_addsub0000__or0008_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 0 | 16 | 0 | 17 | 0 | 14
+INPUTS | 3 | U2/i<8>  | U2/i<9>  | U2/Msub_i_addsub0000__or0006/U2/Msub_i_addsub0000__or0006_D2
+INPUTMC | 3 | 3 | 9 | 3 | 2 | 3 | 0
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0008/U2/Msub_i_addsub0000__or0008_D2 = !U2/i<8> & !U2/i<9> & 
+	U2/Msub_i_addsub0000__or0006/U2/Msub_i_addsub0000__or0006_D2;
+
+MACROCELL | 3 | 0 | U2/Msub_i_addsub0000__or0006/U2/Msub_i_addsub0000__or0006_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 3 | 9 | 3 | 2 | 5 | 14
+INPUTS | 3 | U2/i<6>  | U2/i<7>  | U2/Msub_i_addsub0000__or0004/U2/Msub_i_addsub0000__or0004_D2
+INPUTMC | 3 | 3 | 3 | 3 | 10 | 3 | 1
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0006/U2/Msub_i_addsub0000__or0006_D2 = !U2/i<6> & !U2/i<7> & 
+	U2/Msub_i_addsub0000__or0004/U2/Msub_i_addsub0000__or0004_D2;
+
+MACROCELL | 3 | 1 | U2/Msub_i_addsub0000__or0004/U2/Msub_i_addsub0000__or0004_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 3 | 3 | 3 | 10 | 3 | 0
+INPUTS | 3 | U2/i<4>  | U2/i<5>  | U2/Msub_i_addsub0000__or0002/U2/Msub_i_addsub0000__or0002_D2
+INPUTMC | 3 | 3 | 11 | 3 | 4 | 6 | 6
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0004/U2/Msub_i_addsub0000__or0004_D2 = !U2/i<4> & !U2/i<5> & 
+	U2/Msub_i_addsub0000__or0002/U2/Msub_i_addsub0000__or0002_D2;
+
+MACROCELL | 6 | 6 | U2/Msub_i_addsub0000__or0002/U2/Msub_i_addsub0000__or0002_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 3 | 11 | 3 | 4 | 3 | 1
+INPUTS | 4 | U2/i<0>  | U2/i<1>  | U2/i<2>  | U2/i<3>
+INPUTMC | 4 | 6 | 5 | 6 | 16 | 6 | 15 | 6 | 17
+EQ | 1 | 
+   U2/Msub_i_addsub0000__or0002/U2/Msub_i_addsub0000__or0002_D2 = !U2/i<0> & !U2/i<1> & !U2/i<2> & !U2/i<3>;
+
+MACROCELL | 0 | 12 | U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 6 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 0 | 11
+INPUTS | 5 | U2/i<10>  | U2/i<11>  | U2/i<8>  | U2/i<9>  | U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2
+INPUTMC | 5 | 0 | 16 | 0 | 17 | 3 | 9 | 3 | 2 | 6 | 3
+EQ | 2 | 
+   U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2 = U2/i<10> & U2/i<11> & U2/i<8> & U2/i<9> & 
+	U2/i_Madd__add0000__and0006/U2/i_Madd__add0000__and0006_D2;
+
+MACROCELL | 0 | 14 | U2/Msub_i_addsub0000__or0010/U2/Msub_i_addsub0000__or0010_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 1 | 17 | 1 | 14 | 1 | 12
+INPUTS | 3 | U2/i<10>  | U2/i<11>  | U2/Msub_i_addsub0000__or0008/U2/Msub_i_addsub0000__or0008_D2
+INPUTMC | 3 | 0 | 16 | 0 | 17 | 5 | 14
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0010/U2/Msub_i_addsub0000__or0010_D2 = !U2/i<10> & !U2/i<11> & 
+	U2/Msub_i_addsub0000__or0008/U2/Msub_i_addsub0000__or0008_D2;
+
+MACROCELL | 1 | 12 | U2/Msub_i_addsub0000__or0012/U2/Msub_i_addsub0000__or0012_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 0 | 15 | 1 | 16 | 0 | 13
+INPUTS | 3 | U2/i<12>  | U2/i<13>  | U2/Msub_i_addsub0000__or0010/U2/Msub_i_addsub0000__or0010_D2
+INPUTMC | 3 | 1 | 17 | 1 | 14 | 0 | 14
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0012/U2/Msub_i_addsub0000__or0012_D2 = !U2/i<12> & !U2/i<13> & 
+	U2/Msub_i_addsub0000__or0010/U2/Msub_i_addsub0000__or0010_D2;
+
+MACROCELL | 0 | 11 | U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 6 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 1 | 10
+INPUTS | 5 | U2/i<12>  | U2/i<13>  | U2/i<14>  | U2/i<15>  | U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2
+INPUTMC | 5 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 0 | 12
+EQ | 2 | 
+   U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2 = U2/i<12> & U2/i<13> & U2/i<14> & U2/i<15> & 
+	U2/i_Madd__add0000__and0010/U2/i_Madd__add0000__and0010_D2;
+
+MACROCELL | 0 | 13 | U2/Msub_i_addsub0000__or0014/U2/Msub_i_addsub0000__or0014_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 3 | 17 | 3 | 8 | 5 | 13
+INPUTS | 3 | U2/i<14>  | U2/i<15>  | U2/Msub_i_addsub0000__or0012/U2/Msub_i_addsub0000__or0012_D2
+INPUTMC | 3 | 0 | 15 | 1 | 16 | 1 | 12
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0014/U2/Msub_i_addsub0000__or0014_D2 = !U2/i<14> & !U2/i<15> & 
+	U2/Msub_i_addsub0000__or0012/U2/Msub_i_addsub0000__or0012_D2;
+
+MACROCELL | 5 | 13 | U2/Msub_i_addsub0000__or0016/U2/Msub_i_addsub0000__or0016_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 1 | 13 | 1 | 15 | 1 | 11
+INPUTS | 3 | U2/i<16>  | U2/i<17>  | U2/Msub_i_addsub0000__or0014/U2/Msub_i_addsub0000__or0014_D2
+INPUTMC | 3 | 3 | 17 | 3 | 8 | 0 | 13
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0016/U2/Msub_i_addsub0000__or0016_D2 = !U2/i<16> & !U2/i<17> & 
+	U2/Msub_i_addsub0000__or0014/U2/Msub_i_addsub0000__or0014_D2;
+
+MACROCELL | 1 | 10 | U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 6 | 1 | 15 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 1 | 9
+INPUTS | 5 | U2/i<16>  | U2/i<17>  | U2/i<18>  | U2/i<19>  | U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2
+INPUTMC | 5 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 0 | 11
+EQ | 2 | 
+   U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2 = U2/i<16> & U2/i<17> & U2/i<18> & U2/i<19> & 
+	U2/i_Madd__add0000__and0014/U2/i_Madd__add0000__and0014_D2;
+
+MACROCELL | 1 | 11 | U2/Msub_i_addsub0000__or0018/U2/Msub_i_addsub0000__or0018_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 3 | 16 | 3 | 7 | 5 | 12
+INPUTS | 3 | U2/i<18>  | U2/i<19>  | U2/Msub_i_addsub0000__or0016/U2/Msub_i_addsub0000__or0016_D2
+INPUTMC | 3 | 1 | 13 | 1 | 15 | 5 | 13
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0018/U2/Msub_i_addsub0000__or0018_D2 = !U2/i<18> & !U2/i<19> & 
+	U2/Msub_i_addsub0000__or0016/U2/Msub_i_addsub0000__or0016_D2;
+
+MACROCELL | 5 | 12 | U2/Msub_i_addsub0000__or0020/U2/Msub_i_addsub0000__or0020_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 7 | 15 | 7 | 17 | 7 | 13
+INPUTS | 3 | U2/i<20>  | U2/i<21>  | U2/Msub_i_addsub0000__or0018/U2/Msub_i_addsub0000__or0018_D2
+INPUTMC | 3 | 3 | 16 | 3 | 7 | 1 | 11
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0020/U2/Msub_i_addsub0000__or0020_D2 = !U2/i<20> & !U2/i<21> & 
+	U2/Msub_i_addsub0000__or0018/U2/Msub_i_addsub0000__or0018_D2;
+
+MACROCELL | 1 | 9 | U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 6 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 7 | 11
+INPUTS | 5 | U2/i<20>  | U2/i<21>  | U2/i<22>  | U2/i<23>  | U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2
+INPUTMC | 5 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 1 | 10
+EQ | 2 | 
+   U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2 = U2/i<20> & U2/i<21> & U2/i<22> & U2/i<23> & 
+	U2/i_Madd__add0000__and0018/U2/i_Madd__add0000__and0018_D2;
+
+MACROCELL | 7 | 13 | U2/Msub_i_addsub0000__or0022/U2/Msub_i_addsub0000__or0022_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 3 | 15 | 3 | 6 | 5 | 11
+INPUTS | 3 | U2/i<22>  | U2/i<23>  | U2/Msub_i_addsub0000__or0020/U2/Msub_i_addsub0000__or0020_D2
+INPUTMC | 3 | 7 | 15 | 7 | 17 | 5 | 12
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0022/U2/Msub_i_addsub0000__or0022_D2 = !U2/i<22> & !U2/i<23> & 
+	U2/Msub_i_addsub0000__or0020/U2/Msub_i_addsub0000__or0020_D2;
+
+MACROCELL | 5 | 11 | U2/Msub_i_addsub0000__or0024/U2/Msub_i_addsub0000__or0024_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 7 | 14 | 7 | 16 | 7 | 12
+INPUTS | 3 | U2/i<24>  | U2/i<25>  | U2/Msub_i_addsub0000__or0022/U2/Msub_i_addsub0000__or0022_D2
+INPUTMC | 3 | 3 | 15 | 3 | 6 | 7 | 13
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0024/U2/Msub_i_addsub0000__or0024_D2 = !U2/i<24> & !U2/i<25> & 
+	U2/Msub_i_addsub0000__or0022/U2/Msub_i_addsub0000__or0022_D2;
+
+MACROCELL | 7 | 11 | U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 5 | 7 | 16 | 3 | 14 | 3 | 5 | 3 | 13 | 7 | 9
+INPUTS | 5 | U2/i<24>  | U2/i<25>  | U2/i<26>  | U2/i<27>  | U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2
+INPUTMC | 5 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 1 | 9
+EQ | 2 | 
+   U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2 = U2/i<24> & U2/i<25> & U2/i<26> & U2/i<27> & 
+	U2/i_Madd__add0000__and0022/U2/i_Madd__add0000__and0022_D2;
+
+MACROCELL | 7 | 12 | U2/Msub_i_addsub0000__or0026/U2/Msub_i_addsub0000__or0026_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 3 | 3 | 14 | 3 | 5 | 5 | 10
+INPUTS | 3 | U2/i<26>  | U2/i<27>  | U2/Msub_i_addsub0000__or0024/U2/Msub_i_addsub0000__or0024_D2
+INPUTMC | 3 | 7 | 14 | 7 | 16 | 5 | 11
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0026/U2/Msub_i_addsub0000__or0026_D2 = !U2/i<26> & !U2/i<27> & 
+	U2/Msub_i_addsub0000__or0024/U2/Msub_i_addsub0000__or0024_D2;
+
+MACROCELL | 7 | 9 | U2/i_Madd__add0000__and0029/U2/i_Madd__add0000__and0029_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 2 | 3 | 13 | 3 | 12
+INPUTS | 4 | U2/i<28>  | U2/i<29>  | U2/i<30>  | U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2
+INPUTMC | 4 | 3 | 14 | 3 | 5 | 3 | 13 | 7 | 11
+EQ | 2 | 
+   U2/i_Madd__add0000__and0029/U2/i_Madd__add0000__and0029_D2 = U2/i<28> & U2/i<29> & U2/i<30> & 
+	U2/i_Madd__add0000__and0026/U2/i_Madd__add0000__and0026_D2;
+
+MACROCELL | 5 | 10 | U2/Msub_i_addsub0000__or0028/U2/Msub_i_addsub0000__or0028_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 2 | 3 | 13 | 3 | 12
+INPUTS | 3 | U2/i<28>  | U2/i<29>  | U2/Msub_i_addsub0000__or0026/U2/Msub_i_addsub0000__or0026_D2
+INPUTMC | 3 | 3 | 14 | 3 | 5 | 7 | 12
+EQ | 2 | 
+   U2/Msub_i_addsub0000__or0028/U2/Msub_i_addsub0000__or0028_D2 = !U2/i<28> & !U2/i<29> & 
+	U2/Msub_i_addsub0000__or0026/U2/Msub_i_addsub0000__or0026_D2;
+
+MACROCELL | 2 | 0 | clk_sortie/clk_sortie_CE
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 17 | 4 | 10 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 4 | 7 | 4 | 6 | 4 | 5 | 4 | 4 | 4 | 17 | 4 | 3 | 4 | 2 | 4 | 16 | 4 | 15 | 2 | 14 | 4 | 13 | 2 | 15
+INPUTS | 20 | U1/compt<10>  | U1/compt<11>  | U1/compt<5>  | U1/compt<6>  | U1/compt<7>  | U1/compt<8>  | U1/compt<9>  | U1/compt<23>  | U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2  | U1/compt_addsub0000<12>/U1/compt_addsub0000<12>_D  | U1/compt_addsub0000<13>/U1/compt_addsub0000<13>_D  | U1/compt_addsub0000<14>/U1/compt_addsub0000<14>_D  | U1/compt_addsub0000<15>/U1/compt_addsub0000<15>_D  | U1/compt_addsub0000<16>/U1/compt_addsub0000<16>_D  | U1/compt_addsub0000<17>/U1/compt_addsub0000<17>_D  | U1/compt_addsub0000<18>/U1/compt_addsub0000<18>_D  | U1/compt_addsub0000<19>/U1/compt_addsub0000<19>_D  | U1/compt_addsub0000<20>/U1/compt_addsub0000<20>_D  | U1/compt_addsub0000<21>/U1/compt_addsub0000<21>_D  | U1/compt_addsub0000<22>/U1/compt_addsub0000<22>_D
+INPUTMC | 20 | 2 | 17 | 2 | 16 | 2 | 14 | 2 | 13 | 4 | 13 | 4 | 1 | 4 | 0 | 2 | 15 | 4 | 12 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2
+EQ | 9 | 
+   clk_sortie/clk_sortie_CE = U1/compt<10> & U1/compt<11> & !U1/compt<5> & 
+	!U1/compt<6> & !U1/compt<7> & !U1/compt<8> & !U1/compt<9> & 
+	U1/compt<23> & 
+	U1/Madd_compt_addsub0000__and0003/U1/Madd_compt_addsub0000__and0003_D2 & U1/compt_addsub0000<12>/U1/compt_addsub0000<12>_D & 
+	U1/compt_addsub0000<13>/U1/compt_addsub0000<13>_D & !U1/compt_addsub0000<14>/U1/compt_addsub0000<14>_D & 
+	U1/compt_addsub0000<15>/U1/compt_addsub0000<15>_D & !U1/compt_addsub0000<16>/U1/compt_addsub0000<16>_D & 
+	U1/compt_addsub0000<17>/U1/compt_addsub0000<17>_D & U1/compt_addsub0000<18>/U1/compt_addsub0000<18>_D & 
+	U1/compt_addsub0000<19>/U1/compt_addsub0000<19>_D & U1/compt_addsub0000<20>/U1/compt_addsub0000<20>_D & 
+	U1/compt_addsub0000<21>/U1/compt_addsub0000<21>_D & !U1/compt_addsub0000<22>/U1/compt_addsub0000<22>_D;
+
+PIN | btn_entree | 64 | 0 | N/A | 143 | 45 | 7 | 2 | 6 | 7 | 7 | 10 | 0 | 1 | 0 | 8 | 6 | 2 | 6 | 12 | 1 | 3 | 0 | 16 | 0 | 17 | 1 | 17 | 1 | 14 | 0 | 15 | 1 | 16 | 3 | 17 | 3 | 8 | 1 | 13 | 1 | 15 | 6 | 16 | 3 | 16 | 3 | 7 | 7 | 15 | 7 | 17 | 3 | 15 | 3 | 6 | 7 | 14 | 7 | 16 | 3 | 14 | 3 | 5 | 6 | 15 | 3 | 13 | 6 | 17 | 3 | 11 | 3 | 4 | 3 | 3 | 3 | 10 | 3 | 9 | 3 | 2 | 3 | 12 | 6 | 14 | 6 | 9 | 6 | 13 | 6 | 11 | 6 | 8 | 6 | 10
+PIN | clk_entree | 4096 | 0 | N/A | 33 | 25 | 2 | 1 | 4 | 10 | 2 | 17 | 2 | 16 | 4 | 9 | 4 | 8 | 5 | 17 | 4 | 7 | 5 | 16 | 4 | 6 | 4 | 5 | 4 | 4 | 4 | 17 | 4 | 3 | 4 | 2 | 5 | 15 | 4 | 16 | 4 | 15 | 4 | 14 | 2 | 14 | 2 | 13 | 4 | 13 | 4 | 1 | 4 | 0 | 2 | 15
+PIN | led_sortie<0> | 536871040 | 0 | N/A | 106
+PIN | led_sortie<1> | 536871040 | 0 | N/A | 88
+PIN | led_sortie<2> | 536871040 | 0 | N/A | 109
+PIN | led_sortie<3> | 536871040 | 0 | N/A | 18
+PIN | led_sortie<4> | 536871040 | 0 | N/A | 24
+PIN | led_sortie<5> | 536871040 | 0 | N/A | 84
+PIN | led_sortie<6> | 536871040 | 0 | N/A | 91
+PIN | led_sortie<7> | 536871040 | 0 | N/A | 5

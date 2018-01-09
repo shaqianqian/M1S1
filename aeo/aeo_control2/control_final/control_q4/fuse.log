@@ -1,0 +1,22 @@
+Running: /home/parallels/Desktop/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/parallels/Desktop/control_final/control_q4/IP_FLITER_isim_beh.exe -prj /home/parallels/Desktop/control_final/control_q4/IP_FLITER_beh.prj work.IP_FLITER 
+ISim M.81d (signature 0x9ca8bed6)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/parallels/Desktop/control_final/control_q4/IP_FLITER.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 73076 KB
+Fuse CPU Usage: 80 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling architecture behavioral of entity ip_fliter
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable /home/parallels/Desktop/control_final/control_q4/IP_FLITER_isim_beh.exe
+Fuse Memory Usage: 373144 KB
+Fuse CPU Usage: 90 ms
+GCC CPU Usage: 170 ms

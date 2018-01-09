@@ -1,0 +1,50 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 12.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : shiftanodes.vf
+// /___/   /\     Timestamp : 11/28/2017 15:52:35
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/m1/ma/aeo/tp8/shiftanodes.vf -w /home/m1/ma/aeo/tp8/shiftanodes.sch
+//Design Name: shiftanodes
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module shiftanodes(clk, 
+                   Enable190, 
+                   anodes);
+
+    input clk;
+    input Enable190;
+   output [3:0] anodes;
+   
+   wire [3:0] anodes_DUMMY;
+   
+   assign anodes[3:0] = anodes_DUMMY[3:0];
+   FDE #( .INIT(1'b0) ) XLXI_1 (.C(clk), 
+               .CE(Enable190), 
+               .D(anodes_DUMMY[3]), 
+               .Q(anodes_DUMMY[0]));
+   FDE #( .INIT(1'b1) ) XLXI_2 (.C(clk), 
+               .CE(Enable190), 
+               .D(anodes_DUMMY[0]), 
+               .Q(anodes_DUMMY[1]));
+   FDE #( .INIT(1'b1) ) XLXI_3 (.C(clk), 
+               .CE(Enable190), 
+               .D(anodes_DUMMY[1]), 
+               .Q(anodes_DUMMY[2]));
+   FDE #( .INIT(1'b1) ) XLXI_4 (.C(clk), 
+               .CE(Enable190), 
+               .D(anodes_DUMMY[2]), 
+               .Q(anodes_DUMMY[3]));
+endmodule

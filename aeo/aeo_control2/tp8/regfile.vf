@@ -1,0 +1,199 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 12.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : regfile.vf
+// /___/   /\     Timestamp : 11/28/2017 15:52:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/m1/ma/aeo/tp8/regfile.vf -w /home/m1/ma/aeo/tp8/regfile.sch
+//Design Name: regfile
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module D4_16E_HXILINX_regfile (D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, A0, A1, A2, A3, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   output D8;
+   output D9;
+   output D10;
+   output D11;
+   output D12;
+   output D13;
+   output D14;
+   output D15;
+
+   input  A0;
+   input  A1;
+   input  A2;
+   input  A3;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+   reg D4;
+   reg D5;
+   reg D6;
+   reg D7;
+   reg D8;
+   reg D9;
+   reg D10;
+   reg D11;
+   reg D12;
+   reg D13;
+   reg D14;
+   reg D15;
+
+      always @ (A0 or A1 or A2 or A3 or E)
+      begin
+         if(!E)
+           {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0000;
+        else
+        begin
+           case({A3,A2,A1,A0})
+             4'b0000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0001;
+             4'b0001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0010;
+             4'b0010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0100;
+             4'b0011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_1000;
+             4'b0100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0001_0000;
+             4'b0101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0010_0000;
+             4'b0110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0100_0000;
+             4'b0111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_1000_0000;
+             4'b1000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0001_0000_0000;
+             4'b1001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0010_0000_0000;
+             4'b1010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0100_0000_0000;
+             4'b1011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_1000_0000_0000;
+             4'b1100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0001_0000_0000_0000;
+             4'b1101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0010_0000_0000_0000;
+             4'b1110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0100_0000_0000_0000;
+             4'b1111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b1000_0000_0000_0000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale 1ns / 1ps
+
+module regfile(clk, 
+               Nreg, 
+               Rstore, 
+               store, 
+               Rload);
+
+    input clk;
+    input [2:0] Nreg;
+    input [31:0] Rstore;
+    input store;
+   output [31:0] Rload;
+   
+   wire [31:0] XLXN_7;
+   wire [31:0] XLXN_8;
+   wire [31:0] XLXN_9;
+   wire [31:0] XLXN_10;
+   wire [31:0] XLXN_11;
+   wire [31:0] XLXN_12;
+   wire [31:0] XLXN_13;
+   wire [31:0] XLXN_14;
+   wire [31:0] XLXN_15;
+   wire [31:0] XLXN_16;
+   wire XLXN_44;
+   wire XLXN_49;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_52;
+   wire XLXN_53;
+   wire XLXN_54;
+   wire XLXN_55;
+   wire XLXN_56;
+   
+   mux2x32  mux2 (.sel(Nreg[2]), 
+                 .X0(XLXN_15[31:0]), 
+                 .X1(XLXN_16[31:0]), 
+                 .Y(Rload[31:0]));
+   Mux4  mux40 (.sel(Nreg[1:0]), 
+               .X0(XLXN_7[31:0]), 
+               .X1(XLXN_8[31:0]), 
+               .X2(XLXN_9[31:0]), 
+               .X3(XLXN_10[31:0]), 
+               .Y(XLXN_15[31:0]));
+   Mux4  mux41 (.sel(Nreg[1:0]), 
+               .X0(XLXN_11[31:0]), 
+               .X1(XLXN_12[31:0]), 
+               .X2(XLXN_13[31:0]), 
+               .X3(XLXN_14[31:0]), 
+               .Y(XLXN_16[31:0]));
+   QDE_1  R0 (.clk(clk), 
+             .d(Rstore[31:0]), 
+             .E(XLXN_49), 
+             .q(XLXN_7[31:0]));
+   QDE_1  R1 (.clk(clk), 
+             .d(Rstore[31:0]), 
+             .E(XLXN_50), 
+             .q(XLXN_8[31:0]));
+   QDE_1  R2 (.clk(clk), 
+             .d(Rstore[31:0]), 
+             .E(XLXN_51), 
+             .q(XLXN_9[31:0]));
+   QDE_1  R3 (.clk(clk), 
+             .d(Rstore[31:0]), 
+             .E(XLXN_52), 
+             .q(XLXN_10[31:0]));
+   QDE_1  R4 (.clk(clk), 
+             .d(Rstore[31:0]), 
+             .E(XLXN_53), 
+             .q(XLXN_11[31:0]));
+   QDE_1  R5 (.clk(clk), 
+             .d(Rstore[31:0]), 
+             .E(XLXN_54), 
+             .q(XLXN_12[31:0]));
+   QDE_1  R6 (.clk(clk), 
+             .d(Rstore[31:0]), 
+             .E(XLXN_55), 
+             .q(XLXN_13[31:0]));
+   QDE_1  R7 (.clk(clk), 
+             .d(Rstore[31:0]), 
+             .E(XLXN_56), 
+             .q(XLXN_14[31:0]));
+   (* HU_SET = "XLXI_27_11" *) 
+   D4_16E_HXILINX_regfile  XLXI_27 (.A0(store), 
+                                   .A1(Nreg[0]), 
+                                   .A2(Nreg[1]), 
+                                   .A3(Nreg[2]), 
+                                   .E(XLXN_44), 
+                                   .D0(), 
+                                   .D1(XLXN_49), 
+                                   .D2(), 
+                                   .D3(XLXN_50), 
+                                   .D4(), 
+                                   .D5(XLXN_51), 
+                                   .D6(), 
+                                   .D7(XLXN_52), 
+                                   .D8(), 
+                                   .D9(XLXN_53), 
+                                   .D10(), 
+                                   .D11(XLXN_54), 
+                                   .D12(), 
+                                   .D13(XLXN_55), 
+                                   .D14(), 
+                                   .D15(XLXN_56));
+   VCC  XLXI_28 (.P(XLXN_44));
+endmodule

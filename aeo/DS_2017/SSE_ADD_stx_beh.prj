@@ -1,0 +1,5 @@
+vhdl isim_temp "add8.vhd"
+vhdl isim_temp "add16.vhd"
+vhdl isim_temp "SSE_4ADD8.vhd"
+vhdl isim_temp "SSE_2ADD16.vhd"
+vhdl isim_temp "SSE_ADD.vhd"

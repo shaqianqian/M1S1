@@ -1,0 +1,22 @@
+ISim log file
+Running: /home/parallels/Desktop/control_final/control_q2/IP_fibo_isim_beh.exe -gui -tclbatch isim.cmd -wdb /home/parallels/Desktop/control_final/control_q2/IP_fibo_isim_beh.wdb 
+ISim M.81d (signature 0x9ca8bed6)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /ip_fibo/tin 12345678 -radix hex
+# isim force add /ip_fibo/tin 12345678 -radix hex
+# isim force add /ip_fibo/ipcode 403 -radix hex
+# isim force add /ip_fibo/ipcode 403 -radix hex
+# isim force add /ip_fibo/clk 0 -radix bin -value 1 -radix bin -time 10 ns -repeat 20 ns
+# isim force add /ip_fibo/clk 0 -radix bin -value 1 -radix bin -time 10 ns -repeat 20 ns
+# run 1.00us
+at 1010 ns, Instance /ip_fibo/Inst_fibogen/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# exit 0

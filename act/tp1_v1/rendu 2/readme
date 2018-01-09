@@ -1,0 +1,48 @@
+Question4:
+Dans cette question, on a besoin de mélanger les points de deux lignes des toits,
+et juste prendre les points qui sont les plus hauts, c'est-à-dire que on a besoin
+des fonctions pour comparer les relations entre deux ligne(a side connects with
+the ground(x==0)). Les codes claires sont dans notre programmation <question4.java>
+
+//on avance sur l'axe des abscisses jusqu'au premier point supérieur à  g
+tant que (point_suivant existe && point_suivant.x < g)
+    avancer le point suivant
+
+//on insère 2 point représentant la ligne verticale gauche
+si (point_suivant n'existe pas)
+    insérer (g, 0) et se placer après
+    insérer (g, h) et se placer après
+sinon si (point_suivant.y < h)
+    insérer (g, point_suivant.y) et se placer après
+    insérer (g, h) et se placer après
+sinon
+    tant que (point_suivant existe && point_suivant.y >= h)
+    avancer le point_suivant
+
+//de g à d
+//on efface les lignes de toit dont la hauteur est inférieure à h
+//si on rencontre une ligne de toit plus haute, on inscrit les points correspondant à l'intersection de l'immeuble que l'on veut dessiner et de celui que l'on vient de rencontrer et on n'efface rien
+tant que (point_suivant existe && point_suivant.x <= d)
+    si (point_suivant.y > h)
+        insérer (point_suivant.x, h) et se placer après
+	tant que (point_suivant existe && point_suivant.x <= d && point_suivant.y > h)
+	     avancer le point suivant
+	insérer (point_suivant.x, h) et se placer après //pas correct a certains moments
+    sinon
+	retirer le point suivant de la liste (et point_suivant = celui d'après)
+
+si (point_suivant n'existe pas)
+    insérer (d, h) et se placer après
+    insérer (d, 0)
+sinon si (point_suivant.y < h)
+    insérer (d, h) et se placer après
+    insérer (d, point_suivant.y)
+
+----------
+
+Création d'une nouvelle liste de points
+
+pour chaque triplet
+     algo_précédent(liste, triplet)
+     
+La complexité est en O(n)

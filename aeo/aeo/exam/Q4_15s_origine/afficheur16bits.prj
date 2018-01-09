@@ -1,0 +1,6 @@
+vhdl work "x7seg.vhd"
+vhdl work "fsm.vhd"
+vhdl work "clkdiv.vhd"
+vhdl work "calc.vhd"
+vhdl work "afficheur16bits.vhd"
+vhdl work "comp.vhd"

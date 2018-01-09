@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/parallels/Desktop/control_final/control_q4/Nexys3v6.ncd
+OUTFILE=/home/parallels/Desktop/control_final/control_q4/Nexys3v6.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/parallels/Desktop/control_final/control_q4
+LICENSE=WebPack
+USER_INFO=0_0_579

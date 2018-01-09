@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/m1/ma/tp10/tp10_vhdl/Nexys3v6.ncd
+OUTFILE=/home/m1/ma/tp10/tp10_vhdl/Nexys3v6.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/m1/ma/tp10/tp10_vhdl
+LICENSE=WebPack
+USER_INFO=0_0_579

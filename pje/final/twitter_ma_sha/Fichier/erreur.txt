@@ -1,0 +1,8 @@
+mot_clé 60 0.33
+knn 114 0.63
+Bayes:precence 23 0.13
+Bayes:frequence 21 0.12
+Bayes:bi 18 0.1
+Bayes:bifrequence 18 0.1
+Bayes:bi_uni 20 0.11
+Bayes:bi_uni_fre 18 0.1

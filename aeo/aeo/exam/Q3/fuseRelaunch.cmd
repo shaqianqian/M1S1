@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits_isim_beh.exe" -prj "/home/parallels/Desktop/TP_controle/compteur59/afficheur16bits_beh.prj" "work.afficheur16bits" 

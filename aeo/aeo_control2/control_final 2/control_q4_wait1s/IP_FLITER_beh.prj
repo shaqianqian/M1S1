@@ -1,0 +1,3 @@
+vhdl work "IP_FLITER.vhd"
+vhdl work "acompt_1s.vhd"
+vhdl work "fsm.vhd"

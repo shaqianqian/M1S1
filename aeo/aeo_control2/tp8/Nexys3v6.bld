@@ -1,0 +1,121 @@
+Release 12.4 ngdbuild M.81d (lin64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -nt timestamp -uc Nexys3.ucf -p xc6slx16-csg324-3 Nexys3v6.ngc
+Nexys3v6.ngd
+
+Reading NGO file "/home/m1/ma/aeo/tp8/Nexys3v6.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Nexys3.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:137 - Constraint <NET "mclk" TNM_NET = "clk_pin";>
+   [Nexys3.ucf(11)]: No appropriate instances for the TNM constraint are driven
+   by "mclk".
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_clk_pin = PERIOD "clk_pin"
+   10 ns;> [Nexys3.ucf(12)]: Unable to find an active 'TNM' or 'TimeGrp'
+   constraint named 'clk_pin'.
+
+WARNING:ConstraintSystem:191 - The TNM 'clk_pin', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_clk_pin'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_clk_pin = PERIOD "clk_pin" 10 ns;> [Nexys3.ucf(12)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_clk_pin = PERIOD "clk_pin" 10 ns;> [Nexys3.ucf(12)]
+
+Done...
+
+Checking expanded design ...
+ERROR:NgdBuild:604 - logical block 'clk_gen' with type 'timer' could not be
+   resolved. A pin name misspelling can cause this, a missing edif or ngc file,
+   case mismatch between the block name and the edif or ngc file name, or the
+   misspelling of a type name. Symbol 'timer' is not supported in target
+   'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'my_Master/MIP_square2.Inst_IP_square2/my_mul16_1' with type 'multiply' could
+   not be resolved. A pin name misspelling can cause this, a missing edif or ngc
+   file, case mismatch between the block name and the edif or ngc file name, or
+   the misspelling of a type name. Symbol 'multiply' is not supported in target
+   'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'my_Master/MIP_square2.Inst_IP_square2/my_mul16_2' with type 'multiply' could
+   not be resolved. A pin name misspelling can cause this, a missing edif or ngc
+   file, case mismatch between the block name and the edif or ngc file name, or
+   the misspelling of a type name. Symbol 'multiply' is not supported in target
+   'spartan6'.
+ERROR:NgdBuild:604 - logical block 'my_Master/Mfunit.Inst_IPFunit/my_incdec'
+   with type 'incdec' could not be resolved. A pin name misspelling can cause
+   this, a missing edif or ngc file, case mismatch between the block name and
+   the edif or ngc file name, or the misspelling of a type name. Symbol 'incdec'
+   is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block 'my_Master/Mfunit.Inst_IPFunit/my_addsub'
+   with type 'addsub' could not be resolved. A pin name misspelling can cause
+   this, a missing edif or ngc file, case mismatch between the block name and
+   the edif or ngc file name, or the misspelling of a type name. Symbol 'addsub'
+   is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'my_Master/Xslaves[1].Yslaves[0].One_salve/Smul16.Inst_IP_mul16/my_mul16'
+   with type 'multiply' could not be resolved. A pin name misspelling can cause
+   this, a missing edif or ngc file, case mismatch between the block name and
+   the edif or ngc file name, or the misspelling of a type name. Symbol
+   'multiply' is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'my_Master/Xslaves[1].Yslaves[0].One_salve/Sfunit.Inst_IPFunit/my_incdec'
+   with type 'incdec' could not be resolved. A pin name misspelling can cause
+   this, a missing edif or ngc file, case mismatch between the block name and
+   the edif or ngc file name, or the misspelling of a type name. Symbol 'incdec'
+   is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'my_Master/Xslaves[1].Yslaves[0].One_salve/Sfunit.Inst_IPFunit/my_addsub'
+   with type 'addsub' could not be resolved. A pin name misspelling can cause
+   this, a missing edif or ngc file, case mismatch between the block name and
+   the edif or ngc file name, or the misspelling of a type name. Symbol 'addsub'
+   is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'my_Master/Xslaves[0].Yslaves[0].One_salve/Smul16.Inst_IP_mul16/my_mul16'
+   with type 'multiply' could not be resolved. A pin name misspelling can cause
+   this, a missing edif or ngc file, case mismatch between the block name and
+   the edif or ngc file name, or the misspelling of a type name. Symbol
+   'multiply' is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'my_Master/Xslaves[0].Yslaves[0].One_salve/Sfunit.Inst_IPFunit/my_incdec'
+   with type 'incdec' could not be resolved. A pin name misspelling can cause
+   this, a missing edif or ngc file, case mismatch between the block name and
+   the edif or ngc file name, or the misspelling of a type name. Symbol 'incdec'
+   is not supported in target 'spartan6'.
+ERROR:NgdBuild:604 - logical block
+   'my_Master/Xslaves[0].Yslaves[0].One_salve/Sfunit.Inst_IPFunit/my_addsub'
+   with type 'addsub' could not be resolved. A pin name misspelling can cause
+   this, a missing edif or ngc file, case mismatch between the block name and
+   the edif or ngc file name, or the misspelling of a type name. Symbol 'addsub'
+   is not supported in target 'spartan6'.
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    11
+  Number of warnings:   4
+
+Total memory usage is 282168 kilobytes
+
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "Nexys3v6.bld"...

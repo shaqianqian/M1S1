@@ -1,0 +1,10 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/m1/ma/aeo/tp8/afficheur.vf,-w,/home/m1/ma/aeo/tp8/afficheur.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/m1/ma/aeo/tp8/Enable190.vf,-w,/home/m1/ma/aeo/tp8/Enable190.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/m1/ma/aeo/tp8/Hstack.vf,-w,/home/m1/ma/aeo/tp8/Hstack.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/m1/ma/aeo/tp8/mux4x4.vf,-w,/home/m1/ma/aeo/tp8/mux4x4.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/m1/ma/aeo/tp8/netring_master.vf,-w,/home/m1/ma/aeo/tp8/netring_master.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/m1/ma/aeo/tp8/netring.vf,-w,/home/m1/ma/aeo/tp8/netring.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/m1/ma/aeo/tp8/pulse.vf,-w,/home/m1/ma/aeo/tp8/pulse.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/m1/ma/aeo/tp8/regfile.vf,-w,/home/m1/ma/aeo/tp8/regfile.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/m1/ma/aeo/tp8/reset_mem.vf,-w,/home/m1/ma/aeo/tp8/reset_mem.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/m1/ma/aeo/tp8/shiftanodes.vf,-w,/home/m1/ma/aeo/tp8/shiftanodes.sch

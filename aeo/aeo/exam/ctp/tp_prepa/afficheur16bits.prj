@@ -1,0 +1,4 @@
+vhdl work "zer.vhd"
+vhdl work "s.vhd"
+vhdl work "e.vhd"
+vhdl work "affichieur.vhd"

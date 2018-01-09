@@ -1,0 +1,4 @@
+make
+./mi
+make clean
+

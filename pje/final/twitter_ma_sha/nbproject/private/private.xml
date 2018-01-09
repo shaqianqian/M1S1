@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/View/Knn_frame.java</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/Fichier/twitter_sans_annotation.csv</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/View/tweet.java</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/Outil/File_twitter.java</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/View/Twitter.java</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/Algo/Knn.java</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/Outil/filter_contenu.java</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/Outil/Id_distance.java</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/Algo/Anaylse_experimentale.java</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/Fichier/tweets.txt</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/Fichier/out.csv</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/Outil/Diagram_algo.java</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/Fichier/times.txt</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/Fichier/positive.txt</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/Fichier/contenus.csv</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/Fichier/contenus_apres_temps.csv</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/View/ErreurFrame.java</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/View/Mot_cle_frame.java</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/Fichier/twitter_annotation.csv</file>
+            <file>file:/Users/shaqianqian/NetBeansProjects/final/twitter_ma_sha/src/Algo/Bayes.java</file>
+        </group>
+    </open-files>
+</project-private>

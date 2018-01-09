@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (TTL|LVTTL|LVCMOS2|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xa9500xl" device="XA95144XL" pkg="CS144" spg="-15"/><pin dir="input" nm="btn_entree" no="D7"/><pin dir="input" nm="clk_entree" no="K2"/><pin dir="output" nm="led_sortie&lt;0&gt;" no="F11" sr="fast"/><pin dir="output" nm="led_sortie&lt;1&gt;" no="K11" sr="fast"/><pin dir="output" nm="led_sortie&lt;2&gt;" no="E12" sr="fast"/><pin dir="output" nm="led_sortie&lt;3&gt;" no="F1" sr="fast"/><pin dir="output" nm="led_sortie&lt;4&gt;" no="H2" sr="fast"/><pin dir="output" nm="led_sortie&lt;5&gt;" no="L12" sr="fast"/><pin dir="output" nm="led_sortie&lt;6&gt;" no="J10" sr="fast"/><pin dir="output" nm="led_sortie&lt;7&gt;" no="C1" sr="fast"/></ibis>

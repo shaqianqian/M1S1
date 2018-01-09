@@ -1,0 +1,92 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    15:46:01 12/05/2017 
+-- Design Name: 
+-- Module Name:    swap - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity swap is
+Port ( e1: in  STD_LOGIC_VECTOR (31 downto 0);
+       e2: in  STD_LOGIC_VECTOR (31 downto 0);
+		   e3: in  STD_LOGIC_VECTOR (31 downto 0);
+       s1: out  STD_LOGIC_VECTOR (31 downto 0);
+       s2: out  STD_LOGIC_VECTOR (31 downto 0);
+		  s3: out  STD_LOGIC_VECTOR (31 downto 0)
+           
+);
+end swap;
+
+architecture Behavioral of swap is
+
+begin
+process(e1,e2,e3)
+begin 
+  if((e3>=e1)and(e3>=e2)) 
+    then
+	 if(e1<e2) then 
+    s1<=e3;
+	 s2<=e2;
+    s3<=e1;
+    else  
+	     s1<=e3;
+        s2<=e1;
+		  s3<=e2;
+		  
+  	  end if;
+	  
+  elsif((e2>=e1)and(e2>=e3))
+    then 
+	 if(e1<e3) then 
+    s1<=e2;
+	 s2<=e3;
+    s3<=e1;
+    else  
+	     s1<=e2;
+        s2<=e1;
+		  s3<=e3;
+		  
+  	  end if;
+   elsif((e1>=e2)and(e1>=e3))
+    then 
+	 if(e2<e3) then 
+    s1<=e1;
+	 s2<=e3;
+    s3<=e2;
+    else  
+	     s1<=e1;
+        s2<=e2;
+		  s3<=e3;
+		  
+  	  end if;
+  
+  
+  end if;
+
+ end process;
+ end Behavioral;
+
+

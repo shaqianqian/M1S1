@@ -1,0 +1,73 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 12.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : netring.vf
+// /___/   /\     Timestamp : 11/28/2017 15:52:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/m1/ma/aeo/tp8/netring.vf -w /home/m1/ma/aeo/tp8/netring.sch
+//Design Name: netring
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module netring(clk, 
+               E_put, 
+               E_shift, 
+               I_put, 
+               I_X, 
+               i_Xmoins, 
+               I_Y, 
+               I_Ymoins, 
+               P_M, 
+               X_Y, 
+               O);
+
+    input clk;
+    input E_put;
+    input E_shift;
+    input [31:0] I_put;
+    input [31:0] I_X;
+    input [31:0] i_Xmoins;
+    input [31:0] I_Y;
+    input [31:0] I_Ymoins;
+    input P_M;
+    input X_Y;
+   output [31:0] O;
+   
+   wire [1:0] sel;
+   wire XLXN_19;
+   wire [31:0] XLXN_20;
+   wire [31:0] XLXN_23;
+   
+   QDE  XLXI_2 (.clk(clk), 
+               .d(XLXN_20[31:0]), 
+               .E(XLXN_19), 
+               .q(O[31:0]));
+   OR2  XLXI_3 (.I0(E_put), 
+               .I1(E_shift), 
+               .O(XLXN_19));
+   Mux2  XLXI_5 (.sel(E_put), 
+                .X0(XLXN_23[31:0]), 
+                .X1(I_put[31:0]), 
+                .Y(XLXN_20[31:0]));
+   Mux4  XLXI_6 (.sel(sel[1:0]), 
+                .X0(I_X[31:0]), 
+                .X1(I_Y[31:0]), 
+                .X2(i_Xmoins[31:0]), 
+                .X3(I_Ymoins[31:0]), 
+                .Y(XLXN_23[31:0]));
+   BUF  XLXI_7 (.I(X_Y), 
+               .O(sel[0]));
+   BUF  XLXI_8 (.I(P_M), 
+               .O(sel[1]));
+endmodule

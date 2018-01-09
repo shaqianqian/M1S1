@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/parallels/Desktop/TP_controle/clock/chenillard.ncd
+OUTFILE=/home/parallels/Desktop/TP_controle/clock/chenillard.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/parallels/Desktop/TP_controle/clock
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

@@ -1,0 +1,198 @@
+Running: /opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/m1/ma/tp8/Nexys3v6_isim_beh.exe -prj /home/m1/ma/tp8/Nexys3v6_beh.prj work.Nexys3v6 
+ISim M.81d (signature 0x9ca8bed6)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/m1/ma/tp8/ipcore_dir/timer.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/QDE_1.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/Mux4.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/Mux2x32.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/select_out.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/select_in0_save.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/returnstack.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/regfile.vhf" into library work
+Parsing VHDL file "/home/m1/ma/tp8/regc.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/reg1c.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/Ram8.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/qde.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/predicat.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/next_count.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/Mux2.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/mem_bank_1bit.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/ipcore_dir/my_ram.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/ipcore_dir/multiply.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/ipcore_dir/incdec.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/ipcore_dir/addsub.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IPcode.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/homade_opcodes.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/dstack.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/constant32.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/slavedual_prom.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/reset_mem.vhf" into library work
+Parsing VHDL file "/home/m1/ma/tp8/random.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/QD.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/pulse.vhf" into library work
+Parsing VHDL file "/home/m1/ma/tp8/mysr8ce.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IP_Snum.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IP_regfile.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IP_ram.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IP_Put.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IP_datastack.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IPTic.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IPstack.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IPsleep.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IPmul16.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IPidentity.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IPget.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/Hstack.vhf" into library work
+Parsing VHDL file "/home/m1/ma/tp8/Hcontrolunit.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/Funit_lib.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/add_gen.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/x7seg.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/uart_rx.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/uart_dispatch.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/shiftanodes.vhf" into library work
+Parsing VHDL file "/home/m1/ma/tp8/reg.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/netring_master.vhf" into library work
+Parsing VHDL file "/home/m1/ma/tp8/netring.vhf" into library work
+Parsing VHDL file "/home/m1/ma/tp8/mux4x4.vhf" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IP_switch.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IP_Rdm.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IP_MEcom.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IP_Led.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IP_Com.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IP_Actif.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IPwaitBT1.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IPWait.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/IPBufO.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/Hsalve.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/BaudClk_adept.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/uart_driverV2.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/Hmaster.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/m1/ma/tp8/Hmaster.vhd" Line 555: Actual for formal port e_shift is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/m1/ma/tp8/Hmaster.vhd" Line 575: Actual for formal port e_shift is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/m1/ma/tp8/Hmaster.vhd" Line 594: Actual for formal port reset is neither a static name nor a globally static expression
+Parsing VHDL file "/home/m1/ma/tp8/Enable190.vhf" into library work
+Parsing VHDL file "/home/m1/ma/tp8/debounce4.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/arbitre2.vhd" into library work
+Parsing VHDL file "/home/m1/ma/tp8/afficheur.vhf" into library work
+Parsing VHDL file "/home/m1/ma/tp8/Nexys3v6.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:746 - "/home/m1/ma/tp8/Hmaster.vhd" Line 90: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/m1/ma/tp8/Hmaster.vhd" Line 92: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/m1/ma/tp8/Hmaster.vhd" Line 95: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/m1/ma/tp8/Hmaster.vhd" Line 449: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/m1/ma/tp8/Hmaster.vhd" Line 488: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/m1/ma/tp8/Hmaster.vhd" Line 514: Range is empty (null range)
+WARNING:HDLCompiler:746 - "/home/m1/ma/tp8/Hmaster.vhd" Line 540: Range is empty (null range)
+Completed static elaboration
+Fuse Memory Usage: 100512 KB
+Fuse CPU Usage: 270 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package std_logic_signed from library ieee
+Using precompiled package textio from library std
+Using precompiled package vital_timing from library ieee
+Using precompiled package vital_primitives from library ieee
+Compiling package ipcodes
+Compiling package vcomponents
+Compiling architecture behavioral of entity mysr8ce [mysr8ce_default]
+Compiling architecture fd_v of entity fd [\FD('0')\]
+Compiling architecture and3_v of entity and3 [and3_default]
+Compiling architecture inv_v of entity inv [inv_default]
+Compiling architecture behavioral of entity pulse [pulse_default]
+Compiling architecture inst_rx of entity uart_rx [uart_rx_default]
+Compiling architecture behavioral of entity uart_baudclock [\uart_baudClock(100000000,9600)\]
+Compiling architecture behavioral of entity uart_dispatch [uart_dispatch_default]
+Compiling architecture rom_io of entity wrapper_ram [wrapper_ram_default]
+Compiling package opcodes
+Compiling architecture behavioral of entity mem_bank_1bit [mem_bank_1bit_default]
+Compiling architecture behavioral of entity inst_mem [inst_mem_default]
+Compiling architecture behavioral of entity add_gen [add_gen_default]
+Compiling architecture and2_v of entity and2 [and2_default]
+Compiling architecture behavioral of entity reset_mem [reset_mem_default]
+Compiling architecture behavioral of entity constant32 [constant32_default]
+Compiling architecture behavioral of entity mux4 [mux4_default]
+Compiling architecture behavioral of entity mux2 [mux2_default]
+Compiling architecture behavioral of entity predicat [predicat_default]
+Compiling architecture rtl of entity ram8 [ram8_default]
+Compiling architecture qde of entity qde [\QDE(32)\]
+Compiling architecture behavioral of entity select_in [select_in_default]
+Compiling architecture behavioral of entity select_out [select_out_default]
+Compiling architecture behavioral of entity next_count [next_count_default]
+Compiling architecture or3_v of entity or3 [or3_default]
+Compiling architecture or2_v of entity or2 [or2_default]
+Compiling architecture behavioral of entity hstack [hstack_default]
+Compiling architecture behavioral of entity rstack [rstack_default]
+Compiling architecture behavioral of entity hcu [hcu_default]
+Compiling architecture reg0 of entity reg0 [\reg0(16)\]
+Compiling architecture reg0 of entity reg0 [\reg0(8)\]
+Compiling architecture reg0c of entity reg0c [\reg0c(8)\]
+Compiling architecture behavioral of entity ip_led [\IP_Led(('0','0','0','0','0','0'...]
+Compiling architecture behavioral of entity ip_switch [\IP_switch(('0','0','0','0','0',...]
+Compiling architecture behavioral of entity ip_bufo [\IP_BufO(('0','0','0','0','0','0...]
+Compiling architecture reg1c of entity reg1c [\reg1c(5)\]
+Compiling architecture fsm of entity ip_waitbt [\IP_waitbt(('1','0','0','0','0',...]
+Compiling architecture fsm of entity ip_delay [\IP_delay(('1','0','0','0','0','...]
+Compiling package xbip_addsub_v2_0_comp
+Compiling package bip_utils_pkg_v2_0
+Compiling package bip_usecase_utils_pkg_v2_0
+Compiling package c_addsub_pkg_v11_0
+Compiling package xbip_pipe_v2_0_xst_comp
+Compiling package c_reg_fd_v11_0_comp
+Compiling architecture behavioral of entity c_reg_fd_v11_0 [\c_reg_fd_v11_0(32,"0","0",1,0,0...]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(32,32,32,...]
+Compiling architecture behavioral of entity c_addsub_v11_0 [\c_addsub_v11_0(0,"spartan6",0,3...]
+Compiling architecture incdec_a of entity incdec [incdec_default]
+Compiling architecture behavioral of entity c_addsub_v11_0_legacy [\c_addsub_v11_0_legacy(32,32,32,...]
+Compiling architecture behavioral of entity c_addsub_v11_0 [\c_addsub_v11_0(0,"spartan6",0,3...]
+Compiling architecture addsub_a of entity addsub [addsub_default]
+Compiling architecture myfunit of entity ip_funit [\IP_Funit(('0','0','0','0','0','...]
+Compiling architecture behavioral of entity ip_stack [\IP_stack(('0','0','0','0','0','...]
+Compiling architecture behavioral of entity ip_identity [\IP_identity(('0','0','0','0','0...]
+Compiling architecture reg0c of entity reg0c [\reg0c(32)\]
+Compiling architecture behavioral of entity dstack [dstack_default]
+Compiling architecture behavioral of entity ip_datastack [\IP_datastack(('0','0','0','0','...]
+Compiling architecture reg1c of entity reg1c [\reg1c(32)\]
+Compiling architecture behavioral of entity ip_tic [\IP_Tic(('0','0','0','0','0','0'...]
+Compiling architecture behavioral of entity random [\random(32)\]
+Compiling architecture behavioral of entity ip_rdm [\IP_Rdm(('0','0','0','0','0','0'...]
+Compiling package mult_gen_pkg_v11_2
+Compiling architecture behavioral of entity mult_gen_v11_2 [\mult_gen_v11_2(0,0,"spartan6",1...]
+Compiling architecture multiply_a of entity multiply [multiply_default]
+Compiling architecture behavioral of entity ip_mul16 [\IP_mul16(('0','0','0','0','0','...]
+Compiling architecture behavioral of entity hmaster [hmaster_default]
+Compiling architecture debounce4 of entity debounce4 [debounce4_default]
+Compiling package vpkg
+Compiling architecture ibufg_v of entity ibufg [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_clock_lost_v of entity dcm_sp_clock_lost [dcm_sp_clock_lost_default]
+Compiling architecture dcm_sp_v of entity dcm_sp [\DCM_SP(true,"*",true,false,2.0,...]
+Compiling architecture bufg_v of entity bufg [bufg_default]
+Compiling architecture xilinx of entity timer [timer_default]
+Compiling architecture behavioral of entity x7seg [x7seg_default]
+Compiling architecture behavioral of entity cb2ce_hxilinx_afficheur [cb2ce_hxilinx_afficheur_default]
+Compiling architecture m4_1e_hxilinx_afficheur_v of entity m4_1e_hxilinx_afficheur [m4_1e_hxilinx_afficheur_default]
+Compiling architecture vcc_v of entity vcc [vcc_default]
+Compiling architecture behavioral of entity mux4x4_muser_afficheur [mux4x4_muser_afficheur_default]
+Compiling architecture fde_v of entity fde [\FDE('0')\]
+Compiling architecture behavioral of entity shiftanodes_muser_afficheur [shiftanodes_muser_afficheur_defa...]
+Compiling architecture behavioral of entity afficheur [afficheur_default]
+Compiling architecture behavioral of entity cb16ce_hxilinx_enable190 [cb16ce_hxilinx_enable190_default]
+Compiling architecture nor2_v of entity nor2 [nor2_default]
+Compiling architecture behavioral of entity cb4ce_hxilinx_enable190 [cb4ce_hxilinx_enable190_default]
+Compiling architecture behavioral of entity enable190 [enable190_default]
+Compiling architecture behavioral of entity arbitre [arbitre_default]
+Compiling architecture behavioral of entity nexys3v6
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 183 VHDL Units
+Built simulation executable /home/m1/ma/tp8/Nexys3v6_isim_beh.exe
+Fuse Memory Usage: 690792 KB
+Fuse CPU Usage: 610 ms
+GCC CPU Usage: 4470 ms

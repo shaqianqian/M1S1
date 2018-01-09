@@ -1,0 +1,28 @@
+Command line:
+   afficheur16bits_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  41625
+
+Sun Oct 15 01:13:39 2017
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 196.116 Meg
+
+ Total Signals          : 25
+ Total Nets             : 39
+ Total Signal Drivers   : 10
+ Total Blocks           : 10
+ Total Primitive Blocks : 9
+ Total Processes        : 8
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 540
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 271.618 Meg
+
+Sun Oct 15 01:13:44 2017
+

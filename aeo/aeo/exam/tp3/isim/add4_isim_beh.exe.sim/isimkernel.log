@@ -1,0 +1,10 @@
+Command line:
+   add4_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51509
+
+Tue Sep 12 16:31:37 2017
+
+
+ Elaboration Time: 0 sec

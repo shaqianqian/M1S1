@@ -1,0 +1,123 @@
+-Author:
+-MA Ling
+-SHA Qianqian
+
+Q1 
+Veuillez consulter Q1.xhtml
+
+Q1.1 En consultant Graph Q1.1 
+— (2, 0)(2, 5)(4, 4)(4, 7)(5, 7)(5, 0) n'est pas ligne de toits.
+— (2, 0)(1, 4)(4, 4)(4, 7)(5, 7)(5, 0) n'est pas ligne de toits.
+— (2, 0)(2, 5)(4, 5)(4, 7)(5, 7)(5, 0) est ligne de toits.
+— (2, 0)(2, 5)(4, 5)(4, 7)5, 7)(6, 7)(5, 0) n'est pas ligne de toits.
+— (2, 0)(2, 5)(4, 5)(4, 8)(4, 7)(5, 7)(5, 0) n'est pas ligne de toits.
+
+Q1.2 
+En français, deux pairs de points consecutifs doivent avoir un x ou un y en common. Par exemple, si on a le pari (x,y1) (x,y2) alors le point suivant sera (x1,y2).
+
+In english,if the first pair (x,y1) (x,y2) of point has the same x value, the second successif pair (x1,y2) has the same y value. and if the first pair has the same y, the second pair has the same x.
+
+Q1.3 En consultant Gragh Q1.3
+
+Le ligne de toits de (1, 1)(5, 13)(9, 20)(12, 27)(16, 3)(19, 0)(22, 3)(25, 0)
+
+=>(1, 0)(1, 1)(5, 1)(5, 13)(9, 13)(9, 20)(12, 20)(12, 27)(16, 27)(16, 3)(19, 3)(19, 0)(22, 0)(22, 3)(25, 3)(25, 0)
+
+Q2
+Un alogrithm par pixels, avec un complecite de O(m*n), le disadvantage est trop complet, si il y a 10000 ou plus, c'est uncalculatable pour le ordinateur.
+
+1) colorer tous les pixels in the range 'point(gi hi di)' en 1, complexité est O(n).
+
+    pour point in n points:
+        pour i in range(point[0],point[2]+1):
+            pour j in range(0,point[1]+1):
+                result[j][i]=1  
+    return result
+    
+2) scanner les points et noter tous les points. Parcourir tous le tableau de haut en bas et de gauche à droit,complexite O(m*n).
+   
+    pour j in range(0,points[0])
+        pour i in range(0,points)
+            si points[i][j]==0
+                si i n'est pas0
+                    result.add(j,i-1)
+                sinon
+                    result.add(j,i)
+                break
+             
+    pour index,point in enumerate(result[1:]):
+        si result[index][1]!=-1:
+            si result[index][1] is not point[1] or result[index][0] is not point[0]:
+                si result[index][1]<point[1]:
+                    add([point[0],result[index][1]]),(point) in copy_result
+                sinon
+                    add(result[index]),([result[index][0],point[1]]) in copy_result
+            sinon
+                add(result[index]) in copyresult
+    
+3) combiner les points qui ont les mêmes x ou les mêmes y, complecité O(n)
+  
+    pour index,point in copy_result
+        si copy_result[index][1]!=point[1]
+            add(point) in tem[count_i+1]
+    	    count_i++
+        sinon
+            add(point) in tem[count_i]
+            
+    pour item in tem
+        si len(item)==1:
+            add(item[0]) in result
+        si len(item)>1:
+            add(item[0]) (item[-1]) in result
+
+4) get ligne toit
+	return result
+
+Q3
+
+Ajouter les immeubles un près un autre . Avec un complexite de O(n).
+entrée :  (g,h,d) le triplet
+		 
+	it = itérateur sur la liste l 
+	
+        tant que it(x) < g do
+		 avacer le immeuble suivant;
+	end tant que;
+	
+     
+We represent first two immeubles by 2 list en param l1 et l2
+list <point (int,int)> 
+it2 = iterateur sur immeuble2
+it1 = iterateur sur immeuble1
+
+pour chaque point p1 de immeuble1 et p1 de la immeuble2
+     tant que it1(x)<it2(x)
+          y_next= it1(y)
+          it1 =point_next
+     fin tant que
+
+     si it1(x) < it2(x) {
+        
+         si (it1(y) > it2(y)) {
+           save = it1(x) , it2(x)
+         }
+         si (it1(y) < it2(y)) {
+           save = it1(x), it1(y), it2(y), it2(y_suivant)
+         }
+         Si (it1(y) == it2(y)) {
+           Save = it1(x), it1(y), it2(y)
+         }
+     si (it1(x) > it2(x) {
+         si (it1(y) > it2(y)) {
+           save = it2(x), it1(y)
+         }
+         si (it1(y) < it2(y)) {
+    save = it2(x),it2(y), it2(y_suivant),it1(y_suivant)
+         si (it1(y) == it2(y)) {
+    save = it2(x), it2(y), it1(y)
+     }
+   // compare the other situations
+}
+   
+
+

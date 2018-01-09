@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "/home/m1/ma/q1/chenillard.xst" -ofn "/home/m1/ma/q1/chenillard.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xa9500xl chenillard.ngc chenillard.ngd  
+cpldfit -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper chenillard.ngd 
+XSLTProcess chenillard_build.xml 
+tsim -intstyle ise chenillard chenillard.nga 
+taengine -intstyle ise -f chenillard -w --format html1 -l chenillard_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n chenillard -i chenillard 
+ngdbuild -intstyle ise -dd _ngo -uc Nexys3_master.ucf -p xa9500xl chenillard.ngc chenillard.ngd  
+cpldfit -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper chenillard.ngd 
+XSLTProcess chenillard_build.xml 
+ngdbuild -intstyle ise -dd _ngo -uc Nexys3_master.ucf -p xa9500xl chenillard.ngc chenillard.ngd  
+xst -intstyle ise -ifn "/home/m1/ma/q1/chenillard.xst" -ofn "/home/m1/ma/q1/chenillard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys3_master.ucf -p xc6slx16-csg324-3 chenillard.ngc chenillard.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o chenillard_map.ncd chenillard.ngd chenillard.pcf 
+par -w -intstyle ise -ol high -mt off chenillard_map.ncd chenillard.ncd chenillard.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml chenillard.twx chenillard.ncd -o chenillard.twr chenillard.pcf -ucf Nexys3_master.ucf 
+bitgen -intstyle ise -f chenillard.ut chenillard.ncd 
